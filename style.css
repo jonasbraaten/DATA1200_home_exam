@@ -10,6 +10,10 @@ h1, h2 {
     color: #d2232a; /* dette styrer fargen på h1 og h2 */
 }
 
+h1, h2 { /* dette gjør at h1 og h2 overskriftene ligger på sentrum av siden*/
+    text-align: center;
+}
+
 header, footer {
     background: #333;
     color: #fff;
@@ -43,6 +47,19 @@ section {
     margin-bottom: 20px;
 }
 
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+    width: 23.5%;
+    margin: 0 0.5%;
+    text-align: center;
+}
+
+
 /* 3. Her fikser vi på bilder, gallerier og lignende */
 img {
     width: 100%;
@@ -61,6 +78,24 @@ figcaption {
     color: #555;
 }
 
+.image-row {  /* Mellomrommen mellom bildene av spillerne under navnene*/
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.image-row img { /* Her fikser vi bredden og høyden av de bildene nevnt over */
+    width: calc(25% - 10px); 
+    height: auto;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+
 /* 4. fikse på lenker og navigasjon */
 a {
     color: #d2232a;
@@ -78,7 +113,6 @@ a:hover {
 }
 
 .hero-title { /* Dette er teskten over bilde på toppen av siden (hero bildet)*/
-    font-family: Arial, Helvetica, sans-serif;
     color: white;
     font-size: 3em;
     text-align: center;
