@@ -1,10 +1,8 @@
 #activity-page body {
     font-family: Arial, sans-serif;
-    font-size: 18px; /* Større tekst for bedre lesbarhet */
     line-height: 1.6;
     margin: 0;
-    padding: 20px;
-    color: #333; /* Mørk tekst for bedre kontrast */
+    padding: 0;
     background-color: #f4f4f4;
 }
 
