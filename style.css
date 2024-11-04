@@ -1,4 +1,4 @@
-body {
+#activity-page body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
@@ -6,53 +6,53 @@ body {
     background-color: #f4f4f4;
 }
 
-h1, h2 {
+#activity-page h1, h2 {
     color: #d2232a; /* dette styrer fargen på h1 og h2 */
 }
 
-h1, h2 { /* dette gjør at h1 og h2 overskriftene ligger på sentrum av siden*/
+#activity-page h1, h2 { /* dette gjør at h1 og h2 overskriftene ligger på sentrum av siden*/
     text-align: center;
 }
 
-header, footer {
+#activity-page header, footer {
     background: #333;
     color: #fff;
     padding: 10px 0;
     text-align: center;
 }
 
-nav ul {
+#activity-page nav ul {
     list-style-type: none;
     padding: 0;
 }
 
-nav ul li {
+#activity-page nav ul li {
     display: inline;
     margin-right: 15px;
 }
 
-nav ul li a {
+#activity-page nav ul li a {
     color: #fff;
     text-decoration: none;
 }
 
 /* 2. Tenker at under her har vi en seksjon hvor vi fikser med layout og struktur i main */
-main {
+#activity-page main {
     padding: 20px;
     max-width: 1200px;
     margin: auto;
 }
 
-section {
+#activity-page section {
     margin-bottom: 20px;
 }
 
-ul {
+#activity-page ul {
     list-style-type: none;
     padding: 0;
 }
 
-ul li {
+#activity-page ul li {
     display: inline-block;
     width: 23.5%;
     margin: 0 0.5%;
@@ -61,24 +61,24 @@ ul li {
 
 
 /* 3. Her fikser vi på bilder, gallerier og lignende */
-img {
+#activity-page img {
     width: 100%;
     max-width: 300px;
     height: auto;
 }
 
-figure {
+#activity-page figure {
     display: inline-block;
     margin: 10px;
     text-align: center;
 }
 
-figcaption {
+#activity-page figcaption {
     font-size: 0.9em;
     color: #555;
 }
 
-.image-row {  /* Mellomrommen mellom bildene av spillerne under navnene*/
+#activity-page .image-row {  /* Mellomrommen mellom bildene av spillerne under navnene*/
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -87,7 +87,7 @@ figcaption {
     padding: 0;
 }
 
-.image-row img { /* Her fikser vi bredden og høyden av de bildene nevnt over */
+#activity-page .image-row img { /* Her fikser vi bredden og høyden av de bildene nevnt over */
     width: calc(25% - 10px); 
     height: auto;
     display: block;
@@ -97,22 +97,22 @@ figcaption {
 
 
 /* 4. fikse på lenker og navigasjon */
-a {
+#activity-page a {
     color: #d2232a;
 }
 
 
-a:hover {
+#activity-page a:hover {
     text-decoration: underline;
 }
-.hero { /* Dette er bilde på toppen av siden (hero bildet)*/
+#activity-page .hero { /* Dette er bilde på toppen av siden (hero bildet)*/
     background: url('https://cloudfront-eu-central-1.images.arcpublishing.com/mentormedier/JQPJY5L2HND6HNKA6W3YIGFDJQ.jpg') no-repeat center center;
     background-size: cover;
     height: 400px;
     position: relative;
 }
 
-.hero-title { /* Dette er teskten over bilde på toppen av siden (hero bildet)*/
+#activity-page .hero-title { /* Dette er teskten over bilde på toppen av siden (hero bildet)*/
     color: white;
     font-size: 3em;
     text-align: center;
@@ -124,3 +124,7 @@ a:hover {
     padding: 10px 20px;
     -webkit-text-stroke: 1px black;
 }
+
+/* index-id siden under her
+
+/* accessibility siden under her
