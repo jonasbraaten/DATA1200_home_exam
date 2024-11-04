@@ -137,5 +137,14 @@ a:hover {
         color: #333;
         background-color: #f4f4f4;
     }
+
+#Mainpage head{
+    font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 5%;
+        color: #c20000;
+        background-color: #333333;
+}
     
     /* accessibility siden under her*/
