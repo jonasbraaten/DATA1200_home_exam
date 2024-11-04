@@ -1,11 +1,11 @@
 body {
     font-family: Arial, sans-serif;
-    font-size: 18px; /* Større tekst for bedre lesbarhet */
+    font-size: 100%; /* Større tekst for bedre lesbarhet */
     line-height: 1.6;
     margin: 0;
-    padding: 20px;
-    color: #333; /* Mørk tekst for bedre kontrast */
-    background-color: #f4f4f4;
+    padding: 5%;
+    color: #333; /* Mørk tekst for større kontrast */
+    background-color: #f4f4f4; /* Lys bakgrunn for større kontrast */
 }
 
 h1, h2 {
@@ -19,7 +19,7 @@ h1, h2 { /* dette gjør at h1 og h2 overskriftene ligger på sentrum av siden*/
 header, footer {
     background: #333;
     color: #fff;
-    padding: 10px 0;
+    padding: 2%;
     text-align: center;
 }
 
@@ -30,7 +30,7 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin-right: 15px;
+    margin-right: 2%;
 }
 
 nav ul li a {
@@ -40,13 +40,13 @@ nav ul li a {
 
 /* 2. Tenker at under her har vi en seksjon hvor vi fikser med layout og struktur i main */
 main {
-    padding: 20px;
-    max-width: 1200px;
+    padding: 5%;
+    max-width: 80%;
     margin: auto;
 }
 
 section {
-    margin-bottom: 20px;
+    margin-bottom: 2%;
 }
 
 ul {
