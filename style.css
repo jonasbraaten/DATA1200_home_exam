@@ -137,8 +137,17 @@
 #hompage h1{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    font-size: large;
     color:#b60000;
     background-color: #333;
+    padding: 2%;
+}
+
+#hompage h2{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color:#333;
+    background-color: #f4f4f4;
     padding: 2%;
 }
 
