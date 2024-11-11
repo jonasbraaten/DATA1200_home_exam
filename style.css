@@ -237,4 +237,23 @@
     }
 }
 
+/* Footer oppsett*/
+*{
+    text-decoration: none; 
+    font-family: Arial, Helvetica, sans-serif; 
+}
+.footer{
+    text-decoration: none;
+}
+.list{
+    list-style-type: none;
+    
+}
+
+.list :hover{
+    transform: scale(1.05)
+  
+}
+
+
 /* accessibility siden under her*/
