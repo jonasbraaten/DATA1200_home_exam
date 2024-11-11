@@ -86,4 +86,141 @@
     margin-bottom: 20px;
 }
 
+/* index-id siden under her*/
+#homepage body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5%;
+    color:#333;
+    background-color: #f4f4f4;
+    padding: 2%;
+}
+
+#hompage h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: large;
+    color:#b60000;
+    background-color: #333;
+    padding: 2%;
+}
+
+#hompage h2{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color:#333;
+    background-color: #f4f4f4;
+    padding: 2%;
+}
+
+
+.info-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+    max-width: 800px;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.info-section {
+    list-style: none;
+    border-top: 1px solid #000; 
+    padding-top: 10px;
+}
+
+.info-title {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+.info-detail {
+    font-size: 1em;
+}
+
+.heading {  
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+/* Klikkbar knapp (link) */
+.story-button {
+    display: flex;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 2em;
+    transition: transform 0.3s ease;
+    flex-direction: row-reverse;  /* Bilde på høyre side av teksten */
+}
+
+/* Hover-effekt for knappen */
+.story-button:hover {
+    transform: scale(1.05);
+}
+
+/* Tekstdelen og bilde inne i knappen */
+.story-button .story-text,
+.story-button .story-image {
+    flex: 1 1 50%;  /* Both take 50% width */
+}
+
+.story-text {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.story-image {
+    width: 50%;
+    height: 100%;
+}
+
+/* Bildet */
+.story-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Overskrift */
+.story-text h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    color: #a30000;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+/* Tekstinnhold */
+.story-text p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Responsivitet */
+@media (max-width: 768px) {
+    .story-button {
+        flex-direction: column;  /* Bilde over tekst på små skjermer */
+    }
+
+    .story-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .story-text h3 {
+        font-size: 1.2rem;
+    }
+
+    .story-text p {
+        font-size: 0.9rem;
+    }
+}
+
 /* accessibility siden under her*/
