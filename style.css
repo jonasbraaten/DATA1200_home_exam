@@ -11,14 +11,13 @@
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     font-size: large;
-    color:#b60000;
-    background-color: #333;
+    color:#810000;
     padding: 2%;
 }
 
 .heading2{
     font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
+    text-align: center; 
     color:#333;
     background-color: #f4f4f4;
     padding: 2%;
@@ -223,38 +222,8 @@
   /* https://www.w3schools.com/cssref/sel_hover.php#gsc.tab=0*/
 }
 
-
-
-
-/* ----> AKTIVITETS-SIDEN <---- */
-
-/* Generelle instillinger for siden (aktivitetssiden) */
-/* Kilde: https://www.w3schools.com/css/css3_box-sizing.asp */
-* { /* Denne gjelder alle sider siden den bruker universalstjernen*/
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; /* fjerner standerden og legger til bredde og høyre*/
-} 
-
-
-body { /* holder konsist i hele body (siden) med font, farge og linjehøyde*/ 
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: white;
-    font-size: 1rem;
-    line-height: 1.6;
-}
-
-
-/* ----> Fonter og typografi osv (aktivitetssiden) <---- */
-/* Kilde: https://www.w3schools.com/cssref/pr_font_font-size.asp */
-
-h1 { /* Dette er teskten over bilde på toppen av siden (hero bildet)*/
-    font-size: clamp(1.5rem, 2vw + 1rem, 3rem);
-    color: #f4f4f4;
-    line-height: 2.5rem;
-    text-align: center;
-}
-
+/* accessibility siden under her*/
+ 
 
 /* ----> Struktur av siden og layout av header, main, footer (aktivitetssiden) <---- */
 .aktivitetsmain { /*kanter på main-strukturen*/
