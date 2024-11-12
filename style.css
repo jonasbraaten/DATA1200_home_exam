@@ -16,7 +16,7 @@
 }
 
 
-body { /* holder konsist i hele body (siden) med font, farge og linjehøyde*/ 
+#activity-page .body { /* holder konsist i hele body (siden) med font, farge og linjehøyde*/ 
     font-family: Arial, Helvetica, sans-serif;
     background-color: white;
     font-size: 1rem;
@@ -27,7 +27,7 @@ body { /* holder konsist i hele body (siden) med font, farge og linjehøyde*/
 /* ----> Fonter og typografi osv (aktivitetssiden) <---- */
 /* Kilde: https://www.w3schools.com/cssref/pr_font_font-size.asp */
 
-h1 { /* Dette er teskten over bilde på toppen av siden (hero bildet)*/
+#activity-page .h1 { /* Dette er teskten over bilde på toppen av siden (hero bildet)*/
     font-size: clamp(1.5rem, 2vw + 1rem, 3rem);
     color: #f4f4f4;
     line-height: 2.5rem;
@@ -104,9 +104,6 @@ h1 { /* Dette er teskten over bilde på toppen av siden (hero bildet)*/
 
 
 /* INDEX-SIDEN */
-#homepage body{
-
-/* index-id siden under her*/
 .mainbody{
     font-family: Arial, Helvetica, sans-serif;
     margin: 5%;
@@ -157,8 +154,6 @@ h1 { /* Dette er teskten over bilde på toppen av siden (hero bildet)*/
 .info-detail {
     font-size: 0.95em;
 }
-
-.heading {
 
 /* Overskrift*/
 .heading {  
@@ -269,7 +264,3 @@ h1 { /* Dette er teskten over bilde på toppen av siden (hero bildet)*/
     transform: scale(1.05)
   /* https://www.w3schools.com/cssref/sel_hover.php#gsc.tab=0*/
 }
-
-
-/* accessibility siden under her*/
-
