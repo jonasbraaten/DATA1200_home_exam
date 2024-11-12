@@ -1,3 +1,4 @@
+
 /* ----> AKTIVITETS-SIDEN <---- */
 
 /* Generelle instillinger for siden (aktivitetssiden) */
@@ -7,6 +8,13 @@
     padding: 0;
     box-sizing: border-box; /* fjerner standerden og legger til bredde og høyre*/
 } 
+
+*{
+    text-decoration: none; 
+    font-family: Arial, Helvetica, sans-serif; 
+    /* https://www.w3schools.com/cssref/sel_all.php */
+}
+
 
 body { /* holder konsist i hele body (siden) med font, farge og linjehøyde*/ 
     font-family: Arial, Helvetica, sans-serif;
@@ -97,6 +105,9 @@ h1 { /* Dette er teskten over bilde på toppen av siden (hero bildet)*/
 
 /* INDEX-SIDEN */
 #homepage body{
+
+/* index-id siden under her*/
+.mainbody{
     font-family: Arial, Helvetica, sans-serif;
     margin: 5%;
     color:#333;
@@ -104,16 +115,17 @@ h1 { /* Dette er teskten over bilde på toppen av siden (hero bildet)*/
     padding: 2%;
 }
 
-#hompage h1{
+/* Overskrift*/
+.heading1{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    font-size: large;
+    font-size: xx-large;
     color:#b60000;
-    background-color: #333;
     padding: 2%;
 }
 
-#hompage h2{
+/* Overskrift*/
+.heading2{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     color:#333;
@@ -147,9 +159,117 @@ h1 { /* Dette er teskten over bilde på toppen av siden (hero bildet)*/
 }
 
 .heading {
+
+/* Overskrift*/
+.heading {  
     text-align: center;
     font-size: 1.5em;
     margin-bottom: 20px;
 }
 
 /* ACCESSABILITY SIDEN*/
+/* Overskrift*/
+.interesse{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;  
+    font-size: x-large;
+}
+    
+/* Klikkbar knapp (link) */
+.story-button {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    display: flex;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 2em;
+    transition: transform 0.3s ease;
+    flex-direction: row-reverse;  /* Bilde på høyre side av teksten */
+
+    /* W3schools: https://www.w3schools.com/css/css3_flexbox_container.asp */
+}
+
+/* Hover-effekt for knappen */
+.story-button:hover {
+    transform: scale(1.05);
+
+/* W13schools: https://www.w3schools.com/css/css3_buttons.asp */
+}
+
+
+/* Tekstdelen og bilde inne i knappen */
+.story-button .story-text,
+.story-button .story-image {
+    flex: 1 1 50%; /*flex-basis, flex-shrink, flex-grow kombinert*/
+    /* W3schools: https://www.w3schools.com/cssref/css3_pr_flex-grow.php*/
+}
+
+.story-text {
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.story-image {
+    width: 50%;
+    height: 100%;
+}
+
+/* Bilde */
+.story-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Overskrift */
+.story-text h3 {
+    font-size: 1.4rem;
+    color: #a30000;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+/* Tekstinnhold */
+.story-text p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Responsivitet */
+@media (max-width: 768px) {
+    .story-button {
+        flex-direction: column;  /* Bilde over tekst på små skjermer */
+    }
+
+    .story-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .story-text h3 {
+        font-size: 1.2rem;
+    }
+
+    .story-text p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Footer oppsett*/
+.list{
+    list-style-type: none;
+    /* https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_unordered_none */
+}
+
+.list :hover{
+    transform: scale(1.05)
+  /* https://www.w3schools.com/cssref/sel_hover.php#gsc.tab=0*/
+}
+
+
+/* accessibility siden under her*/
+
