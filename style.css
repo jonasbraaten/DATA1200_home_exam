@@ -1,4 +1,29 @@
-/* index-id siden under her*/
+/* index siden under*/
+
+/* nav */
+.nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav ul li {
+    margin-right: 5%;
+  }
+  
+  /* fjernet understreking */
+  .nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+    padding: 10px;
+  }
+  
+  /* Endre fargen på lenkene */
+  .nav a:hover {
+    color: #7ab458;
+  }
+
 .homepage{
     font-family: Arial, Helvetica, sans-serif;
     margin: 5%;
@@ -11,14 +36,20 @@
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     font-size: large;
-    color:#810000;
+    color: #1f4118;
     padding: 2%;
+}
+
+.bachelor{
+    text-align: center;  
+    font-weight: lighter;
+    font-size: larger;
 }
 
 .heading2{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center; 
-    color:#333;
+    color:#333; 
     background-color: #f4f4f4;
     padding: 2%;
 }
