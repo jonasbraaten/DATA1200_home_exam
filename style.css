@@ -225,6 +225,7 @@
 
 
 
+
 /* ----> AKTIVITETS-SIDEN <---- */
 
 /* Generelle instillinger for siden (aktivitetssiden) */
@@ -318,3 +319,6 @@ h1 { /* Dette er teskten over bilde på toppen av siden (hero bildet)*/
         padding: 0.5rem;
     }
 }
+=======
+/* accessibility siden under her*/
+ 
