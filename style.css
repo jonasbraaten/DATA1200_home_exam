@@ -11,14 +11,13 @@
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     font-size: large;
-    color:#b60000;
-    background-color: #333;
+    color:#810000;
     padding: 2%;
 }
 
 .heading2{
     font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
+    text-align: center; 
     color:#333;
     background-color: #f4f4f4;
     padding: 2%;
@@ -224,5 +223,72 @@
   /* https://www.w3schools.com/cssref/sel_hover.php#gsc.tab=0*/
 }
 
+/* accessibility siden under her*/
+ 
+
+/* ----> Struktur av siden og layout av header, main, footer (aktivitetssiden) <---- */
+.aktivitetsmain { /*kanter på main-strukturen*/
+    margin: 1.5rem;
+    padding: 0.2rem;
+
+}
+
+
+/* ----> Navigasjonen (aktivitetssiden) <---- */
+/* Kilde: https://www.w3schools.com/css/css_navbar.asp */
+.aktivitets-navigasjon ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000000;
+}
+
+.aktivitets-navigasjon li {
+    margin: 0 1rem; /* avstanden mellom emnene i menyen */
+}
+
+/* Kilde: https://developer.mozilla.org/en-US/docs/Web/CSS/clamp() */
+.aktivitets-navigasjon a {
+    text-decoration: none;
+    color: #f4f4f4;
+    font-weight: bold;
+    font-size: clamp(0.75rem, 1vw + 0.5rem, 1.25rem);
+    padding: 0.5rem;
+}
+
+
+/* ----> Bilder & video og annen media styling (aktivitetssiden) <----*/
+
+.handballhero { /* Dette er bilde på toppen av siden (hero bildet)*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('https://cloudfront-eu-central-1.images.arcpublishing.com/mentormedier/JQPJY5L2HND6HNKA6W3YIGFDJQ.jpg') no-repeat center center;
+    background-size: cover;
+    height: 16rem;
+    position: relative;
+
+}
+
+
+/* ----> Responsiv skjerm og størrelse (aktivitetssiden) <---- */
+/* Kilde: https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries */
+@media all {
+    .aktivitets-navigasjon ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .aktivitets-navigasjon li {
+        margin: 0rem;
+    }
+
+    .aktivitets-navigasjon a {
+        padding: 0.5rem;
+    }
+}
+=======
 /* accessibility siden under her*/
  
