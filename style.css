@@ -1,4 +1,8 @@
-
+*{
+    text-decoration: none; 
+    font-family: Arial, Helvetica, sans-serif; 
+    /* https://www.w3schools.com/cssref/sel_all.php */
+}
 
 /* 4. fikse på lenker og navigasjon */
 #activity-page a {
@@ -237,21 +241,18 @@
 }
 
 /* Footer oppsett*/
-*{
-    text-decoration: none; 
-    font-family: Arial, Helvetica, sans-serif; 
-}
+
 .footer{
     text-decoration: none;
 }
 .list{
     list-style-type: none;
-    
+    /* https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_unordered_none */
 }
 
 .list :hover{
     transform: scale(1.05)
-  
+  /* https://www.w3schools.com/cssref/sel_hover.php#gsc.tab=0*/
 }
 
 
