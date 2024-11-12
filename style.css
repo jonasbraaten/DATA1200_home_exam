@@ -3,7 +3,7 @@
     font-family: Arial, Helvetica, sans-serif; 
     /* https://www.w3schools.com/cssref/sel_all.php */
 }
-=========
+
 /* ----> AKTIVITETS-SIDEN <---- */
 
 /* Generelle instillinger for siden (aktivitetssiden) */
@@ -321,8 +321,5 @@ h1 { /* Dette er teskten over bilde på toppen av siden (hero bildet)*/
     transform: scale(1.05)
   /* https://www.w3schools.com/cssref/sel_hover.php#gsc.tab=0*/
 }
-
-
-/* accessibility siden under her*/
 
 /* ACCESSABILITY SIDEN*/
