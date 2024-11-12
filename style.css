@@ -87,13 +87,13 @@
     grid-template-columns: repeat(4, 1fr); 
     gap: 20px; 
     max-width: 800px;
-    margin: auto;
+    margin: 10px;
     padding-top: 20px;
 }
 
 .info-section {
     list-style: none;
-    border-top: 1px solid #000; 
+    border-top: 1px solid #333; 
     padding-top: 10px;
 }
 
@@ -104,8 +104,22 @@
 }
 
 .info-detail {
-    font-size: 1em;
+    font-size: 0.95em;
 }
+
+/*Responsive design for mindere skjermer*/
+
+ @media (max-width: 768px){
+    .info-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+ }
+
+ @media (max-width: 480px){
+    .info-container{
+        grid-template-columns: 1fr;
+    }
+ }
 
 /* Overskrift*/
 .heading {  
