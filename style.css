@@ -24,18 +24,19 @@
     padding: 2%;
 }
 
+/*Studiinformasjon*/
 .info-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
     gap: 20px; 
     max-width: 800px;
-    margin: auto;
+    margin: 10;
     padding-top: 20px;
 }
 
 .info-section {
     list-style: none;
-    border-top: 1px solid #000; 
+    border-top: 1px solid #333; 
     padding-top: 10px;
 }
 
