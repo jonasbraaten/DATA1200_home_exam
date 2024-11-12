@@ -1,4 +1,15 @@
-/* index-id siden under her*/
+
+/* UNITVERSEL FOR ALLE SIDER*/
+* {
+    text-decoration: none; 
+    font-family: Arial, Helvetica, sans-serif; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* fjerner standerden og legger til bredde og høyre*/
+}    
+
+
+/* ==== INDEX-SIDEN ==== */
 .homepage{
     font-family: Arial, Helvetica, sans-serif;
     margin: 5%;
@@ -220,9 +231,6 @@
 
 /* Footer oppsett*/
 
-*{
-    text-decoration: none;
-}
 .footer{
     text-decoration: none;
     color: #333
@@ -237,16 +245,12 @@
   /* https://www.w3schools.com/cssref/sel_hover.php#gsc.tab=0*/
 }
 
-/* ----> AKTIVITETS-SIDEN <---- */
+
+
+/* ====> AKTIVITETS-SIDEN <==== */
 
 /* Generelle instillinger for siden (aktivitetssiden) */
 /* Kilde: https://www.w3schools.com/css/css3_box-sizing.asp */
-* { /* Denne gjelder alle sider siden den bruker universalstjernen*/
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; /* fjerner standerden og legger til bredde og høyre*/
-} 
-
 
 body { /* holder konsist i hele body (siden) med font, farge og linjehøyde*/ 
     font-family: Arial, Helvetica, sans-serif;
@@ -270,7 +274,18 @@ h1 { /* Dette er teskten over bilde på toppen av siden (hero bildet)*/
 .aktivitetsmain { /*kanter på main-strukturen*/
     margin: 1.5rem;
     padding: 0.2rem;
+}
 
+.aktuellespillere {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2em;
+    margin-bottom: 2em;
+}
+
+.spillerinfo {
+    flex: 1;
 }
 
 
@@ -291,11 +306,12 @@ h1 { /* Dette er teskten over bilde på toppen av siden (hero bildet)*/
 
 /* Kilde: https://developer.mozilla.org/en-US/docs/Web/CSS/clamp() */
 .aktivitets-navigasjon a {
+    flex-wrap: wrap;
     text-decoration: none;
     color: #f4f4f4;
     font-weight: bold;
-    font-size: clamp(0.75rem, 1vw + 0.5rem, 1.25rem);
-    padding: 0.5rem;
+    font-size: clamp(1rem, 1vw + 0.9rem, 1.5rem);
+    padding: 0.5rem 1rem;
 }
 
 
@@ -309,25 +325,52 @@ h1 { /* Dette er teskten over bilde på toppen av siden (hero bildet)*/
     background-size: cover;
     height: 16rem;
     position: relative;
+}
 
+.spillerbilde { /*angir størrelse og posisjon av spillerbilder når på deskop*/
+    width: 40%;
+    max-width: 300px;
+    height: auto;
 }
 
 
 /* ----> Responsiv skjerm og størrelse (aktivitetssiden) <---- */
 /* Kilde: https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries */
-@media all {
+@media (max-width: 768px){
     .aktivitets-navigasjon ul {
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .aktivitets-navigasjon li {
-        margin: 0rem;
+        flex-direction: column;
+        align-items: center;
     }
 
     .aktivitets-navigasjon a {
-        padding: 0.5rem;
+        font-size: 1.2rem;
+        padding: 1rem 2rem; /* større padding rundt nav når i mindre skjerm*/
     }
 }
-/* accessibility siden under her*/
- 
+
+@media (max-width: 480px){
+    .aktivitets-navigasjon ul  {
+        padding: 1.5rem; /*øke padding på nav for å klikke bedre, når skjermen blir mindre*/
+    }
+
+    .aktivitets-navigasjon a {
+        font-size: 1.4rem;
+        padding: 1.2rem 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .aktuellespillere {
+        flex-direction: column; /* her plasseres bildet under infoen på telefon*/
+        align-items: center;
+    }
+
+    .spillerbilde {
+        width: 100%; /* hele skjermen på telefon under infoen*/
+        max-width: none;
+        margin-top: 1em;
+    }
+}
+
+
+
