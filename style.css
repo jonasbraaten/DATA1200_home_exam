@@ -241,10 +241,6 @@
 }
 
 /* Footer oppsett*/
-
-.footer{
-    text-decoration: none;
-}
 .list{
     list-style-type: none;
     /* https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_unordered_none */
