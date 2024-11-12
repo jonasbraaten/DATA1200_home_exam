@@ -11,31 +11,31 @@
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     font-size: large;
-    color:#b60000;
-    background-color: #333;
+    color:#810000;
     padding: 2%;
 }
 
 .heading2{
     font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
+    text-align: center; 
     color:#333;
     background-color: #f4f4f4;
     padding: 2%;
 }
 
+/*Studiinformasjon*/
 .info-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
     gap: 20px; 
     max-width: 800px;
-    margin: auto;
+    margin: 10;
     padding-top: 20px;
 }
 
 .info-section {
     list-style: none;
-    border-top: 1px solid #000; 
+    border-top: 1px solid #333; 
     padding-top: 10px;
 }
 
@@ -223,7 +223,6 @@
   /* https://www.w3schools.com/cssref/sel_hover.php#gsc.tab=0*/
 }
 
-
 /* ----> AKTIVITETS-SIDEN <---- */
 
 /* Generelle instillinger for siden (aktivitetssiden) */
@@ -252,7 +251,6 @@ h1 { /* Dette er teskten over bilde på toppen av siden (hero bildet)*/
     line-height: 2.5rem;
     text-align: center;
 }
-
 
 /* ----> Struktur av siden og layout av header, main, footer (aktivitetssiden) <---- */
 .aktivitetsmain { /*kanter på main-strukturen*/
