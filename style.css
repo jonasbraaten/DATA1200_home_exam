@@ -384,7 +384,7 @@ body { /* holder konsist i hele body (siden) med font, farge og linjehøyde*/
 
 h1 { /* Dette er teskten over bilde på toppen av siden (hero bildet)*/
     font-size: clamp(1.5rem, 2vw + 1rem, 3rem);
-    color: #f4f4f4;
+    color: #fdffcc;
     line-height: 2.5rem;
     text-align: center;
 }
@@ -411,28 +411,40 @@ h1 { /* Dette er teskten over bilde på toppen av siden (hero bildet)*/
 /* ----> Navigasjonen (aktivitetssiden) <---- */
 /* Kilde: https://www.w3schools.com/css/css_navbar.asp */
 .aktivitets-navigasjon ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 1rem;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #000000;
 }
 
 .aktivitets-navigasjon li {
-    margin: 0 1rem; /* avstanden mellom emnene i menyen */
+    float: left;
+    margin: 1rem;
 }
 
 /* Kilde: https://developer.mozilla.org/en-US/docs/Web/CSS/clamp() */
-.aktivitets-navigasjon a {
-    flex-wrap: wrap;
-    text-decoration: none;
+.aktivitets-navigasjon li a {
+    display: block;
     color: #f4f4f4;
     font-weight: bold;
-    font-size: clamp(1rem, 1vw + 0.9rem, 1.5rem);
-    padding: 0.5rem 1rem;
+    text-align: center;
+    padding: 0rem 0.5rem;
 }
 
+.aktivitets-navigasjon li a:hover { /* fargen bak teksten i menuen når man manuvrerer*/
+    background-color: #ed7b39;
+    border-radius: 1rem; /*gjør at kantene på hover blir avrundet*/
+    transition: background-color 0.3s, border-radius 0.3s; /*fade-in hovering*/
+}    
+
+@media screen and (max-width: 600px){ /*navigasjon på mobilstørrelse*/
+    .aktivitets-navigasjon ul li.right, 
+    .aktivitets-navigasjon ul li {
+        float: none;
+    }
+}
 
 /* ----> Bilder & video og annen media styling (aktivitetssiden) <----*/
 
@@ -455,41 +467,6 @@ h1 { /* Dette er teskten over bilde på toppen av siden (hero bildet)*/
 
 /* ----> Responsiv skjerm og størrelse (aktivitetssiden) <---- */
 /* Kilde: https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries */
-@media (max-width: 768px){
-    .aktivitets-navigasjon ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .aktivitets-navigasjon a {
-        font-size: 1.2rem;
-        padding: 1rem 2rem; /* større padding rundt nav når i mindre skjerm*/
-    }
-}
-
-@media (max-width: 480px){
-    .aktivitets-navigasjon ul  {
-        padding: 1.5rem; /*øke padding på nav for å klikke bedre, når skjermen blir mindre*/
-    }
-
-    .aktivitets-navigasjon a {
-        font-size: 1.4rem;
-        padding: 1.2rem 2.5rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .aktuellespillere {
-        flex-direction: column; /* her plasseres bildet under infoen på telefon*/
-        align-items: center;
-    }
-
-    .spillerbilde {
-        width: 100%; /* hele skjermen på telefon under infoen*/
-        max-width: none;
-        margin-top: 1em;
-    }
-}
 
 
 
