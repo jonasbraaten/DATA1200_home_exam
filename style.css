@@ -475,6 +475,72 @@ h1.herotittel { /* Dette er teskten over bilde på toppen av siden (hero bildet)
     margin: 2rem;
 }
 
+/*aktivitets-footer styling*/
+.aktivitetsfooter {
+    background-color: #c79ec7;
+    padding: 3rem;
+    text-align: center;
+}
+
+.aktivitetsfooter-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+
+.aktivitetsfooter-nav a {
+    color: #9d2c39;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.aktivitetsfooter-nav a:hover {
+    transition: color 0.2s;
+    color:#105ba6;
+}
+
+
+@media (max-width: 600px) { /* når skjermen kommer under denne størrelsen går spillerbilde under tekst*/
+    .spillerinfo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .spillerbilde img { /* spiller bildet blir mindre i tillegg*/
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.historieoversikt {
+    display: flex; /*legger aside ved siden av historie-seksjon*/
+    gap: 2rem; /*mellomrom mellom dem*/
+}
+
+.historie {
+    flex: 50%;
+    padding: 0.1rem;
+}
+
+.seiersoversikt {
+    padding: 0.5rem;
+    background-color: #d8be92;
+    border-radius: 1rem;;
+}
+
+.seiere li {
+    font-style: italic;
+    list-style: inside square;
+    margin: 0.5rem;
+}
+
+@media (max-width: 600px) {
+    .historieoversikt {
+        flex-direction: column;
+    }
+}
+
 
 /* ----> Navigasjonen (aktivitetssiden) <---- */
 /* Kilde: https://www.w3schools.com/css/css_navbar.asp */
@@ -486,7 +552,6 @@ h1.herotittel { /* Dette er teskten over bilde på toppen av siden (hero bildet)
     overflow: hidden;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #06061f;
-    justify-content: center;
 }
 
 .aktivitets-navigasjon li {
@@ -507,6 +572,7 @@ h1.herotittel { /* Dette er teskten over bilde på toppen av siden (hero bildet)
     background-color: #92b5d8;
     border-radius: 1rem; /*gjør at kantene på hover blir avrundet*/
     transition: background-color 0.3s, border-radius 0.3s; /*fade-in hovering*/
+    text-decoration: none;
 }    
 
 @media screen and (max-width: 600px){ /*navigasjon på mobilstørrelse*/
@@ -516,9 +582,9 @@ h1.herotittel { /* Dette er teskten over bilde på toppen av siden (hero bildet)
     }
 }
 
-/* ----> Bilder & video og annen media styling (aktivitetssiden) <----*/
+/* ----> Bilder / video / Lenker og annen media styling (aktivitetssiden) <----*/
 
-.handballhero { /* Dette er bilde på toppen av siden (hero bildet)*/
+.handballhero { /* Dette er bilde på toppen av aktivitets-siden (hero bildet)*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -528,9 +594,19 @@ h1.herotittel { /* Dette er teskten over bilde på toppen av siden (hero bildet)
     position: relative;
 }
 
+.aktivitetslenker { /*sentrerer og lager plass mellom aktivitets-lenker og annet*/
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+a.aktivitetslink { /*styler lenkene på aktivitets-siden*/
+    background-color: #bcd3dd;
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    font-size: clamp(0.77rem, 2vw, 1rem);
+}
 
 /* ----> Responsiv skjerm og størrelse (aktivitetssiden) <---- */
 /* Kilde: https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries */
-
-
-
