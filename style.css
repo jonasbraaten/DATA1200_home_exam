@@ -1,3 +1,8 @@
+/* universal, vil dekke alt*/
+*{
+    text-decoration: none;
+}
+
 /* index-id siden under her*/
 .homepage{
     font-family: Arial, Helvetica, sans-serif;
@@ -58,10 +63,10 @@
 /* index-id siden under her*/
 .mainbody{
     font-family: Arial, Helvetica, sans-serif;
-    margin: 5%;
+    margin: 0%;
     color:#333;
     background-color: #f4f4f4;
-    padding: 2%;
+    padding: 0%;
 }
 
 /* Overskrift*/
@@ -206,22 +211,53 @@
 
 /* Footer oppsett*/
 
-*{
-    text-decoration: none;
-}
-.footer{
-    text-decoration: none;
-    color: #333
-}
-.list{
-    list-style-type: none;
-    /* https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_unordered_none */
+
+.footer {
+    padding: 10px; 
+    background-color: #b0d7ab;
+    color: #333;
 }
 
-.list :hover{
-    transform: scale(1.05)
-  /* https://www.w3schools.com/cssref/sel_hover.php#gsc.tab=0*/
+.footer-list{ /* https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_unordered_none */
+    list-style-type: none;
 }
+
+.footer-list li:hover {   /* https://www.w3schools.com/cssref/sel_hover.php#gsc.tab=0*/
+    transform: scale(1.05);
+}
+
+.row {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Column flyter ved siden av hverandre */
+.column {
+    float: left;
+    padding: 20px;
+}
+
+.column.side {
+    width: 25%;
+}
+
+.column.middle {
+    width: 50%;
+}
+/* Gjør at columns ikke går over hverandre, men under
+https://www.w3schools.com/css/tryit.asp?filename=trycss_website_layout_footer*/
+@media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+      width: 100%;
+    }
+  }
+  
+.social.list {
+    list-style-type: none;
+}
+
+
+
 
 /* ----> AKTIVITETS-SIDEN <---- */
 
