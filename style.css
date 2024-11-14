@@ -268,7 +268,9 @@
 
 /* Footer indexoppsett*/
 
-
+*{ 
+    text-decoration: none;
+}
 .footer {
     padding: 10px; 
     background-color: #b0d7ab;
