@@ -127,26 +127,27 @@
     font-size: 1.5em;
     margin-bottom: 20px;
 }
-/* Faglig leder overskrift*/
+/* faglig-leder overskrift*/
 .faglig-leder{
-     text-align:center;
-     margin-bottom: 20px; 
+    text-align:center;
+    color: #333;
+    margin-bottom: 1.25rem; 
 } 
 /*Innramming på fagligleder info*/
 .profilkort{
     display: flex;
     align-items:center;
-    border-top: 1px solid #333;
-    border-bottom: 1px solid #333;
-    padding: 20px;
-    max-width: 400px;
-    margin: 2 auto;
+    border-top: 0.1rem solid #333;
+    border-bottom: 0.1rem solid #333;
+    padding: 1.25rem;
+    max-width: 25em;
+    margin: 0.125rem auto;
 }
-/*Profilbilde*/
+
 .profilbilde{
     width: 25%;
     height: 25%;
-    margin-right: 20px;
+    margin-right: 1.25rem;
 }
 
 .profildetaljer h2 {
@@ -156,7 +157,7 @@
 }
 
 .profildetaljer p {
-    margin: 5px 0;
+    margin: 0.3125rem 0; 
     color: #333;
 }
 
@@ -166,7 +167,8 @@
 }
 
 .profildetaljer a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    
 
 }
 
