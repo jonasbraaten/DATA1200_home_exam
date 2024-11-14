@@ -314,8 +314,24 @@
     background-color: #b0d7ab;
     color: #333;
 }
+.section1{ /*https://www.w3schools.com/css/css_border.asp*/
+    border: 2px solid #333;
+    width: auto; /* Angi bredde */
+    height: auto; 
+}
+
+.første-setning{
+    padding: 5px;
+}
+.første-link{
+    padding: 5px;
+}
 
 .footer-list{ /* https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_unordered_none */
+    list-style-type: none;
+}
+
+.social.list{
     list-style-type: none;
 }
 
@@ -333,10 +349,19 @@
     float: left;
     padding: 20px;
 }
-
+.column.side{
+    font-weight: bold;
+}
 .list :hover{
     transform: scale(1.05)
   /* https://www.w3schools.com/cssref/sel_hover.php#gsc.tab=0*/
+}
+a{
+    color: #333;
+}
+
+ a:hover{
+    text-decoration: underline;  
 }
 
 /* ----> AKTIVITETS-SIDEN <---- */
