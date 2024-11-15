@@ -12,7 +12,16 @@
 /* ==== INDEX-SIDEN ==== */
 
 /* index siden under*/
+/* Header */
+.header{
+    padding: 10px; 
+    background-color: #9bd394;
+    color: #333;
+}
 
+.header.list{
+    list-style-type: none;
+}
 /* nav */
 .nav ul {
     list-style: none;
@@ -113,7 +122,7 @@
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     font-size: xx-large;
-    color:#b60000;
+    color:#333;
     padding: 2%;
 }
 
@@ -313,14 +322,16 @@
 }
 .footer {
     padding: 10px; 
-    background-color: #b0d7ab;
+    background-color: #9bd394;
     color: #333;
-}
+} 
+
+/* Rammen rundt første del av footer*/
 .section1{ /*https://www.w3schools.com/css/css_border.asp*/
     border: 2px solid #333;
-    width: auto; /* Angi bredde */
+    width: auto; 
     height: auto; 
-}
+} 
 
 .første-setning{
     padding: 5px;
