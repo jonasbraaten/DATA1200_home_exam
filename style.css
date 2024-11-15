@@ -225,12 +225,38 @@
 
 }
 
-/* Overskrift*/
-.interesse{
+/* Du er kanskje også intressert i disse -> overskrift */
+.du-er-kanskje-intressert{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;  
     font-size: x-large;
 }
+.felles-avstand{
+    max-width: 25em;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+.andre-studier section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0;
+    border-bottom: 1px solid #333;
+    border-top: 1px solid #333
+  }
+  
+  .andre-studier data h3 {
+    font-size: 0.25em;
+    font-weight: bold;
+    margin: 0;
+  }
+  .andre-studier p {
+    font-size: 0.9em;
+    color: #555;
+    margin: 0;
+  }
+
+
     
 /* Klikkbar knapp (link) */
 .story-button {
@@ -324,9 +350,27 @@
     padding: 10px; 
     background-color: #9bd394;
     color: #333;
-} 
+}
 
-/* Rammen rundt første del av footer*/
+.footer-list{ /* https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_unordered_none */
+    list-style-type: none;
+}
+
+.footer-list li:hover {   /* https://www.w3schools.com/cssref/sel_hover.php#gsc.tab=0*/
+    transform: scale(1.05);
+}
+
+.row {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Column flyter ved siden av hverandre */
+.column {
+    float: left;
+    padding: 20px;
+}
+
 .section1{ /*https://www.w3schools.com/css/css_border.asp*/
     border: 2px solid #333;
     width: auto; 
@@ -382,20 +426,21 @@ a{
 /* Generelle instillinger for siden (aktivitetssiden) */
 /* Kilde: https://www.w3schools.com/css/css3_box-sizing.asp */
 
-body { /* holder konsist i hele body (siden) med font, farge og linjehøyde*/ 
+body.activity-page { /* holder konsist i hele body (siden) med font, farge og linjehøyde*/ 
     font-family: Arial, Helvetica, sans-serif;
-    background-color: white;
+    background-color: #f6efef;
     font-size: 1rem;
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 
 /* ----> Fonter og typografi osv (aktivitetssiden) <---- */
 /* Kilde: https://www.w3schools.com/cssref/pr_font_font-size.asp */
 
-h1 { /* Dette er teskten over bilde på toppen av siden (hero bildet)*/
+h1.herotittel { /* Dette er teskten over bilde på toppen av siden (hero bildet)*/
     font-size: clamp(1.5rem, 2vw + 1rem, 3rem);
-    color: #f4f4f4;
+    color: #fdffcc;
     line-height: 2.5rem;
     text-align: center;
 }
@@ -408,46 +453,173 @@ h1 { /* Dette er teskten over bilde på toppen av siden (hero bildet)*/
 
 .aktuellespillere {
     display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 2em;
-    margin-bottom: 2em;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 100%;
+    margin: 1rem auto;
 }
 
 .spillerinfo {
-    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 4px solid #000000;
+    border-radius: 1rem;
+    background-color: #06061f;
+    max-width: fit-content;
+    margin: 0;
+}
+
+.spillertekst {
+    display: block;
+    width: 100%;
+}
+
+.spillerinfo h3 {
+    color:#dcaaaa;
+    margin: 0.5rem 0;
+
+}
+
+.spillerinfo h4 {
+    color:#92b5d8;
+    margin: 0.5rem 0;
+}
+
+.spillerinfo p {
+    color:white;
+    margin: 0.5rem 0;
+}
+
+.spillerbilde picture {
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   max-width: 100%;
+   box-sizing: border-box;
+}
+
+.spillerbilde img {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #92b5d8;
+    margin: 2rem;
+}
+
+/*aktivitets-footer styling*/
+.aktivitetsfooter {
+    background-color: #c79ec7;
+    padding: 3rem;
+    text-align: center;
+}
+
+.aktivitetsfooter-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+
+.aktivitetsfooter-nav a {
+    color: #9d2c39;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.aktivitetsfooter-nav a:hover {
+    transition: color 0.2s;
+    color:#105ba6;
+}
+
+
+@media (max-width: 600px) { /* når skjermen kommer under denne størrelsen går spillerbilde under tekst*/
+    .spillerinfo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .spillerbilde img { /* spiller bildet blir mindre i tillegg*/
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.historieoversikt {
+    display: flex; /*legger aside ved siden av historie-seksjon*/
+    gap: 2rem; /*mellomrom mellom dem*/
+}
+
+.historie {
+    flex: 50%;
+    padding: 0.1rem;
+}
+
+.seiersoversikt {
+    padding: 0.5rem;
+    background-color: #d8be92;
+    border-radius: 1rem;;
+}
+
+.seiere li {
+    font-style: italic;
+    list-style: inside square;
+    margin: 0.5rem;
+}
+
+@media (max-width: 600px) {
+    .historieoversikt {
+        flex-direction: column;
+    }
 }
 
 
 /* ----> Navigasjonen (aktivitetssiden) <---- */
 /* Kilde: https://www.w3schools.com/css/css_navbar.asp */
+
 .aktivitets-navigasjon ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 1rem;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #000000;
+    background-color: #06061f;
 }
 
 .aktivitets-navigasjon li {
-    margin: 0 1rem; /* avstanden mellom emnene i menyen */
+    float: left;
+    margin: 1rem;
 }
 
 /* Kilde: https://developer.mozilla.org/en-US/docs/Web/CSS/clamp() */
-.aktivitets-navigasjon a {
-    flex-wrap: wrap;
-    text-decoration: none;
+.aktivitets-navigasjon li a {
+    display: block;
     color: #f4f4f4;
     font-weight: bold;
-    font-size: clamp(1rem, 1vw + 0.9rem, 1.5rem);
-    padding: 0.5rem 1rem;
+    text-align: center;
+    padding: 0rem 0.5rem;
 }
 
+.aktivitets-navigasjon li a:hover { /* fargen bak teksten i menuen når man manuvrerer*/
+    background-color: #92b5d8;
+    border-radius: 1rem; /*gjør at kantene på hover blir avrundet*/
+    transition: background-color 0.3s, border-radius 0.3s; /*fade-in hovering*/
+    text-decoration: none;
+}    
 
-/* ----> Bilder & video og annen media styling (aktivitetssiden) <----*/
+@media screen and (max-width: 600px){ /*navigasjon på mobilstørrelse*/
+    .aktivitets-navigasjon ul li.right, 
+    .aktivitets-navigasjon ul li {
+        float: none;
+    }
+}
 
-.handballhero { /* Dette er bilde på toppen av siden (hero bildet)*/
+/* ----> Bilder / video / Lenker og annen media styling (aktivitetssiden) <----*/
+
+.handballhero { /* Dette er bilde på toppen av aktivitets-siden (hero bildet)*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -457,50 +629,19 @@ h1 { /* Dette er teskten over bilde på toppen av siden (hero bildet)*/
     position: relative;
 }
 
-.spillerbilde { /*angir størrelse og posisjon av spillerbilder når på deskop*/
-    width: 40%;
-    max-width: 300px;
-    height: auto;
+.aktivitetslenker { /*sentrerer og lager plass mellom aktivitets-lenker og annet*/
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
 }
 
+a.aktivitetslink { /*styler lenkene på aktivitets-siden*/
+    background-color: #bcd3dd;
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    font-size: clamp(0.77rem, 2vw, 1rem);
+}
 
 /* ----> Responsiv skjerm og størrelse (aktivitetssiden) <---- */
 /* Kilde: https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries */
-@media (max-width: 768px){
-    .aktivitets-navigasjon ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .aktivitets-navigasjon a {
-        font-size: 1.2rem;
-        padding: 1rem 2rem; /* større padding rundt nav når i mindre skjerm*/
-    }
-}
-
-@media (max-width: 480px){
-    .aktivitets-navigasjon ul  {
-        padding: 1.5rem; /*øke padding på nav for å klikke bedre, når skjermen blir mindre*/
-    }
-
-    .aktivitets-navigasjon a {
-        font-size: 1.4rem;
-        padding: 1.2rem 2.5rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .aktuellespillere {
-        flex-direction: column; /* her plasseres bildet under infoen på telefon*/
-        align-items: center;
-    }
-
-    .spillerbilde {
-        width: 100%; /* hele skjermen på telefon under infoen*/
-        max-width: none;
-        margin-top: 1em;
-    }
-}
-
-
-
