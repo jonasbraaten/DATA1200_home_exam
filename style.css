@@ -172,12 +172,38 @@
 
 }
 
-/* Overskrift*/
-.interesse{
+/* Du er kanskje også intressert i disse -> overskrift */
+.du-er-kanskje-intressert{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;  
     font-size: x-large;
 }
+.felles-avstand{
+    max-width: 25em;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+.andre-studier section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0;
+    border-bottom: 1px solid #333;
+    border-top: 1px solid #333
+  }
+  
+  .andre-studier data h3 {
+    font-size: 0.25em;
+    font-weight: bold;
+    margin: 0;
+  }
+  .andre-studier p {
+    font-size: 0.9em;
+    color: #555;
+    margin: 0;
+  }
+
+
     
 /* Klikkbar knapp (link) */
 .story-button {
