@@ -171,6 +171,45 @@
     font-size: 1.5em;
     margin-bottom: 20px;
 }
+
+/*Linne sin del*/
+/*Videre studiemuligjheter ved OsloMet (kajsa del) */
+.videre-studiemuligheter ul{
+    list-style-type: none; 
+    padding: 0; 
+    text-align: center;
+}
+
+.videre-studiemuligheter li{ 
+    padding: 1rem 1.25rem; 
+    border-bottom: 1px solid #ccc; 
+    border-top: 1px solid #ccc ;
+    padding: 1rem 0;
+    margin: 2rem auto;  
+} 
+
+.videre-studiemuligheter li strong{
+    display: block; 
+    margin-bottom:0.3em;
+}
+
+.videre-studiemuligheter li p {
+    margin: 0; 
+  }
+  
+  .videre-studiemuligheter li a{
+    text-decoration: none; 
+    color: #000; 
+    font-size: 1em; 
+    color: #333; 
+  }
+
+  .videre-studiemuligheter li a:hover{
+    color: #333; 
+    text-decoration: underline; 
+  }
+
+
 /* faglig-leder overskrift*/
 .faglig-leder{
     text-align:center;
