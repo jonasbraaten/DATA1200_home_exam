@@ -1,105 +1,43 @@
-#activity-page body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+
+/* UNITVERSEL FOR ALLE SIDER*/
+* {
+    text-decoration: none; 
+    font-family: Arial, Helvetica, sans-serif; 
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-}
+    box-sizing: border-box; /* fjerner standerden og legger til bredde og høyre*/
+}    
 
-#activity-page h1, h2 {
-    color: #d2232a; /* FARGE OVERSKRIFTER h1 & h2 */
-}
 
-#activity-page h1, h2 { /* SENTERER H1 & H2*/
-    text-align: center;
-}
+/* ==== INDEX-SIDEN ==== */
 
-#activity-page header, footer { /*HEADER STYLING*/
-    background: #090936;
-    color: #fffdfd;
-    padding: 0.5em 0;
-    text-align: center;
-}
+/* index siden under*/
 
-/*NAVIGASJONS LISTEN*/
-#activity-page nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-#activity-page nav ul li {
-    display: inline;
-    margin-right: 1rem;
-}
-
-#activity-page nav ul li a {
-    color: #ffffff;
+/* nav */
+.nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav ul li {
+    margin-right: 5%;
+  }
+  
+  /* fjernet understreking */
+  .nav a {
     text-decoration: none;
-}
+    font-weight: bold;
+    color: #333;
+    padding: 10px;
+  }
+  
+  /* Endre fargen på lenkene */
+  .nav a:hover {
+    color: #7ab458;
+  }
 
-/* LAYOUT & STRUKTUR I MAIN BODY PÅ ACTIVITY*/
-#activity-page main {
-    padding: 1em;
-    max-width:max-content;
-    margin: auto;
-}
-
-#activity-page section {
-    margin-bottom: 2em;
-}
-
-#activity-page ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-#activity-page ul li {
-    display: inline-block;
-    width: 23.5%;
-    margin: 0 0.5%;
-    text-align: center;
-}
-
-
-/*BILDER AV SPILLERE OG INFO VED SIDEN AV PÅ ACTIVITY*/
-#activity-page figure {
-    display: inline-block;
-    margin: 1em;
-    text-align: center;
-}
-
-/* 4. fikse på lenker og navigasjon PÅ ACTIVITY*/
-#activity-page a {
-    color: #d2232a;
-}
-
-
-#activity-page a:hover {
-    text-decoration: underline;
-}
-
-/* HERO PÅ TOPPEN PÅ ACTIVITY*/
-#activity-page .hero { /* Dette er bilde på toppen av siden (hero bildet)*/
-    background: url('https://cloudfront-eu-central-1.images.arcpublishing.com/mentormedier/JQPJY5L2HND6HNKA6W3YIGFDJQ.jpg') no-repeat center center;
-    background-size: cover;
-    height: 20rem;
-    position: relative;
-}
-
-#activity-page .hero-title { /* Dette er teskten over bilde på toppen av siden (hero bildet)*/
-    color: white;
-    font-size: 3em;
-    text-align: center;
-    position:absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    -webkit-text-stroke: 0.01em black;
-}
-
-/* index-id siden under her*/
-#homepage body{
+.homepage{
     font-family: Arial, Helvetica, sans-serif;
     margin: 5%;
     color:#333;
@@ -107,36 +45,41 @@
     padding: 2%;
 }
 
-#hompage h1{
+.heading1{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     font-size: large;
-    color:#b60000;
-    background-color: #333;
+    color: #1f4118;
     padding: 2%;
 }
 
-#hompage h2{
+.bachelor{
+    text-align: center;  
+    font-weight: lighter;
+    font-size: larger;
+}
+
+.heading2{
     font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    color:#333;
+    text-align: center; 
+    color:#333; 
     background-color: #f4f4f4;
     padding: 2%;
 }
 
-
+/*Studiinformasjon*/
 .info-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
     gap: 20px; 
     max-width: 800px;
-    margin: auto;
+    margin: 10;
     padding-top: 20px;
 }
 
 .info-section {
     list-style: none;
-    border-top: 1px solid #000; 
+    border-top: 1px solid #333; 
     padding-top: 10px;
 }
 
@@ -147,13 +90,572 @@
 }
 
 .info-detail {
-    font-size: 1em;
+    font-size: 0.95em;
 }
 
-.heading {  
+.heading {
     text-align: center;
     font-size: 1.5em;
     margin-bottom: 20px;
 }
 
-/* accessibility siden under her*/
+/* index-id siden under her*/
+.mainbody{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0%;
+    color:#333;
+    background-color: #f4f4f4;
+    padding: 0%;
+}
+
+/* Overskrift*/
+.heading1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: xx-large;
+    color:#b60000;
+    padding: 2%;
+}
+
+/* Overskrift*/
+.heading2{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color:#333;
+    background-color: #f4f4f4;
+    padding: 2%;
+}
+/*Studieinfo*/
+.info-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+    max-width: 800px;
+    margin: 10px;
+    padding-top: 20px;
+}
+
+.info-section {
+    list-style: none;
+    border-top: 1px solid #333; 
+    padding-top: 10px;
+}
+
+.info-title {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+.info-detail {
+    font-size: 0.95em;
+}
+
+/*Responsive design for mindere skjermer*/
+
+ @media (max-width: 768px){
+    .info-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+ }
+
+ @media (max-width: 480px){
+    .info-container{
+        grid-template-columns: 1fr;
+    }
+ }
+
+/* Overskrift*/
+.heading {  
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+/* faglig-leder overskrift*/
+.faglig-leder{
+    text-align:center;
+    color: #333;
+    margin-bottom: 1.25rem; 
+    margin-top:1rem;
+} 
+/*Innramming på fagligleder info*/
+.profilkort{
+    display: flex;
+    align-items:center;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    padding: 1.25rem;
+    margin: 0.125rem auto;
+    width: 100%;
+}
+
+.profilbilde{
+    width: 25%;
+    height: 25%;
+    margin-right: 1.25rem;
+}
+
+.profildetaljer h2 {
+    font-size: 1.2em;
+    margin: 0;
+    color: #333;
+}
+
+.profildetaljer p {
+    margin: 0.3125rem 0; 
+    color: #333;
+}
+
+.profildetaljer a {
+    color: #333;
+    text-decoration: none;
+}
+
+.profildetaljer a:hover {
+    text-decoration: none;
+    
+}
+
+/* Du er kanskje også intressert i disse -> overskrift*/
+  .interessert-disse {
+    text-align: center; 
+  }
+  
+  .interessert-disse h2 {
+    display: inline-block; 
+    margin-top: 30px;
+    margin-bottom: 15px; 
+  }
+  
+  .interessert-disse ul {
+    list-style-type: none; 
+    padding: 0; 
+  }
+  
+  .interessert-disse li {
+    text-align: left; 
+    padding: 15px 20px; 
+    border-bottom: 1px solid #ccc; 
+  }
+  
+  .interessert-disse li strong {
+    display: block; 
+    margin-bottom: 5px; 
+  }
+  
+  .interessert-disse li p {
+    margin: 0; 
+  }
+
+  .interessert-disse li a{
+    text-decoration: none; 
+    color: #000; 
+    font-size: 1em; 
+    color: #333; 
+  }
+
+  .interessert-disse li a:hover{
+    color: #333; 
+    text-decoration: underline; 
+    transform: scale(1.05);
+  }
+
+
+    
+/* Klikkbar knapp (link) */
+.story-button {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    display: flex;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 2em;
+    transition: transform 0.3s ease;
+    flex-direction: row-reverse;  /* Bilde på høyre side av teksten */
+
+    /* W3schools: https://www.w3schools.com/css/css3_flexbox_container.asp */
+}
+
+/* Hover-effekt for knappen */
+.story-button:hover {
+    transform: scale(1.05);
+
+/* W13schools: https://www.w3schools.com/css/css3_buttons.asp */
+}
+
+/* Tekstdelen og bilde inne i knappen */
+.story-button .story-text,
+.story-button .story-image {
+    flex: 1 1 50%; /*flex-basis, flex-shrink, flex-grow kombinert*/
+    /* W3schools: https://www.w3schools.com/cssref/css3_pr_flex-grow.php*/
+}
+
+.story-text {
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.story-image {
+    width: 50%;
+    height: 100%;
+}
+
+/* Bilde */
+.story-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Overskrift */
+.story-text h3 {
+    font-size: 1.4rem;
+    color: #a30000;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+/* Tekstinnhold */
+.story-text p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Responsivitet */
+@media (max-width: 768px) {
+    .story-button {
+        flex-direction: column;  /* Bilde over tekst på små skjermer */
+    }
+
+    .story-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .story-text h3 {
+        font-size: 1.2rem;
+    }
+
+    .story-text p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Footer indexoppsett*/
+
+*{ 
+    text-decoration: none;
+}
+.footer {
+    padding: 10px; 
+    background-color: #b0d7ab;
+    color: #333;
+}
+
+.footer-list{ /* https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_unordered_none */
+    list-style-type: none;
+}
+
+.footer-list li:hover {   /* https://www.w3schools.com/cssref/sel_hover.php#gsc.tab=0*/
+    transform: scale(1.05);
+}
+
+.row {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Column flyter ved siden av hverandre */
+.column {
+    float: left;
+    padding: 20px;
+}
+
+.section1{ /*https://www.w3schools.com/css/css_border.asp*/
+    border: 2px solid #333;
+    width: auto; /* Angi bredde */
+    height: auto; 
+}
+
+.første-setning{
+    padding: 5px;
+}
+.første-link{
+    padding: 5px;
+}
+
+.footer-list{ /* https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_unordered_none */
+    list-style-type: none;
+}
+
+.social.list{
+    list-style-type: none;
+}
+
+.footer-list li:hover {   /* https://www.w3schools.com/cssref/sel_hover.php#gsc.tab=0*/
+    transform: scale(1.05);
+}
+
+.row {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Column flyter ved siden av hverandre */
+.column {
+    float: left;
+    padding: 20px;
+}
+.column.side{
+    font-weight: bold;
+}
+.list :hover{
+    transform: scale(1.05)
+  /* https://www.w3schools.com/cssref/sel_hover.php#gsc.tab=0*/
+}
+a{
+    color: #333;
+}
+
+ a:hover{
+    text-decoration: underline;  
+}
+
+/* ----> AKTIVITETS-SIDEN <---- */
+
+/* Generelle instillinger for siden (aktivitetssiden) */
+/* Kilde: https://www.w3schools.com/css/css3_box-sizing.asp */
+
+body.activity-page { /* holder konsist i hele body (siden) med font, farge og linjehøyde*/ 
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f6efef;
+    font-size: 1rem;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+
+/* ----> Fonter og typografi osv (aktivitetssiden) <---- */
+/* Kilde: https://www.w3schools.com/cssref/pr_font_font-size.asp */
+
+.herotittel { /* Dette er teskten over bilde på toppen av siden (hero bildet)*/
+    font-size: clamp(1.5rem, 2vw + 1rem, 3rem);
+    color: #faffd0;
+    line-height: 2.5rem;
+    text-align: center;
+}
+
+/* ----> Struktur av siden og layout av header, main, footer (aktivitetssiden) <---- */
+.aktivitetsmain { /*kanter på main-strukturen*/
+    margin: 1.5rem;
+    padding: 0.2rem;
+}
+
+.aktuellespillere {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 100%;
+    margin: 1rem auto;
+}
+
+.spillerinfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 4px solid #000000;
+    border-radius: 1rem;
+    background-color: #06061f;
+    max-width: fit-content;
+    margin: 0;
+}
+
+.spillertekst {
+    display: block;
+    width: 100%;
+}
+
+.spillerinfo h3 {
+    color:#ffe3ae;
+    margin: 0.5rem 0;
+
+}
+
+.spillerinfo h4 {
+    color:#92b5d8;
+    margin: 0.5rem 0;
+}
+
+.spillerinfo p {
+    color:white;
+    margin: 0.5rem 0;
+}
+
+.spillerbilde picture {
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   max-width: 100%;
+   box-sizing: border-box;
+}
+
+.spillerbilde img {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #92b5d8;
+    margin: 2rem;
+    margin-bottom: 0;
+}
+
+/*aktivitets-footer styling*/
+.aktivitetsfooter {
+    background-color: #c79ec7;
+    padding: 3rem;
+    text-align: center;
+}
+
+.aktivitetsfooter-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+
+.aktivitetsfooter-nav a {
+    color: #9d2c39;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.aktivitetsfooter-nav a:hover {
+    transition: color 0.2s;
+    color:#105ba6;
+}
+
+
+@media (max-width: 600px) { /* når skjermen kommer under denne størrelsen går spillerbilde under tekst*/
+    .spillerinfo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .spillerbilde img { /* spiller bildet blir mindre i tillegg*/
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.historieoversikt {
+    display: flex; /*legger aside ved siden av historie-seksjon*/
+    gap: 2rem; /*mellomrom mellom dem*/
+}
+
+.historie {
+    flex: 50%;
+    padding: 0.1rem;
+}
+
+.seiersoversikt {
+    padding: 0.5rem;
+    background-color: #d8be92;
+    border-radius: 1rem;;
+}
+
+.seiere li {
+    font-style: italic;
+    list-style: inside square;
+    margin: 0.5rem;
+}
+
+@media (max-width: 600px) {
+    .historieoversikt {
+        flex-direction: column;
+    }
+}
+
+
+/* ----> Navigasjonen (aktivitetssiden) <---- */
+/* Kilde: https://www.w3schools.com/css/css_navbar.asp */
+
+.aktivitets-navigasjon ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #06061f;
+}
+
+.aktivitets-navigasjon li {
+    float: left;
+    margin: 1rem;
+}
+
+/* Kilde: https://developer.mozilla.org/en-US/docs/Web/CSS/clamp() */
+.aktivitets-navigasjon li a {
+    display: block;
+    color: #f4f4f4;
+    font-weight: bold;
+    text-align: center;
+    padding: 0rem 0.5rem;
+}
+
+.aktivitets-navigasjon li a:hover { /* fargen bak teksten i menuen når man manuvrerer*/
+    background-color: #92b5d8;
+    color:#000000;
+    border-radius: 1rem; /*gjør at kantene på hover blir avrundet*/
+    transition: background-color 0.3s, border-radius 0.3s; /*fade-in hovering*/
+    text-decoration: none;
+}    
+
+@media screen and (max-width: 600px){ /*navigasjon på mobilstørrelse*/
+    .aktivitets-navigasjon ul li.right, 
+    .aktivitets-navigasjon ul li {
+        float: none;
+    }
+}
+
+/* ----> Bilder / video / Lenker og annen media styling (aktivitetssiden) <----*/
+
+.handballhero { /* Dette er bilde på toppen av aktivitets-siden (hero bildet)*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('https://cloudfront-eu-central-1.images.arcpublishing.com/mentormedier/JQPJY5L2HND6HNKA6W3YIGFDJQ.jpg') no-repeat center center;
+    background-size: cover;
+    height: 16rem;
+    position: relative;
+}
+
+.aktivitetslenker { /*sentrerer og lager plass mellom aktivitets-lenker og annet*/
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+a.aktivitetslink { /*styler lenkene på aktivitets-siden*/
+    background-color: #bcd3dd;
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    font-size: clamp(0.77rem, 2vw, 1rem);
+}
+
+.instagrambruker {
+    background-color: #ffe3ae;
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    font-size: clamp(0.77rem, 2vw, 1rem);
+}
+
+/* ----> Responsiv skjerm og størrelse (aktivitetssiden) <---- */
+/* Kilde: https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries */
