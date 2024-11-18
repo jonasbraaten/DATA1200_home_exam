@@ -1,4 +1,58 @@
-/* index-id siden under her*/
+
+/* UNITVERSEL FOR ALLE SIDER*/
+* {
+    text-decoration: none; 
+    font-family: Arial, Helvetica, sans-serif; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* fjerner standerden og legger til bredde og høyre*/
+}    
+
+
+/* ==== INDEX-SIDEN ==== */
+
+/* index siden under*/
+/* Header */
+.header{
+    padding: 10px; 
+    background-color: #2F5233; /* color palette: https://www.canva.com/colors/color-palettes/green-blaze/*/
+    color: #333;
+}
+
+.header :hover{
+    transition: color 0.2s;
+    color: #B1D8B7;
+}
+
+.indexheader li{
+    list-style-type: none;
+    text-align: center;
+    overflow: hidden;
+}
+/* nav */
+.nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav ul li {
+    margin-right: 5%;
+  }
+  
+  /* fjernet understreking */
+  .nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+    padding: 10px;
+  }
+  
+  /* Endre fargen på lenkene */
+  .nav a:hover {
+    color: #7ab458;
+  }
+
 .homepage{
     font-family: Arial, Helvetica, sans-serif;
     margin: 5%;
@@ -346,18 +400,86 @@
 *{
     text-decoration: none;
 }
-.footer{
-    text-decoration: none;
-    color: #333
+.footer {
+    padding: 10px; 
+    background-color: #2F5233;
+    color: white;;
+}
+
+.footer :hover{
+    transition: color 0.1s;
+    color: #B1D8B7;
+
 }
 .list{
     list-style-type: none;
-    /* https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_unordered_none */
 }
 
+.footer-list li:hover {   /* https://www.w3schools.com/cssref/sel_hover.php#gsc.tab=0*/
+    transform: scale(1.05);
+}
+
+.row {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Column flyter ved siden av hverandre */
+.column {
+    float: left;
+    padding: 20px;
+}
+
+.section1{ /*https://www.w3schools.com/css/css_border.asp*/
+    border: 2px solid;
+    width: auto; 
+    height: auto; 
+} 
+
+.første-setning{
+    padding: 5px;
+}
+.første-link{
+    padding: 5px;
+}
+
+.footer-list{ /* https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_unordered_none */
+    list-style-type: none;
+}
+
+.social.list{
+    list-style-type: none;
+}
+
+.footer-list li:hover {   /* https://www.w3schools.com/cssref/sel_hover.php#gsc.tab=0*/
+    transform: scale(1.05);
+    transition: color 0.2s;
+    color: #B1D8B7;
+}
+
+.row {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Column flyter ved siden av hverandre */
+.column {
+    float: left;
+    padding: 20px;
+}
+.column.side{
+    font-weight: bold;
+}
 .list :hover{
-    transform: scale(1.05)
+    color: #B1D8B7
   /* https://www.w3schools.com/cssref/sel_hover.php#gsc.tab=0*/
+}
+a{
+    color:white;
+}
+
+ a:hover{
+    text-decoration: underline;  
 }
 
 /* ----> AKTIVITETS-SIDEN <---- */
