@@ -447,12 +447,28 @@ body.activity-page { /* holder konsist i hele body (siden) med font, farge og li
     color: #faffd0;
     line-height: 2.5rem;
     text-align: center;
+    text-shadow: 2px -1px 15px black, -2px 1px 15px black, 
+
 }
 
 /* ----> Struktur av siden og layout av header, main, footer (aktivitetssiden) <---- */
 .aktivitetsmain { /*kanter på main-strukturen*/
     margin: 1.5rem;
     padding: 0.2rem;
+}
+
+.aktivitetsmain p { /*påvirker alle p i main som en default i main*/
+    font-size: 1.3rem;
+}
+
+.aktivitetsmain h2 { /* huker alle h2 inn litt fra venstre og størrelse*/
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+
+.altomlaget p {
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
 }
 
 .aktuellespillere {
@@ -476,7 +492,7 @@ body.activity-page { /* holder konsist i hele body (siden) med font, farge og li
     margin: 0;
 }
 
-.spillertekst {
+.spillertekst p {
     display: block;
     width: 100%;
 }
@@ -540,19 +556,6 @@ body.activity-page { /* holder konsist i hele body (siden) med font, farge og li
     color:#105ba6;
 }
 
-
-@media (max-width: 600px) { /* når skjermen kommer under denne størrelsen går spillerbilde under tekst*/
-    .spillerinfo {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .spillerbilde img { /* spiller bildet blir mindre i tillegg*/
-        width: 200px;
-        height: 200px;
-    }
-}
-
 .historieoversikt {
     display: flex; /*legger aside ved siden av historie-seksjon*/
     gap: 2rem; /*mellomrom mellom dem*/
@@ -573,12 +576,6 @@ body.activity-page { /* holder konsist i hele body (siden) med font, farge og li
     font-style: italic;
     list-style: inside square;
     margin: 0.5rem;
-}
-
-@media (max-width: 600px) {
-    .historieoversikt {
-        flex-direction: column;
-    }
 }
 
 
@@ -616,13 +613,6 @@ body.activity-page { /* holder konsist i hele body (siden) med font, farge og li
     text-decoration: none;
 }    
 
-@media screen and (max-width: 600px){ /*navigasjon på mobilstørrelse*/
-    .aktivitets-navigasjon ul li.right, 
-    .aktivitets-navigasjon ul li {
-        float: none;
-    }
-}
-
 /* ----> Bilder / video / Lenker og annen media styling (aktivitetssiden) <----*/
 
 .handballhero { /* Dette er bilde på toppen av aktivitets-siden (hero bildet)*/
@@ -642,7 +632,8 @@ body.activity-page { /* holder konsist i hele body (siden) med font, farge og li
 }
 
 a.aktivitetslink { /*styler lenkene på aktivitets-siden*/
-    background-color: #bcd3dd;
+    background-color: #7f4e4e;
+    color: white;
     margin: 1rem;
     padding: 0.5rem;
     border-radius: 1rem;
@@ -659,3 +650,71 @@ a.aktivitetslink { /*styler lenkene på aktivitets-siden*/
 
 /* ----> Responsiv skjerm og størrelse (aktivitetssiden) <---- */
 /* Kilde: https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries */
+
+    /* Responsiv til telefon Aktivitetsiden*/
+
+@media screen and (max-width: 768px){
+    .herotittel {
+        font-size: 2rem;
+    }
+    
+    .aktivitets-navigasjon ul li {
+        float: none;
+        font-size: 1.5rem;
+    }
+
+    .historieoversikt {
+        flex-direction: column;
+    }
+
+    .spillerinfo { /* spillerbildene går under teksten under tekst og på midten*/
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aktivitetsmain p { /*fonten på alle p i main som en default og padding 0 i main aktivitet*/
+        font-size: 1.2rem;
+        padding-left: 0rem;
+    }
+
+    .aktivitetsmain h2 { /* padding til vestre på alle h2 overskrifter i main aktivitet*/
+        padding-left: 1rem;
+    }
+
+    .altomlaget h2 { 
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .aktuellespillere h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .historieseksjon h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .spillertekst h3 {
+        font-size: 1.9rem;
+    }
+
+    .spillertekst h4 {
+        font-size: 1.5rem;
+    }
+
+    .seiersoversikt h4 {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    .seiere li {
+        font-size: 1.2rem;
+    }
+
+    .spillerbilde img { /* spiller bildet blir mindre i tillegg*/
+        width: 200px;
+        height: 200px;
+    }
+}
