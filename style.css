@@ -1,4 +1,42 @@
-/* index-id siden under her*/
+
+/* UNITVERSEL FOR ALLE SIDER*/
+* {
+    text-decoration: none; 
+    font-family: Arial, Helvetica, sans-serif; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* fjerner standerden og legger til bredde og høyre*/
+}    
+
+
+/* ==== INDEX-SIDEN ==== */
+
+/* index siden under*/
+
+/* nav */
+.nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav ul li {
+    margin-right: 5%;
+  }
+  
+  /* fjernet understreking */
+  .nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+    padding: 10px;
+  }
+  
+  /* Endre fargen på lenkene */
+  .nav a:hover {
+    color: #7ab458;
+  }
+
 .homepage{
     font-family: Arial, Helvetica, sans-serif;
     margin: 5%;
@@ -11,14 +49,20 @@
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     font-size: large;
-    color:#810000;
+    color: #1f4118;
     padding: 2%;
+}
+
+.bachelor{
+    text-align: center;  
+    font-weight: lighter;
+    font-size: larger;
 }
 
 .heading2{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center; 
-    color:#333;
+    color:#333; 
     background-color: #f4f4f4;
     padding: 2%;
 }
@@ -58,10 +102,10 @@
 /* index-id siden under her*/
 .mainbody{
     font-family: Arial, Helvetica, sans-serif;
-    margin: 5%;
+    margin: 0%;
     color:#333;
     background-color: #f4f4f4;
-    padding: 2%;
+    padding: 0%;
 }
 
 /* Overskrift*/
@@ -85,22 +129,22 @@
 .info-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
-    gap:1.25em; 
-    max-width: 50rem;
-    margin: 0.625em;
-    padding-top: 1.25em;
+    gap: 20px; 
+    max-width: 800px;
+    margin: 10px;
+    padding-top: 20px;
 }
 
 .info-section {
     list-style: none;
     border-top: 1px solid #333; 
-    padding-top: 0.625em;
+    padding-top: 10px;
 }
 
 .info-title {
     font-weight: bold;
     font-size: 1.1em;
-    margin-bottom: 0.3em;
+    margin-bottom: 5px;
 }
 
 .info-detail {
@@ -127,44 +171,6 @@
     font-size: 1.5em;
     margin-bottom: 20px;
 }
-/*Linne sin del*/
-/*Videre studiemuligjheter ved OsloMet (kajsa del) */
-.videre-studiemuligheter ul{
-    list-style-type: none; 
-    padding: 0; 
-    text-align: center;
-}
-
-.videre-studiemuligheter li{ 
-    padding: 1rem 1.25rem; 
-    border-bottom: 1px solid #ccc; 
-    border-top: 1px solid #ccc ;
-    padding: 1rem 0;
-    margin: 2rem auto;  
-
-} 
-
-.videre-studiemuligheter li strong{
-    display: block; 
-    margin-bottom:0.3em;
-}
-
-.videre-studiemuligheter li p {
-    margin: 0; 
-  }
-  
-  .videre-studiemuligheter li a{
-    text-decoration: none; 
-    color: #000; 
-    font-size: 1em; 
-    color: #333; 
-  }
-
-  .videre-studiemuligheter li a:hover{
-    color: #333; 
-    text-decoration: underline; 
-  }
-
 /* faglig-leder overskrift*/
 .faglig-leder{
     text-align:center;
@@ -176,8 +182,8 @@
 .profilkort{
     display: flex;
     align-items:center;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
     padding: 1.25rem;
     margin: 0.125rem auto;
     width: 100%;
@@ -217,8 +223,8 @@
   
   .interessert-disse h2 {
     display: inline-block; 
-    margin-top: 2em;
-    margin-bottom: 1em; 
+    margin-top: 30px;
+    margin-bottom: 15px; 
   }
   
   .interessert-disse ul {
@@ -228,13 +234,13 @@
   
   .interessert-disse li {
     text-align: left; 
-    padding: 1em 1.25em; 
+    padding: 15px 20px; 
     border-bottom: 1px solid #ccc; 
   }
   
   .interessert-disse li strong {
     display: block; 
-    margin-bottom: 0.3em; 
+    margin-bottom: 5px; 
   }
   
   .interessert-disse li p {
@@ -251,17 +257,15 @@
   .interessert-disse li a:hover{
     color: #333; 
     text-decoration: underline; 
+    transform: scale(1.05);
   }
 
 
-/*Seksjonen*/  
-.student-stories{
-    text-decoration: none;
-}
-
+    
 /* Klikkbar knapp (link) */
 .story-button {
     font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
     display: flex;
     background-color: #f8f8f8;
     border-radius: 8px;
@@ -309,7 +313,7 @@
 /* Overskrift */
 .story-text h3 {
     font-size: 1.4rem;
-    color: #38492a;
+    color: #a30000;
     font-weight: bold;
     margin-bottom: 0;
 }
@@ -322,7 +326,7 @@
 }
 
 /* Responsivitet */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .story-button {
         flex-direction: column;  /* Bilde over tekst på små skjermer */
     }
@@ -343,88 +347,275 @@
 
 /* Footer indexoppsett*/
 
-*{
+*{ 
     text-decoration: none;
 }
-.footer{
-    text-decoration: none;
-    color: #333
-}
-.list{
-    list-style-type: none;
-    /* https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_unordered_none */
+.footer {
+    padding: 10px; 
+    background-color: #b0d7ab;
+    color: #333;
 }
 
+.footer-list{ /* https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_unordered_none */
+    list-style-type: none;
+}
+
+.footer-list li:hover {   /* https://www.w3schools.com/cssref/sel_hover.php#gsc.tab=0*/
+    transform: scale(1.05);
+}
+
+.row {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Column flyter ved siden av hverandre */
+.column {
+    float: left;
+    padding: 20px;
+}
+
+.section1{ /*https://www.w3schools.com/css/css_border.asp*/
+    border: 2px solid #333;
+    width: auto; /* Angi bredde */
+    height: auto; 
+}
+
+.første-setning{
+    padding: 5px;
+}
+.første-link{
+    padding: 5px;
+}
+
+.footer-list{ /* https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_unordered_none */
+    list-style-type: none;
+}
+
+.social.list{
+    list-style-type: none;
+}
+
+.footer-list li:hover {   /* https://www.w3schools.com/cssref/sel_hover.php#gsc.tab=0*/
+    transform: scale(1.05);
+}
+
+.row {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Column flyter ved siden av hverandre */
+.column {
+    float: left;
+    padding: 20px;
+}
+.column.side{
+    font-weight: bold;
+}
 .list :hover{
     transform: scale(1.05)
   /* https://www.w3schools.com/cssref/sel_hover.php#gsc.tab=0*/
+}
+a{
+    color: #333;
+}
+
+ a:hover{
+    text-decoration: underline;  
 }
 
 /* ----> AKTIVITETS-SIDEN <---- */
 
 /* Generelle instillinger for siden (aktivitetssiden) */
 /* Kilde: https://www.w3schools.com/css/css3_box-sizing.asp */
-* { /* Denne gjelder alle sider siden den bruker universalstjernen*/
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; /* fjerner standerden og legger til bredde og høyre*/
-} 
 
-
-body { /* holder konsist i hele body (siden) med font, farge og linjehøyde*/ 
+body.activity-page { /* holder konsist i hele body (siden) med font, farge og linjehøyde*/ 
     font-family: Arial, Helvetica, sans-serif;
-    background-color: white;
+    background-color: #f6efef;
     font-size: 1rem;
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 
 /* ----> Fonter og typografi osv (aktivitetssiden) <---- */
 /* Kilde: https://www.w3schools.com/cssref/pr_font_font-size.asp */
 
-h1 { /* Dette er teskten over bilde på toppen av siden (hero bildet)*/
+.herotittel { /* Dette er teskten over bilde på toppen av siden (hero bildet)*/
     font-size: clamp(1.5rem, 2vw + 1rem, 3rem);
-    color: #f4f4f4;
+    color: #faffd0;
     line-height: 2.5rem;
     text-align: center;
+    text-shadow: 2px -1px 1px black, -2px 1px 15px black, 
+
 }
 
 /* ----> Struktur av siden og layout av header, main, footer (aktivitetssiden) <---- */
 .aktivitetsmain { /*kanter på main-strukturen*/
     margin: 1.5rem;
     padding: 0.2rem;
+}
 
+.aktivitetsmain p { /*påvirker alle p i main som en default i main*/
+    font-size: 1.3rem;
+}
+
+.aktivitetsmain h2 { /* huker alle h2 inn litt fra venstre og størrelse*/
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+
+.altomlaget p {
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+}
+
+.aktuellespillere {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 100%;
+    margin: 1rem auto;
+}
+
+.spillerinfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 4px solid #000000;
+    border-radius: 1rem;
+    background-color: #06061f;
+    max-width: fit-content;
+    margin: 0;
+}
+
+.spillertekst p {
+    display: block;
+    width: 100%;
+}
+
+.spillerinfo h3 {
+    color:#ffe3ae;
+    margin: 0.5rem 0;
+
+}
+
+.spillerinfo h4 {
+    color:#92b5d8;
+    margin: 0.5rem 0;
+}
+
+.spillerinfo p {
+    color:white;
+    margin: 0.5rem 0;
+}
+
+.spillerbilde picture {
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   max-width: 100%;
+   box-sizing: border-box;
+}
+
+.spillerbilde img {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #92b5d8;
+    margin: 2rem;
+    margin-bottom: 0;
+}
+
+/*aktivitets-footer styling*/
+.aktivitetsfooter {
+    background-color: #c79ec7;
+    padding: 3rem;
+    text-align: center;
+}
+
+.aktivitetsfooter-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+
+.aktivitetsfooter-nav a {
+    color: #9d2c39;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.aktivitetsfooter-nav a:hover {
+    transition: color 0.2s;
+    color:#105ba6;
+}
+
+.historieoversikt {
+    display: flex; /*legger aside ved siden av historie-seksjon*/
+    gap: 2rem; /*mellomrom mellom dem*/
+}
+
+.historie {
+    flex: 50%;
+    padding: 0.1rem;
+}
+
+.seiersoversikt {
+    padding: 0.5rem;
+    background-color: #d8be92;
+    border-radius: 1rem;;
+}
+
+.seiere li {
+    font-style: italic;
+    list-style: inside square;
+    margin: 0.5rem;
 }
 
 
 /* ----> Navigasjonen (aktivitetssiden) <---- */
 /* Kilde: https://www.w3schools.com/css/css_navbar.asp */
+
 .aktivitets-navigasjon ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 1rem;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #000000;
+    background-color: #06061f;
 }
 
 .aktivitets-navigasjon li {
-    margin: 0 1rem; /* avstanden mellom emnene i menyen */
+    float: left;
+    margin: 1rem;
 }
 
 /* Kilde: https://developer.mozilla.org/en-US/docs/Web/CSS/clamp() */
-.aktivitets-navigasjon a {
-    text-decoration: none;
+.aktivitets-navigasjon li a {
+    display: block;
     color: #f4f4f4;
     font-weight: bold;
-    font-size: clamp(0.75rem, 1vw + 0.5rem, 1.25rem);
-    padding: 0.5rem;
+    text-align: center;
+    padding: 0rem 0.5rem;
 }
 
+.aktivitets-navigasjon li a:hover { /* fargen bak teksten i menuen når man manuvrerer*/
+    background-color: #92b5d8;
+    color:#000000;
+    border-radius: 1rem; /*gjør at kantene på hover blir avrundet*/
+    transition: background-color 0.3s, border-radius 0.3s; /*fade-in hovering*/
+    text-decoration: none;
+}    
 
-/* ----> Bilder & video og annen media styling (aktivitetssiden) <----*/
+/* ----> Bilder / video / Lenker og annen media styling (aktivitetssiden) <----*/
 
-.handballhero { /* Dette er bilde på toppen av siden (hero bildet)*/
+.handballhero { /* Dette er bilde på toppen av aktivitets-siden (hero bildet)*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -432,25 +623,98 @@ h1 { /* Dette er teskten over bilde på toppen av siden (hero bildet)*/
     background-size: cover;
     height: 16rem;
     position: relative;
-
 }
 
+.aktivitetslenker { /*sentrerer og lager plass mellom aktivitets-lenker og annet*/
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+a.aktivitetslink { /*styler lenkene på aktivitets-siden*/
+    background-color: #7f4e4e;
+    color: white;
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    font-size: clamp(0.77rem, 2vw, 1rem);
+}
+
+.instagrambruker {
+    background-color: #ffe3ae;
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    font-size: clamp(0.77rem, 2vw, 1rem);
+}
 
 /* ----> Responsiv skjerm og størrelse (aktivitetssiden) <---- */
 /* Kilde: https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries */
-@media all {
-    .aktivitets-navigasjon ul {
-        flex-direction: row;
-        justify-content: center;
+
+    /* Responsiv til telefon Aktivitetsiden*/
+
+@media screen and (max-width: 768px){
+    .herotittel {
+        font-size: 2rem;
+    }
+    
+    .aktivitets-navigasjon ul li {
+        float: none;
+        font-size: 1.5rem;
     }
 
-    .aktivitets-navigasjon li {
-        margin: 0rem;
+    .historieoversikt {
+        flex-direction: column;
     }
 
-    .aktivitets-navigasjon a {
-        padding: 0.5rem;
+    .spillerinfo { /* spillerbildene går under teksten under tekst og på midten*/
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aktivitetsmain p { /*fonten på alle p i main som en default og padding 0 i main aktivitet*/
+        font-size: 1.2rem;
+        padding-left: 0rem;
+    }
+
+    .aktivitetsmain h2 { /* padding til vestre på alle h2 overskrifter i main aktivitet*/
+        padding-left: 1rem;
+    }
+
+    .altomlaget h2 { 
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .aktuellespillere h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .historieseksjon h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .spillertekst h3 {
+        font-size: 1.9rem;
+    }
+
+    .spillertekst h4 {
+        font-size: 1.5rem;
+    }
+
+    .seiersoversikt h4 {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    .seiere li {
+        font-size: 1.2rem;
+    }
+
+    .spillerbilde img { /* spiller bildet blir mindre i tillegg*/
+        width: 200px;
+        height: 200px;
     }
 }
-/* accessibility siden under her*/
- 
