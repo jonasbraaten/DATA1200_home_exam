@@ -132,16 +132,17 @@
     text-align:center;
     color: #333;
     margin-bottom: 1.25rem; 
+    margin-top:1rem;
 } 
 /*Innramming på fagligleder info*/
 .profilkort{
     display: flex;
     align-items:center;
-    border-top: 0.1rem solid #333;
-    border-bottom: 0.1rem solid #333;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
     padding: 1.25rem;
-    max-width: 25em;
     margin: 0.125rem auto;
+    width: 100%;
 }
 
 .profilbilde{
@@ -169,38 +170,50 @@
 .profildetaljer a:hover {
     text-decoration: none;
     
-
 }
 
-/* Du er kanskje også intressert i disse -> overskrift */
-.du-er-kanskje-intressert{
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;  
-    font-size: x-large;
-}
-.felles-avstand{
-    max-width: 25em;
-    margin: 0 auto;
-    font-family: Arial, sans-serif;
-}
-.andre-studier section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1em 0;
-    border-bottom: 1px solid #333;
-    border-top: 1px solid #333
+/* Du er kanskje også intressert i disse -> overskrift*/
+  .interessert-disse {
+    text-align: center; 
   }
   
-  .andre-studier data h3 {
-    font-size: 0.25em;
-    font-weight: bold;
-    margin: 0;
+  .interessert-disse h2 {
+    display: inline-block; 
+    margin-top: 30px;
+    margin-bottom: 15px; 
   }
-  .andre-studier p {
-    font-size: 0.9em;
-    color: #555;
-    margin: 0;
+  
+  .interessert-disse ul {
+    list-style-type: none; 
+    padding: 0; 
+  }
+  
+  .interessert-disse li {
+    text-align: left; 
+    padding: 15px 20px; 
+    border-bottom: 1px solid #ccc; 
+  }
+  
+  .interessert-disse li strong {
+    display: block; 
+    margin-bottom: 5px; 
+  }
+  
+  .interessert-disse li p {
+    margin: 0; 
+  }
+
+  .interessert-disse li a{
+    text-decoration: none; 
+    color: #000; 
+    font-size: 1em; 
+    color: #333; 
+  }
+
+  .interessert-disse li a:hover{
+    color: #333; 
+    text-decoration: underline; 
+    transform: scale(1.05);
   }
 
 
