@@ -447,7 +447,7 @@ body.activity-page { /* holder konsist i hele body (siden) med font, farge og li
     color: #faffd0;
     line-height: 2.5rem;
     text-align: center;
-    text-shadow: 2px -1px 15px black, -2px 1px 15px black, 
+    text-shadow: 2px -1px 1px black, -2px 1px 15px black, 
 
 }
 
