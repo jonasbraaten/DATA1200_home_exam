@@ -429,9 +429,9 @@ body.activity-page { /* holder konsist i hele body (siden) med font, farge og li
 /* ----> Fonter og typografi osv (aktivitetssiden) <---- */
 /* Kilde: https://www.w3schools.com/cssref/pr_font_font-size.asp */
 
-h1.herotittel { /* Dette er teskten over bilde på toppen av siden (hero bildet)*/
+.herotittel { /* Dette er teskten over bilde på toppen av siden (hero bildet)*/
     font-size: clamp(1.5rem, 2vw + 1rem, 3rem);
-    color: #fdffcc;
+    color: #faffd0;
     line-height: 2.5rem;
     text-align: center;
 }
@@ -469,7 +469,7 @@ h1.herotittel { /* Dette er teskten over bilde på toppen av siden (hero bildet)
 }
 
 .spillerinfo h3 {
-    color:#dcaaaa;
+    color:#ffe3ae;
     margin: 0.5rem 0;
 
 }
@@ -499,6 +499,7 @@ h1.herotittel { /* Dette er teskten over bilde på toppen av siden (hero bildet)
     object-fit: cover;
     border: 5px solid #92b5d8;
     margin: 2rem;
+    margin-bottom: 0;
 }
 
 /*aktivitets-footer styling*/
@@ -596,6 +597,7 @@ h1.herotittel { /* Dette er teskten over bilde på toppen av siden (hero bildet)
 
 .aktivitets-navigasjon li a:hover { /* fargen bak teksten i menuen når man manuvrerer*/
     background-color: #92b5d8;
+    color:#000000;
     border-radius: 1rem; /*gjør at kantene på hover blir avrundet*/
     transition: background-color 0.3s, border-radius 0.3s; /*fade-in hovering*/
     text-decoration: none;
@@ -628,6 +630,14 @@ h1.herotittel { /* Dette er teskten over bilde på toppen av siden (hero bildet)
 
 a.aktivitetslink { /*styler lenkene på aktivitets-siden*/
     background-color: #bcd3dd;
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    font-size: clamp(0.77rem, 2vw, 1rem);
+}
+
+.instagrambruker {
+    background-color: #ffe3ae;
     margin: 1rem;
     padding: 0.5rem;
     border-radius: 1rem;
