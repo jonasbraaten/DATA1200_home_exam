@@ -135,6 +135,47 @@
     font-size: 0.95em;
 }
 
+/* Container for alle accordion-boksene */
+.accordion-content {
+padding: 1em;
+    display: none; /* Start skjult */
+    border-top: 0.1em solid #ccc;
+    background-color: #f9f9f9;
+    font-size: 1em;
+    margin: 1rem; /*lage kun for p??*/
+    border-radius: 1rem;
+}
+
+/* Styling for overskriftene */
+.accordion-overskrift {
+    display: block;
+    padding: 1em;
+    background-color: #147f12;
+    color: #b7ec9e;
+    font-weight: bold;
+    cursor: pointer;
+    border-bottom: 0.1em solid #ccc;
+    font-size: 1.2em;
+    border-radius: 2rem;
+    box-shadow: 0.5rem 0.5rem 0.8rem rgba(2, 77, 20, 0.25);
+}
+
+/* Hover-effekt på overskriftene */
+.accordion-overskrift:hover {
+    background-color: #0b5a13;
+}
+
+/* Skjuler radioknappene */
+.accordion-radio {
+    display: none;
+}
+
+/* Viser innholdet når radioknappen blir trykt på */
+.accordion-radio:checked + .accordion-overskrift + .accordion-content {
+    display: block;
+}
+
+
 /*Responsive design for mindere skjermer*/
 
  @media (max-width: 768px){
