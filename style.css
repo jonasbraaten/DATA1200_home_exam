@@ -404,15 +404,29 @@
 .column.middle a{ /* Gjør linkene hvit */
     color:white;
 }
+/*.column.middle a :hover{
+    transition: color 0.1s;
+    color: #B1D8B7;
+}*/
 .column.side a{
     color:white;
 }
-.footerh2 a{
+
+/*.kontaktosslink a :hover{
+    transition: color 0.1s;
+    color: #B1D8B7;
+}*/
+
+
+.footerh2 a{ /* gjør abonner linken hvit*/
     color:white;
 }
-.footerh2{
-    
-}
+
+/*.footerh2 a:hover{
+    transition: color 0.1s;
+    color: #B1D8B7;
+} */
+
 a:hover{
     text-decoration: underline;  
 }
@@ -422,7 +436,7 @@ li{
 
 
 /* Liste midt på footer*/
-.indexfooter li :hover{ /* Endrer fargen til linkene når man drar over*/
+.indexfooter-list li :hover{ /* Endrer fargen til linkene når man drar over*/
     transition: color 0.1s;
     color: #B1D8B7;
 }
@@ -431,11 +445,11 @@ li{
     transition: color 0.2s; 
 }
 
+
 /* Sosiale medier*/
 .indexsocial.list{
     list-style-type: none;
 }
-
 .row {
     content: "";
     display: table;
