@@ -11,16 +11,15 @@
 
 /* ==== INDEX-SIDEN ==== */
 
-/* index siden under*/
 /* Header */
 .indexheader{
-    padding: 10px; 
+    padding: 6rem; 
     background-color: #2F5233; /* color palette: https://www.canva.com/colors/color-palettes/green-blaze/*/
 }
 
 .indexheaderliste li{
     list-style-type: none;
-    text-align: center;
+    text-align:right;
 }
 
 /* index nav */
@@ -28,25 +27,28 @@
     list-style: none;
     display: flex;
     justify-content: center;
-
-  }
+}
   
-  .indexnav ul li {
-    margin-right: 5%;
-  }
+.indexnav ul li {
+    margin: 0.5rem;
+    font-size: clamp(1.5rem, 0.5vw, 0.5rem);
+}
   
   /* fjernet understreking */
-  .indexnav a {
+.indexnav a {
     text-decoration: none;
     font-weight: bold;
     color: white;
-    padding: 10px;
-  }
+    padding: 0.5rem;
+}
   
   /* Endre fargen på lenkene */
-  .indexnav a:hover {
-   color: #B1D8B7;
-  }
+.indexnav li a:hover {
+    background-color: #a2cca0;
+    color:#000000;
+    border-radius: 1rem; /*gjør at kantene på hover blir avrundet*/
+    text-decoration: none;
+}
 
 .indexmain{
     font-family: Arial, Helvetica, sans-serif;
@@ -55,27 +57,19 @@
     padding: 2%;
 }
 
-.heading1{
+.indexmainbody h1{ /*første overskrift over hovedbildet*/
     font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    font-size: large;
+    text-align: left;
+    font-size: 3rem;
     color: #1f4118;
-    background-color: white;
-    padding: 2%;
+    padding-left: 3rem;
+    margin: 1rem;
+    display: inline;
 }
 
-.bachelor{
-    text-align: center;  
-    font-weight: lighter;
-    font-size: larger;
-}
-
-.heading2{
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center; 
-    color:#333; 
-    background-color: #f4f4f4;
-    padding: 2%;
+.indexhovedbilde img { /*hovedbilde på toppen av index*/
+    width: 100rem;
+    max-width: 100%;
 }
 
 /*Studiinformasjon*/
@@ -104,11 +98,7 @@
     font-size: 0.95em;
 }
 
-.heading {
-    text-align: center;
-    font-size: 1.5em;
-    margin-bottom: 20px;
-}
+
 
 /* index-id siden under her*/
 .mainbody{
@@ -119,23 +109,6 @@
     padding: 0%;
 }
 
-/* Overskrift*/
-.heading1{
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    font-size: xx-large;
-    color:#333;
-    padding: 2%;
-}
-
-/* Overskrift*/
-.heading2{
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    color:#333;
-    background-color: #f4f4f4;
-    padding: 2%;
-}
 /*Studieinfo*/
 .info-container {
     display: grid;
@@ -262,30 +235,35 @@ padding: 1em;
   }
 
 
-/* faglig-leder overskrift*/
-.faglig-leder{
-    text-align:center;
+/* Faglig-leder overskrift */
+.faglig-leder {
+    text-align: center;
     color: #333;
     margin-bottom: 1.25rem; 
-    margin-top:1rem;
-} 
-/*Innramming på fagligleder info*/
-.profilkort{
+    margin-top: 1rem;
+}
+
+/* Innramming på faglig-leder info */
+.profilkort {
     display: flex;
-    align-items:center;
-    border-top: 1px solid #333;
-    border-bottom: 1px solid #333;
+    align-items: center;
+    justify-content: center; /* Sentrerer innholdet horisontalt */
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
     padding: 1.25rem;
-    margin: 0.125rem auto;
-    width: 100%;
+    margin: 0.5rem auto; /* Gir jevn margin */
+    max-width: 800px; /* Setter en maks bredde for innholdet */
+    box-sizing: border-box; /* Sikrer at padding ikke overskrider bredde */
 }
 
-.profilbilde{
-    width: 25%;
-    height: 25%;
-    margin-right: 1.25rem;
+/* Profilbilde */
+.profilbilde {
+    width: 7rem; /* Endret til konsistent enhet */
+    height: 9rem;
+    margin-right: 1rem; /* Litt mindre avstand for bedre sentrering */
 }
 
+/* Profildetaljer */
 .profildetaljer h2 {
     font-size: 1.2em;
     margin: 0;
@@ -293,7 +271,7 @@ padding: 1em;
 }
 
 .profildetaljer p {
-    margin: 0.3125rem 0; 
+    margin: 0.5rem 0; /* Jevnere avstand mellom linjer */
     color: #333;
 }
 
@@ -303,54 +281,64 @@ padding: 1em;
 }
 
 .profildetaljer a:hover {
-    text-decoration: none;
+    text-decoration: underline; /* Gir tydeligere hover-effekt */
     
 }
 
-/* Du er kanskje også intressert i disse -> overskrift*/
-  .interessert-disse {
+
+/* Du er kanskje også interessert i disse -> overskrift */
+.interessert-disse {
     text-align: center; 
-  }
-  
-  .interessert-disse h2 {
+    max-width: 800px; /* Begrens bredde for bedre layout */
+    margin: 0 auto; /* Sentrer containeren */
+    padding: 20px; /* Legg til padding for litt luft rundt innholdet */
+}
+
+.interessert-disse h2 {
     display: inline-block; 
     margin-top: 30px;
     margin-bottom: 15px; 
-  }
-  
-  .interessert-disse ul {
+}
+
+.interessert-disse ul {
     list-style-type: none; 
     padding: 0; 
-  }
-  
-  .interessert-disse li {
+    margin: 0 auto; /* Sentrer listen */
+    max-width: 600px; /* Begrens bredde på listen */
+}
+
+.interessert-disse li {
+    display: flex; /* Bruk flexbox for å organisere elementer inni hver liste */
+    flex-direction: column; /* Organiser teksten i en vertikal retning */
+    align-items: center; /* Sentrer innholdet i hver liste */
     text-align: left; 
     padding: 15px 20px; 
     border-bottom: 1px solid #ccc; 
-  }
-  
-  .interessert-disse li strong {
+}
+
+.interessert-disse li strong {
     display: block; 
     margin-bottom: 5px; 
-  }
-  
-  .interessert-disse li p {
+    text-align: center; /* Sentrer overskriften */
+}
+
+.interessert-disse li p {
     margin: 0; 
-  }
+    text-align: center; /* Sentrer beskrivelsen */
+}
 
-  .interessert-disse li a{
+.interessert-disse li a {
     text-decoration: none; 
-    color: #000; 
-    font-size: 1em; 
     color: #333; 
-  }
+    font-size: 1em; 
+    text-align: center; /* Sentrer lenken */
+}
 
-  .interessert-disse li a:hover{
+.interessert-disse li a:hover {
     color: #333; 
     text-decoration: underline; 
-    transform: scale(1.05);
-  }
-
+    transform: scale(1.05); /* Legg til en lett zoom-effekt */
+}
 
     
 /* Klikkbar knapp (link) */
@@ -680,7 +668,7 @@ body.activity-page { /* holder konsist i hele body (siden) med font, farge og li
     background-color: #92b5d8;
     color:#000000;
     border-radius: 1rem; /*gjør at kantene på hover blir avrundet*/
-    transition: background-color 0.3s, border-radius 0.3s; /*fade-in hovering*/
+    transition: background-color 0.3s; /*fade-in hovering*/
     text-decoration: none;
 }    
 
@@ -793,51 +781,74 @@ a.aktivitetslink { /*styler lenkene på aktivitets-siden*/
 
 /* ====> ACCESSIBILITY SIDEN UNDER <==== */
 
-/*navigasjon - accessibility*/
-.accessibilitynav ul {
-    list-style-type: none;
+.accessibilitybody {
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #06061f;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
 }
 
-.accessibilitynav li {
-    float: left;
-    margin: 1rem;
+.accessibilityheader {
+    width: 100%;
+    height: 100vh;
+    background:#b24183;
+    padding-left: 12%;
+    padding-right: 7%;
+    position: relative;
 }
 
-/* Kilde: https://developer.mozilla.org/en-US/docs/Web/CSS/clamp() */
-.accessibilitynav li a {
-    display: block;
-    color: #f4f4f4;
-    font-weight: bold;
-    text-align: center;
-    padding: 0rem 0.5rem;
+.accessibilitynav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 0 1.5rem;
+    border-bottom: 0.1rem solid #ffffff;
 }
 
-.accessibilitynav li a:hover { /* fargen bak teksten i menuen når man manuvrerer*/
-    background-color: #92b5d8;
-    color:#000000;
-    border-radius: 1rem; /*gjør at kantene på hover blir avrundet*/
-    transition: background-color 0.3s, border-radius 0.3s; /*fade-in hovering*/
+.accessibilitynav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.accessibilitynav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+}
+
+.accessibilitynav ul li a:hover {
+    background-color: #000000;
+    padding: 0rem;
+    margin: 0;
     text-decoration: none;
 }
 
-/*Main body - accessibility*/
-.accessibilitymain {
-    margin: 2rem;
+.accessSideNav { /*linje på siden av skjermen for det visuelle*/
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 5%;
+    height: 100vh;
+    padding: 2rem 0 1rem;
+    background: linear-gradient(#a30000, #ea8d3c, #fff980, #a30000); /* fargene på gradient*/
+    background-size: 100% 500%;
+    background-position: 0 40%;
 }
 
-/* Fonter og text*/
-.accessibilityinfo h1 {
-    font-size: 3rem;
-    color: rgb(137, 17, 17);
+.accessSideNav h1 { /*teksten inni sidenav m/tekst rotert*/
+    font-size: 2rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    transform-origin: left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: rotate(-90deg) translate(-50%);
+    width: max-content; 
 }
 
-.accessibilityinfo h2 {
-    font-size: 2.5rem;
-    color:#1f4118;
-}
+
 
