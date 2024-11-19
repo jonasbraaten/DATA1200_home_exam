@@ -404,60 +404,34 @@
 }
 
 /* Footer indexoppsett*/
-.footer {
+.indexfooter {
     padding: 10px; 
     background-color: #2F5233;
-    color: white;;
-}
-
-/* Liste midt på footer*/
-.footer :hover{ /* Endrer fargen til linkene når man drar over*/
-    transition: color 0.1s;
-    color: #B1D8B7;
-}
-
-/* */
-.footer-list li:hover {   /* https://www.w3schools.com/cssref/sel_hover.php#gsc.tab=0*/
-    transform: scale(1.05);
-}
-
-li{
-    list-style-type: none;
-}
- 
-.footer-list li:hover {   /* Gjør linkene større, og endfer fsrge når man holder over*/
-    transform: scale(1.05); /* https://www.w3schools.com/cssref/sel_hover.php#gsc.tab=0*/
-    transition: color 0.2s;
-    color: #B1D8B7;
+    color: white;
 }
 a{ /* Gjør linkene hvit */
     color:white;
 }
-
-/* Column flyter ved siden av hverandre */
-*{ 
-    text-decoration: none;
-}
-.footer {
-    padding: 10px; 
-    background-color: #b0d7ab;
-    color: #333;
-}
-
-.footer-list{ /* https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_unordered_none */
-    list-style-type: none;
-}
-
-.footer-list li:hover {   /* https://www.w3schools.com/cssref/sel_hover.php#gsc.tab=0*/
-    transform: scale(1.05);
-}
-
-/* Sosiale medier*/
 a:hover{
     text-decoration: underline;  
 }
+li{
+    list-style-type: none;
+}
 
-.social.list{
+
+/* Liste midt på footer*/
+.indexfooter li :hover{ /* Endrer fargen til linkene når man drar over*/
+    transition: color 0.1s;
+    color: #B1D8B7;
+}
+.indexfooter-list li:hover {   /* Gjør linkene større, og endfer fsrge når man holder over*/
+    transform: scale(1.05); /* https://www.w3schools.com/cssref/sel_hover.php#gsc.tab=0*/
+    transition: color 0.2s; 
+}
+
+/* Sosiale medier*/
+.indexsocial.list{
     list-style-type: none;
 }
 
@@ -466,6 +440,7 @@ a:hover{
     display: table;
     clear: both;
 }
+
 /* Column flyter ved siden av hverandre */
 .column {
     float: left;
@@ -473,14 +448,6 @@ a:hover{
 }
 .column.side{
     font-weight: bold;
-}
-.list :hover{
-    transform: scale(1.05)
-  /* https://www.w3schools.com/cssref/sel_hover.php#gsc.tab=0*/
-  
-}
-a{
-    color: #333;
 }
 
  a:hover{
