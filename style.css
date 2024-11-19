@@ -68,6 +68,7 @@
     text-align: center;  
     font-weight: lighter;
     font-size: larger;
+    margin: 2rem;
 }
 
 .heading2{
@@ -76,38 +77,6 @@
     color:#333; 
     background-color: #f4f4f4;
     padding: 2%;
-}
-
-/*Studiinformasjon*/
-.info-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); 
-    gap: 20px; 
-    max-width: 800px;
-    margin: 10;
-    padding-top: 20px;
-}
-
-.info-section {
-    list-style: none;
-    border-top: 1px solid #333; 
-    padding-top: 10px;
-}
-
-.info-title {
-    font-weight: bold;
-    font-size: 1.1em;
-    margin-bottom: 5px;
-}
-
-.info-detail {
-    font-size: 0.95em;
-}
-
-.heading {
-    text-align: center;
-    font-size: 1.5em;
-    margin-bottom: 20px;
 }
 
 /* index-id siden under her*/
@@ -136,33 +105,39 @@
     background-color: #f4f4f4;
     padding: 2%;
 }
-/*Studieinfo*/
-.info-container {
+
+/*Bachelorprogram overskrift*/
+.indexmain h2{
+    margin: 6rem;
+
+/*Studieinfo*/  
+}
+.bachelor-info {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); 
-    gap: 20px; 
-    max-width: 800px;
-    margin: 10px;
-    padding-top: 20px;
-}
-
-.info-section {
-    list-style: none;
-    border-top: 1px solid #333; 
-    padding-top: 10px;
-}
-
-.info-title {
+    grid-template-columns: repeat(4, 1fr); /* Fire kolonner som fordeles jevnt */
+    gap: 1rem; /* Avstand mellom kolonner og rader */
+    margin: 2rem; /* Margin rundt hele seksjonen */
+    padding: 1rem; /* Innvendig polstring */
+  }
+  
+  .info-item {
+    text-align: center; /* Sentraliserer tekst i hver kolonne */
+    border-top: 1px solid #ccc; /* Legger en linje under hvert element */
+    padding-top: 1rem; /* Legger avstand mellom innhold og linje */
+  }
+  
+  .info-item h3 {
+    margin: 0.5rem 0; /* Avstand over og under overskriften */
+    font-size: 1.5em;
     font-weight: bold;
-    font-size: 1.1em;
-    margin-bottom: 5px;
-}
+  }
+  
+  .info-item p {
+    margin: 0;
+    font-size: 1.2em;
+  }
 
-.info-detail {
-    font-size: 0.95em;
-}
-
-/*Responsive design for mindere skjermer*/
+/*Responsive design for mindere skjermer på studieinfo*/
 
  @media (max-width: 768px){
     .info-container{
@@ -221,109 +196,112 @@
   }
 
 
-/* Faglig-leder overskrift */
+/* Faglig leder - overskrift */
 .faglig-leder {
     text-align: center;
-    color: #333;
-    margin-bottom: 1.25rem; 
-    margin-top: 1rem;
-}
+    font-size: 2rem;
+    color: #000;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+} 
 
-/* Innramming på faglig-leder info */
+/* Profilkort */
 .profilkort {
     display: flex;
     align-items: center;
-    justify-content: center; /* Sentrerer innholdet horisontalt */
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-    padding: 1.25rem;
-    margin: 0.5rem auto; /* Gir jevn margin */
-    max-width: 800px; /* Setter en maks bredde for innholdet */
-    box-sizing: border-box; /* Sikrer at padding ikke overskrider bredde */
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    margin:  0 auto 2rem;
+    max-width: 70rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
 }
 
 /* Profilbilde */
 .profilbilde {
-    width: 7rem; /* Endret til konsistent enhet */
+    width: 7rem;
     height: 9rem;
-    margin-right: 1rem; /* Litt mindre avstand for bedre sentrering */
+    object-fit: cover;
+    margin-right: 1.5rem;
 }
 
 /* Profildetaljer */
 .profildetaljer h2 {
-    font-size: 1.2em;
     margin: 0;
+    font-size: 1.5rem;
     color: #333;
+}
+
+.profildetaljer h2 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.profildetaljer h2 a:hover {
+    text-decoration: underline;
 }
 
 .profildetaljer p {
-    margin: 0.5rem 0; /* Jevnere avstand mellom linjer */
+    margin: 0.5rem 0;
     color: #333;
+    font-size: 1.3rem;
 }
 
-.profildetaljer a {
+.profildetaljer p a {
     color: #333;
     text-decoration: none;
 }
 
-.profildetaljer a:hover {
-    text-decoration: underline; /* Gir tydeligere hover-effekt */
-    
+.profildetaljer p a:hover {
+    text-decoration: underline;
 }
 
-
-/* Du er kanskje også interessert i disse -> overskrift */
+/* Interessert-disse seksjonen */
 .interessert-disse {
-    text-align: center; 
-    max-width: 800px; /* Begrens bredde for bedre layout */
-    margin: 0 auto; /* Sentrer containeren */
-    padding: 20px; /* Legg til padding for litt luft rundt innholdet */
+    text-align: center;
+    margin: 0 auto;
+    max-width: 70rem;
 }
 
 .interessert-disse h2 {
-    display: inline-block; 
-    margin-top: 30px;
-    margin-bottom: 15px; 
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #000;
 }
 
 .interessert-disse ul {
-    list-style-type: none; 
-    padding: 0; 
-    margin: 0 auto; /* Sentrer listen */
-    max-width: 600px; /* Begrens bredde på listen */
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .interessert-disse li {
-    display: flex; /* Bruk flexbox for å organisere elementer inni hver liste */
-    flex-direction: column; /* Organiser teksten i en vertikal retning */
-    align-items: center; /* Sentrer innholdet i hver liste */
-    text-align: left; 
-    padding: 15px 20px; 
-    border-bottom: 1px solid #ccc; 
+    text-align: left;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
 }
 
 .interessert-disse li strong {
-    display: block; 
-    margin-bottom: 5px; 
-    text-align: center; /* Sentrer overskriften */
+    display: block;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: #000;
 }
 
 .interessert-disse li p {
-    margin: 0; 
-    text-align: center; /* Sentrer beskrivelsen */
+    margin: 0;
+    font-size: 1.15rem;
+    color: #333;
 }
 
-.interessert-disse li a {
-    text-decoration: none; 
-    color: #333; 
-    font-size: 1em; 
-    text-align: center; /* Sentrer lenken */
+.interessert-disse li p a {
+    text-decoration: none;
+    color: #333;
 }
 
-.interessert-disse li a:hover {
-    color: #333; 
-    text-decoration: underline; 
-    transform: scale(1.05); /* Legg til en lett zoom-effekt */
+.interessert-disse li p a:hover {
+    text-decoration: underline;
 }
 
     
