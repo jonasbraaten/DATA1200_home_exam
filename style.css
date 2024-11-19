@@ -455,6 +455,7 @@ li{
     text-decoration: underline;  
 }
 
+
 /* ----> AKTIVITETS-SIDEN <---- */
 
 /* Generelle instillinger for siden (aktivitetssiden) */
@@ -561,6 +562,28 @@ body.activity-page { /* holder konsist i hele body (siden) med font, farge og li
     margin-bottom: 0;
 }
 
+.historieoversikt {
+    display: flex; /*legger aside ved siden av historie-seksjon*/
+    gap: 2rem; /*mellomrom mellom dem*/
+}
+
+.historie {
+    flex: 50%;
+    padding: 0.1rem;
+}
+
+.seiersoversikt {
+    padding: 0.5rem;
+    background-color: #d8be92;
+    border-radius: 1rem;;
+}
+
+.seiere li {
+    font-style: italic;
+    list-style: inside square;
+    margin: 0.5rem;
+}
+
 /*aktivitets-footer styling*/
 .aktivitetsfooter {
     background-color: #c79ec7;
@@ -585,29 +608,6 @@ body.activity-page { /* holder konsist i hele body (siden) med font, farge og li
     transition: color 0.2s;
     color:#105ba6;
 }
-
-.historieoversikt {
-    display: flex; /*legger aside ved siden av historie-seksjon*/
-    gap: 2rem; /*mellomrom mellom dem*/
-}
-
-.historie {
-    flex: 50%;
-    padding: 0.1rem;
-}
-
-.seiersoversikt {
-    padding: 0.5rem;
-    background-color: #d8be92;
-    border-radius: 1rem;;
-}
-
-.seiere li {
-    font-style: italic;
-    list-style: inside square;
-    margin: 0.5rem;
-}
-
 
 /* ----> Navigasjonen (aktivitetssiden) <---- */
 /* Kilde: https://www.w3schools.com/css/css_navbar.asp */
@@ -748,3 +748,55 @@ a.aktivitetslink { /*styler lenkene på aktivitets-siden*/
         height: 200px;
     }
 }
+
+
+/* ====> ACCESSIBILITY SIDEN UNDER <==== */
+
+/*navigasjon - accessibility*/
+.accessibilitynav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #06061f;
+}
+
+.accessibilitynav li {
+    float: left;
+    margin: 1rem;
+}
+
+/* Kilde: https://developer.mozilla.org/en-US/docs/Web/CSS/clamp() */
+.accessibilitynav li a {
+    display: block;
+    color: #f4f4f4;
+    font-weight: bold;
+    text-align: center;
+    padding: 0rem 0.5rem;
+}
+
+.accessibilitynav li a:hover { /* fargen bak teksten i menuen når man manuvrerer*/
+    background-color: #92b5d8;
+    color:#000000;
+    border-radius: 1rem; /*gjør at kantene på hover blir avrundet*/
+    transition: background-color 0.3s, border-radius 0.3s; /*fade-in hovering*/
+    text-decoration: none;
+}
+
+/*Main body - accessibility*/
+.accessibilitymain {
+    margin: 2rem;
+}
+
+/* Fonter og text*/
+.accessibilityinfo h1 {
+    font-size: 3rem;
+    color: rgb(137, 17, 17);
+}
+
+.accessibilityinfo h2 {
+    font-size: 2.5rem;
+    color:#1f4118;
+}
+
