@@ -13,47 +13,39 @@
 
 /* index siden under*/
 /* Header */
-.header{
+.indexheader{
     padding: 10px; 
     background-color: #2F5233; /* color palette: https://www.canva.com/colors/color-palettes/green-blaze/*/
-    color: #333;
 }
 
-.header :hover{
-    transition: color 0.2s;
-    color: #B1D8B7;
-}
-
-.indexheader li{
+.indexheaderliste li{
     list-style-type: none;
     text-align: center;
 }
 
-/* nav */
-.nav ul {
+/* index nav */
+.indexnav ul {
     list-style: none;
     display: flex;
     justify-content: center;
 
   }
   
-  .nav ul li {
+  .indexnav ul li {
     margin-right: 5%;
   }
   
   /* fjernet understreking */
-  .nav a {
+  .indexnav a {
     text-decoration: none;
     font-weight: bold;
-    color: #333;
+    color: white;
     padding: 10px;
   }
   
   /* Endre fargen på lenkene */
-  .nav a:hover {
-
-   color: #7ab458;
-    color: #7ab458;
+  .indexnav a:hover {
+   color: #B1D8B7;
   }
 
 .homepage{
