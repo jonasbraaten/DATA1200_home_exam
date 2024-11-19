@@ -27,13 +27,11 @@
 .indexheader li{
     list-style-type: none;
     text-align: center;
-    overflow: hidden;
 }
 /* nav */
 .nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
   }
   
   .nav ul li {
@@ -50,7 +48,7 @@
   
   /* Endre fargen på lenkene */
   .nav a:hover {
-    color: #7ab458;
+   color: #7ab458;
   }
 
 .homepage{
@@ -396,88 +394,48 @@
 }
 
 /* Footer indexoppsett*/
-
-*{
-    text-decoration: none;
-}
 .footer {
     padding: 10px; 
     background-color: #2F5233;
     color: white;;
 }
 
-.footer :hover{
+/* Liste midt på footer*/
+.footer :hover{ /* Endrer fargen til linkene når man drar over*/
     transition: color 0.1s;
     color: #B1D8B7;
-
-}
-.list{
-    list-style-type: none;
 }
 
+/* */
 .footer-list li:hover {   /* https://www.w3schools.com/cssref/sel_hover.php#gsc.tab=0*/
     transform: scale(1.05);
 }
 
-.row {
-    content: "";
-    display: table;
-    clear: both;
-}
-/* Column flyter ved siden av hverandre */
-.column {
-    float: left;
-    padding: 20px;
-}
-
-.section1{ /*https://www.w3schools.com/css/css_border.asp*/
-    border: 2px solid;
-    width: auto; 
-    height: auto; 
-} 
-
-.første-setning{
-    padding: 5px;
-}
-.første-link{
-    padding: 5px;
-}
-
-.footer-list{ /* https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_unordered_none */
+li{
     list-style-type: none;
 }
-
-.social.list{
-    list-style-type: none;
-}
-
-.footer-list li:hover {   /* https://www.w3schools.com/cssref/sel_hover.php#gsc.tab=0*/
-    transform: scale(1.05);
+ 
+.footer-list li:hover {   /* Gjør linkene større, og endfer fsrge når man holder over*/
+    transform: scale(1.05); /* https://www.w3schools.com/cssref/sel_hover.php#gsc.tab=0*/
     transition: color 0.2s;
     color: #B1D8B7;
 }
+a{ /* Gjør linkene hvit */
+    color:white;
+}
 
+/* Column flyter ved siden av hverandre */
 .row {
     content: "";
     display: table;
     clear: both;
 }
-/* Column flyter ved siden av hverandre */
 .column {
     float: left;
     padding: 20px;
 }
-.column.side{
-    font-weight: bold;
-}
-.list :hover{
-    color: #B1D8B7
-  /* https://www.w3schools.com/cssref/sel_hover.php#gsc.tab=0*/
-}
-a{
-    color:white;
-}
 
+/* Sosiale medier*/
  a:hover{
     text-decoration: underline;  
 }
