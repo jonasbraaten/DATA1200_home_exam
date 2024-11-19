@@ -50,7 +50,6 @@
 }
 
 .indexnav img {
-    weight: auto;
     height: auto;
 }
 
@@ -137,8 +136,6 @@
     font-size: 0.95em;
 }
 
-
-
 /* index-id siden under her*/
 .mainbody{
     font-family: Arial, Helvetica, sans-serif;
@@ -146,6 +143,7 @@
     color:#333;
     background-color: #f4f4f4;
     padding: 0%;
+}
 
 .indexhovedbilde img { /*hovedbilde på toppen av index*/
     width: 100rem;
@@ -155,28 +153,42 @@
 /*Studieinfo*/
 .info-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Fire kolonner som fordeles jevnt */
-    gap: 1rem; /* Avstand mellom kolonner og rader */
-    margin: 2rem; /* Margin rundt hele seksjonen */
-    padding: 1rem; /* Innvendig polstring */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem; 
+    margin: 2rem; 
+    padding: 1rem; 
   }
   
   .info-item {
-    text-align: center; /* Sentraliserer tekst i hver kolonne */
-    border-top: 1px solid #ccc; /* Legger en linje under hvert element */
-    padding-top: 1rem; /* Legger avstand mellom innhold og linje */
+    text-align: center; 
+    border-top: 0.0625rem solid #ccc;
+    padding-top: 1rem; 
   }
   
   .info-item h3 {
-    margin: 0.5rem 0; /* Avstand over og under overskriften */
+    margin: 0.5rem 0; 
     font-weight: bold;
-    font-size: 1.5em;
-    margin-bottom: 5px;
+    font-size: 1.65em;
+    margin-bottom: 0.3125rem;
 }
 
 .info-detail {
-    font-size: 1.1em;
+    font-size: 1.48em;
 }
+
+/*Responsive design for mindere skjermer på studieinfo*/
+
+@media (max-width: 48em){
+    .info-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+ }
+
+ @media (max-width: 30em){
+    .info-container{
+        grid-template-columns: 1fr;
+    }
+ }
 
 /* Container for alle accordion-boksene */
 .accordion-content {
@@ -218,20 +230,6 @@ padding: 1em;
     display: block;
 }
 
-
-/*Responsive design for mindere skjermer på studieinfo*/
-
- @media (max-width: 768px){
-    .info-container{
-        grid-template-columns: repeat(2, 1fr);
-    }
- }
-
- @media (max-width: 480px){
-    .info-container{
-        grid-template-columns: 1fr;
-    }
- }
 
 /* Overskrift*/
 .heading {  
@@ -279,10 +277,10 @@ padding: 1em;
 
 
 /* Faglig leder - overskrift */
-.faglig-leder {
+.faglig-leder h2 {
     text-align: center;
     font-size: 2rem;
-    color: #000;
+    color: #1f4118;
     margin-bottom: 1rem;
     margin-top: 2rem;
 } 
@@ -292,11 +290,11 @@ padding: 1em;
     display: flex;
     align-items: center;
     padding: 1.5rem;
-    border: 1px solid #ddd;
+    border: 0.0625rem solid #ddd;
     border-radius: 0.5rem;
     margin:  0 auto 2rem;
-    max-width: 70rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 65rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
     background-color: #fff;
 }
 
@@ -311,7 +309,7 @@ padding: 1em;
 /* Profildetaljer */
 .profildetaljer h2 {
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     color: #333;
 }
 
@@ -327,7 +325,7 @@ padding: 1em;
 .profildetaljer p {
     margin: 0.5rem 0;
     color: #333;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
 }
 
 .profildetaljer p a {
@@ -343,13 +341,13 @@ padding: 1em;
 .interessert-disse {
     text-align: center;
     margin: 0 auto;
-    max-width: 70rem;
+    max-width: 65rem;
 }
 
 .interessert-disse h2 {
     font-size: 2rem;
     margin-bottom: 1.5rem;
-    color: #000;
+    color: #1f4118;
 }
 
 .interessert-disse ul {
@@ -361,19 +359,19 @@ padding: 1em;
 .interessert-disse li {
     text-align: left;
     padding: 1rem;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 0.0625rem solid #ddd;
 }
 
 .interessert-disse li strong {
     display: block;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     margin-bottom: 0.5rem;
     color: #000;
 }
 
 .interessert-disse li p {
     margin: 0;
-    font-size: 1.15rem;
+    font-size: 1.2rem;
     color: #333;
 }
 
@@ -485,9 +483,7 @@ padding: 1em;
 .footerh2 a{
     color:white;
 }
-.footerh2{
-    
-}
+
 a:hover{
     text-decoration: underline;  
 }
@@ -895,4 +891,60 @@ a.aktivitetslink { /*styler lenkene på aktivitets-siden*/
     transform: rotate(-90deg) translate(-50%);
     width: max-content; 
 }
+
+.github body {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    font-size: 1.5rem;
+}
+
+.github h1 {
+    background-color: #154117;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.25rem;
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.github main {
+    padding: 1.25rem; 
+    margin: 1.25rem auto; 
+    max-width: 62.5rem; 
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.github section {
+    margin-bottom: 1.25rem; 
+}
+
+.github h2 {
+    color: #154117; 
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid #154117;
+    padding-bottom: 0.5rem;
+}
+
+.github p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+}
+
+.github ul {
+    list-style-type: circle;
+    margin-left: 1.25rem; 
+}
+
+.github ul li {
+    font-size: 1rem; 
+    margin-bottom: 0.5rem;
+    padding: 1%;
+    list-style-type: disc;
+}
+>>>>>>> f767e1e4f4658e273edae79004cffb7eb1035ff5
 }
