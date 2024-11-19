@@ -767,51 +767,74 @@ a.aktivitetslink { /*styler lenkene på aktivitets-siden*/
 
 /* ====> ACCESSIBILITY SIDEN UNDER <==== */
 
-/*navigasjon - accessibility*/
-.accessibilitynav ul {
-    list-style-type: none;
+.accessibilitybody {
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #06061f;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
 }
 
-.accessibilitynav li {
-    float: left;
-    margin: 1rem;
+.accessibilityheader {
+    width: 100%;
+    height: 100vh;
+    background:#b24183;
+    padding-left: 12%;
+    padding-right: 7%;
+    position: relative;
 }
 
-/* Kilde: https://developer.mozilla.org/en-US/docs/Web/CSS/clamp() */
-.accessibilitynav li a {
-    display: block;
-    color: #f4f4f4;
-    font-weight: bold;
-    text-align: center;
-    padding: 0rem 0.5rem;
+.accessibilitynav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 0 1.5rem;
+    border-bottom: 0.1rem solid #ffffff;
 }
 
-.accessibilitynav li a:hover { /* fargen bak teksten i menuen når man manuvrerer*/
-    background-color: #92b5d8;
-    color:#000000;
-    border-radius: 1rem; /*gjør at kantene på hover blir avrundet*/
-    transition: background-color 0.3s, border-radius 0.3s; /*fade-in hovering*/
+.accessibilitynav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.accessibilitynav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+}
+
+.accessibilitynav ul li a:hover {
+    background-color: #000000;
+    padding: 0rem;
+    margin: 0;
     text-decoration: none;
 }
 
-/*Main body - accessibility*/
-.accessibilitymain {
-    margin: 2rem;
+.accessSideNav { /*linje på siden av skjermen for det visuelle*/
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 5%;
+    height: 100vh;
+    padding: 2rem 0 1rem;
+    background: linear-gradient(#a30000, #ea8d3c, #fff980, #a30000); /* fargene på gradient*/
+    background-size: 100% 500%;
+    background-position: 0 40%;
 }
 
-/* Fonter og text*/
-.accessibilityinfo h1 {
-    font-size: 3rem;
-    color: rgb(137, 17, 17);
+.accessSideNav h1 { /*teksten inni sidenav m/tekst rotert*/
+    font-size: 2rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    transform-origin: left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: rotate(-90deg) translate(-50%);
+    width: max-content; 
 }
 
-.accessibilityinfo h2 {
-    font-size: 2.5rem;
-    color:#1f4118;
-}
+
 
