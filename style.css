@@ -12,7 +12,6 @@
 /* ==== INDEX-SIDEN ==== */
 
 /* index siden under*/
-<<<<<<< HEAD
 /* Header */
 .header{
     padding: 10px; 
@@ -29,17 +28,13 @@
     list-style-type: none;
     text-align: center;
 }
-=======
 
->>>>>>> a65e5dfd1cb3898da2d8bb74158eb9e4a7985b28
 /* nav */
 .nav ul {
     list-style: none;
     display: flex;
-<<<<<<< HEAD
-=======
     justify-content: center;
->>>>>>> a65e5dfd1cb3898da2d8bb74158eb9e4a7985b28
+
   }
   
   .nav ul li {
@@ -56,11 +51,9 @@
   
   /* Endre fargen på lenkene */
   .nav a:hover {
-<<<<<<< HEAD
+
    color: #7ab458;
-=======
     color: #7ab458;
->>>>>>> a65e5dfd1cb3898da2d8bb74158eb9e4a7985b28
   }
 
 .homepage{
@@ -417,7 +410,6 @@
     color: white;;
 }
 
-<<<<<<< HEAD
 /* Liste midt på footer*/
 .footer :hover{ /* Endrer fargen til linkene når man drar over*/
     transition: color 0.1s;
@@ -443,7 +435,6 @@ a{ /* Gjør linkene hvit */
 }
 
 /* Column flyter ved siden av hverandre */
-=======
 *{ 
     text-decoration: none;
 }
@@ -461,26 +452,23 @@ a{ /* Gjør linkene hvit */
     transform: scale(1.05);
 }
 
->>>>>>> a65e5dfd1cb3898da2d8bb74158eb9e4a7985b28
 .row {
     content: "";
     display: table;
     clear: both;
 }
-<<<<<<< HEAD
-=======
+
 /* Column flyter ved siden av hverandre */
->>>>>>> a65e5dfd1cb3898da2d8bb74158eb9e4a7985b28
 .column {
     float: left;
     padding: 20px;
 }
 
-<<<<<<< HEAD
 /* Sosiale medier*/
- a:hover{
+a:hover{
     text-decoration: underline;  
-=======
+}
+
 .section1{ /*https://www.w3schools.com/css/css_border.asp*/
     border: 2px solid #333;
     width: auto; /* Angi bredde */
@@ -522,7 +510,7 @@ a{ /* Gjør linkene hvit */
 .list :hover{
     transform: scale(1.05)
   /* https://www.w3schools.com/cssref/sel_hover.php#gsc.tab=0*/
->>>>>>> a65e5dfd1cb3898da2d8bb74158eb9e4a7985b28
+  
 }
 a{
     color: #333;
