@@ -452,46 +452,13 @@ a{ /* Gjør linkene hvit */
     transform: scale(1.05);
 }
 
-.row {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Column flyter ved siden av hverandre */
-.column {
-    float: left;
-    padding: 20px;
-}
-
 /* Sosiale medier*/
 a:hover{
     text-decoration: underline;  
 }
 
-.section1{ /*https://www.w3schools.com/css/css_border.asp*/
-    border: 2px solid #333;
-    width: auto; /* Angi bredde */
-    height: auto; 
-}
-
-.første-setning{
-    padding: 5px;
-}
-.første-link{
-    padding: 5px;
-}
-
-.footer-list{ /* https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_unordered_none */
-    list-style-type: none;
-}
-
 .social.list{
     list-style-type: none;
-}
-
-.footer-list li:hover {   /* https://www.w3schools.com/cssref/sel_hover.php#gsc.tab=0*/
-    transform: scale(1.05);
 }
 
 .row {
