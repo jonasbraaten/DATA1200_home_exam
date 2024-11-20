@@ -224,6 +224,28 @@ padding: 1em;
     display: block;
 }
 
+
+<<<<<<< Informarmasjonsbokser
+/*hjelp*/
+.informasjonsbokser{
+    padding: ; 
+}
+=======
+/*Responsive design for mindere skjermer på studieinfo*/
+
+@media (max-width: 48em){
+    .info-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+ }
+
+ @media (max-width: 30em){
+    .info-container{
+        grid-template-columns: 1fr;
+    }
+ }
+>>>>>>> Main
+
 /*Studiets oppbygging formatering*/
 
 .studieår h3{
