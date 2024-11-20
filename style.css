@@ -182,19 +182,6 @@
     font-size: 1.48em;
 }
 
-/*Responsive design for mindere skjermer på studieinfo*/
-
-@media (max-width: 48em){
-    .info-container{
-        grid-template-columns: repeat(2, 1fr);
-    }
- }
-
- @media (max-width: 30em){
-    .info-container{
-        grid-template-columns: 1fr;
-    }
- }
 
 /* Container for alle accordion-boksene */
 .accordion-content {
@@ -207,9 +194,10 @@ padding: 1em;
     border-radius: 1rem;
 }
 
-/* Styling for overskriftene */
+/* Styling for .accordion-overskrift*/
 .accordion-overskrift {
     display: block;
+    text-align: center;
     padding: 1em;
     background-color: #2F5233;
     color: #76B947;
@@ -221,19 +209,58 @@ padding: 1em;
     box-shadow: 0.5rem 0.5rem 0.8rem rgba(2, 77, 20, 0.25);
 }
 
-/* Hover-effekt på overskriftene */
+/* Hover-effekt på accordion overskriftene */
 .accordion-overskrift:hover {
     background-color: #B1D8B7;
 }
 
-/* Skjuler radioknappene */
+/* Skjuler accordion radioknappene */
 .accordion-radio {
     display: none;
 }
 
-/* Viser innholdet når radioknappen blir trykt på */
+/* Viser innholdet når accordion radioknappen blir trykt på */
 .accordion-radio:checked + .accordion-overskrift + .accordion-content {
     display: block;
+}
+
+/*Studiets oppbygging formatering*/
+
+.studieår h3{
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.semester {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    column-gap: 40px; /* Mellomrom mellom kolonnene */
+    break-inside: avoid; 
+    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+}
+
+.course{
+    display: grid;
+    gap: 20px;
+    font-size: 1em;
+    margin-bottom: 5px;
+    color: #06580a; /* Hyperlink blåfarge for teksten */
+    column-gap: 40px; /* Mellomrom mellom kolonnene */
+    break-inside: avoid; 
+    /*grid-template-columns: repeat(4, 1fr);*/
+    border-style: solid;
+    border-color: #000;
+}
+
+.emnekode{
+    border-top: 2px solid #000;
+    padding-top: 10px;
+}
+
+.poeng{
+    margin: 2px 0;
+    font-size: 0.9em;
 }
 
 
