@@ -149,11 +149,13 @@ padding: 1em;
     font-size: 1em;
     margin: 1rem; /*lage kun for p??*/
     border-radius: 1rem;
+    text-align: center;
 }
 
 /* Styling for .accordion-overskrift*/
 .accordion-overskrift {
     display: block;
+    text-align: center;
     padding: 1em;
     background-color: #147f12;
     color: #b7ec9e;
