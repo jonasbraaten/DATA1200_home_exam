@@ -476,30 +476,56 @@ padding: 1em;
 
 /* Footer indexoppsett*/
 .indexfooter {
-    padding: 10px; 
+    padding: 1rem; 
     background-color: #2F5233;
     color: white;
+    font-size: 1.3rem;
 }
-.column.middle a{ /* Gjør linkene hvit */
-    color:white;
-}
-.column.side a{
-    color:white;
-}
-.footerh2 a{
-    color:white;
-}
-
-a:hover{
-    text-decoration: underline;  
-}
-li{
-    list-style-type: none;
+.footer-innhold {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
 }
 
+.indexfooterh2 a{ /* gjør abonner linken hvit*/
+    color:white;
+    font-weight:bold;
+    padding: 0.2rem;
+}
+.indexfooterh2 a:hover{
+    background-color: #a2cca0;
+    color:#000000;
+    border-radius: 3rem; /*gjør at kantene på hover blir avrundet*/
+    text-decoration: none;
+}
 
-/* Liste midt på footer*/
-.indexfooter li :hover{ /* Endrer fargen til linkene når man drar over*/
+/* Venstre siden av footer*/
+.footer-left a{
+    color:white;
+    font-weight:bold;
+}
+
+.footer-left h3{
+    font-size: 18px;
+    margin:0;
+}
+.footer-left p{
+    margin: 5px 0;
+}
+
+
+/* Footer midten */
+.footer-middle a{ /* Gjør linkene hvit */
+    color:white;
+    font-weight: bold;
+}
+.footer-middle{
+    margin: 5px 0;
+}
+.indexfooter-list li :hover{ /* Endrer fargen til linkene når man drar over*/
     transition: color 0.1s;
     color: #B1D8B7;
 }
@@ -508,29 +534,31 @@ li{
     transition: color 0.2s; 
 }
 
-/* Sosiale medier*/
-.indexsocial.list{
+
+/* Sosiale medier liste, høyre side av footer */
+.indexsocial-list a{
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+.indexsocial-list a:hover{
+    background-color: #a2cca0;
+    color:#000000;
+    border-radius: 3rem; /*gjør at kantene på hover blir avrundet*/
+    text-decoration: none;
+}
+.footer-right .indexsocial.list{
+    display: inline;
+}
+
+
+a:hover{ /* Understrek under linkene når man holder over (alle på siden)*/
+    text-decoration: underline;  
+}
+li{ /* Alle listene kommer uten punkter*/
     list-style-type: none;
 }
 
-.row {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Column flyter ved siden av hverandre */
-.column {
-    float: left;
-    padding: 20px;
-}
-.column.side{
-    font-weight: bold;
-}
-
- a:hover{
-    text-decoration: underline;  
-}
 
 
 /* ----> AKTIVITETS-SIDEN <---- */
