@@ -225,12 +225,12 @@ padding: 1em;
 }
 
 
-<<<<<<< Informarmasjonsbokser
+
 /*hjelp*/
 .informasjonsbokser{
     padding: ; 
 }
-=======
+
 /*Responsive design for mindere skjermer på studieinfo*/
 
 @media (max-width: 48em){
@@ -244,7 +244,7 @@ padding: 1em;
         grid-template-columns: 1fr;
     }
  }
->>>>>>> Main
+ Main
 
 /*Studiets oppbygging formatering*/
 
