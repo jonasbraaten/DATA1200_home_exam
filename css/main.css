@@ -183,6 +183,29 @@
     font-size: 1.2em;
 }
 
+<<<<<<< Updated upstream:css/main.css
+=======
+/* Hover-effekt på accordion overskriftene */
+.accordion-overskrift:hover {
+    background-color: #B1D8B7;
+}
+
+/* Skjuler accordion radioknappene */
+.accordion-radio {
+    display: none;
+}
+
+/* Viser innholdet når accordion radioknappen blir trykt på */
+.accordion-radio:checked + .accordion-overskrift + .accordion-content {
+    display: block;
+}
+
+
+/*hjelp*/
+.informasjonsbokser{
+    padding: ; 
+}
+>>>>>>> Stashed changes:style.css
 /*Responsive design for mindere skjermer på studieinfo*/
 
 @media (max-width: 48em){
