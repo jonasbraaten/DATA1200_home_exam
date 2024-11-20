@@ -182,6 +182,55 @@
     font-size: 1.48em;
 }
 
+
+/* Container for alle accordion-boksene */
+.accordion-content {
+padding: 1em;
+    display: none; /* Start skjult */
+    border-top: 0.1em solid #ccc;
+    background-color: #f9f9f9;
+    font-size: 1em;
+    margin: 1rem; /*lage kun for p??*/
+    border-radius: 1rem;
+}
+
+/* Styling for .accordion-overskrift*/
+.accordion-overskrift {
+    display: block;
+    text-align: center;
+    padding: 1em;
+    background-color: #2F5233;
+    color: #76B947;
+    font-weight: bold;
+    cursor: pointer;
+    border-bottom: 0.1em solid #ccc;
+    font-size: 1.2em;
+    border-radius: 2rem;
+    box-shadow: 0.5rem 0.5rem 0.8rem rgba(2, 77, 20, 0.25);
+}
+
+/* Hover-effekt på accordion overskriftene */
+.accordion-overskrift:hover {
+    background-color: #B1D8B7;
+}
+
+/* Skjuler accordion radioknappene */
+.accordion-radio {
+    display: none;
+}
+
+/* Viser innholdet når accordion radioknappen blir trykt på */
+.accordion-radio:checked + .accordion-overskrift + .accordion-content {
+    display: block;
+}
+
+
+<<<<<<< Informarmasjonsbokser
+/*hjelp*/
+.informasjonsbokser{
+    padding: ; 
+}
+=======
 /*Responsive design for mindere skjermer på studieinfo*/
 
 @media (max-width: 48em){
@@ -195,45 +244,45 @@
         grid-template-columns: 1fr;
     }
  }
+>>>>>>> Main
 
-/* Container for alle accordion-boksene */
-.accordion-content {
-padding: 1em;
-    display: none; /* Start skjult */
-    border-top: 0.1em solid #ccc;
-    background-color: #f9f9f9;
-    font-size: 1em;
-    margin: 1rem; /*lage kun for p??*/
-    border-radius: 1rem;
+/*Studiets oppbygging formatering*/
+
+.studieår h3{
+    font-size: 1.5em;
+    margin-bottom: 20px;
 }
 
-/* Styling for overskriftene */
-.accordion-overskrift {
-    display: block;
-    padding: 1em;
-    background-color: #2F5233;
-    color: #76B947;
-    font-weight: bold;
-    cursor: pointer;
-    border-bottom: 0.1em solid #ccc;
+.semester {
     font-size: 1.2em;
-    border-radius: 2rem;
-    box-shadow: 0.5rem 0.5rem 0.8rem rgba(2, 77, 20, 0.25);
+    margin-bottom: 10px;
+    column-gap: 40px; /* Mellomrom mellom kolonnene */
+    break-inside: avoid; 
+    grid-template-columns: repeat(4, 1fr);
+    display: flex;
 }
 
-/* Hover-effekt på overskriftene */
-.accordion-overskrift:hover {
-    background-color: #B1D8B7;
+.course{
+    display: grid;
+    gap: 20px;
+    font-size: 1em;
+    margin-bottom: 5px;
+    color: #06580a; /* Hyperlink blåfarge for teksten */
+    column-gap: 40px; /* Mellomrom mellom kolonnene */
+    break-inside: avoid; 
+    /*grid-template-columns: repeat(4, 1fr);*/
+    border-style: solid;
+    border-color: #000;
 }
 
-/* Skjuler radioknappene */
-.accordion-radio {
-    display: none;
+.emnekode{
+    border-top: 2px solid #000;
+    padding-top: 10px;
 }
 
-/* Viser innholdet når radioknappen blir trykt på */
-.accordion-radio:checked + .accordion-overskrift + .accordion-content {
-    display: block;
+.poeng{
+    margin: 2px 0;
+    font-size: 0.9em;
 }
 
 
