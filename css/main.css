@@ -183,8 +183,6 @@
     font-size: 1.2em;
 }
 
-<<<<<<< Updated upstream:css/main.css
-=======
 /* Hover-effekt på accordion overskriftene */
 .accordion-overskrift:hover {
     background-color: #B1D8B7;
@@ -205,7 +203,6 @@
 .informasjonsbokser{
     padding: ; 
 }
->>>>>>> Stashed changes:style.css
 /*Responsive design for mindere skjermer på studieinfo*/
 
 @media (max-width: 48em){
