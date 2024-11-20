@@ -19,7 +19,7 @@
 
 .indexheaderliste li{
     list-style-type: none;
-    text-align:right;
+    text-align: right;
 }
 
 /* index nav */
@@ -50,6 +50,41 @@
     text-decoration: none;
 }
 
+.indexnav img {
+    height: auto;
+}
+
+.navigation-search {
+    position:absolute;
+    top: 1rem;
+    right: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.navigation-search input {
+    width: 10rem;
+    padding: 0.2rem;
+    border: 0.2rem solid #000000;
+    font-size: 0.8rem;
+    outline: none;
+}
+
+.navigation-search button {
+    background-color: #000;
+    color:white;
+    border: none;
+    padding: 0.4rem;
+    cursor: pointer;
+}
+
+.navigation-search button:hover {
+    background-color: #a2cca0;
+    color: #000;
+}
+
+
+/* Main av index starter her*/
 .indexmain{
     font-family: Arial, Helvetica, sans-serif;
     color:#333;
@@ -57,19 +92,23 @@
     padding: 2%;
 }
 
-.indexmainbody h1{ /*første overskrift over hovedbildet*/
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: left;
-    font-size: 3rem;
-    color: #1f4118;
-    padding-left: 3rem;
-    margin: 1rem;
-    display: inline;
-}
-
 .indexhovedbilde img { /*hovedbilde på toppen av index*/
+    position: relative;
     width: 100rem;
     max-width: 100%;
+}
+
+.indexmainbody h1{ /*første overskrift over hovedbildet*/
+    position: absolute;
+    top: 50%;
+    left: 1%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-size: 2rem;
+    color: #ffffff;
+    padding-left: 1rem;
+    margin: 1rem;
+    display: inline;
 }
 
 /*Studiinformasjon*/
@@ -98,8 +137,6 @@
     font-size: 0.95em;
 }
 
-
-
 /* index-id siden under her*/
 .mainbody{
     font-family: Arial, Helvetica, sans-serif;
@@ -109,36 +146,42 @@
     padding: 0%;
 }
 
+.indexhovedbilde img { /*hovedbilde på toppen av index*/
+    width: 100rem;
+    max-width: 100%;
+}
+
 /*Studieinfo*/
 .info-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); 
-    gap: 20px; 
-    max-width: 800px;
-    margin: 10px;
-    padding-top: 20px;
-}
-
-.info-section {
-    list-style: none;
-    border-top: 1px solid #333; 
-    padding-top: 10px;
-}
-
-.info-title {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem; 
+    margin: 2rem; 
+    padding: 1rem; 
+  }
+  
+  .info-item {
+    text-align: center; 
+    border-top: 0.0625rem solid #ccc;
+    padding-top: 1rem; 
+  }
+  
+  .info-item h3 {
+    margin: 0.5rem 0; 
+    font-weight: bold;
+    font-size: 1.65em;
+    margin-bottom: 0.3125rem;
+    margin: 0.5rem 0; /* Avstand over og under overskriften */
+    font-size: 1.5em;
     font-weight: bold;
     font-size: 1.1em;
     margin-bottom: 5px;
 }
 
 .info-detail {
-    font-size: 0.95em;
+    font-size: 1.48em;
 }
 
-/*hjelp*/
-.informasjonsbokser{
-    padding: ; 
-}
 
 /* Container for alle accordion-boksene */
 .accordion-content {
@@ -156,8 +199,8 @@ padding: 1em;
     display: block;
     text-align: center;
     padding: 1em;
-    background-color: #147f12;
-    color: #b7ec9e;
+    background-color: #2F5233;
+    color: #76B947;
     font-weight: bold;
     cursor: pointer;
     border-bottom: 0.1em solid #ccc;
@@ -168,7 +211,7 @@ padding: 1em;
 
 /* Hover-effekt på accordion overskriftene */
 .accordion-overskrift:hover {
-    background-color: #0b5a13;
+    background-color: #B1D8B7;
 }
 
 /* Skjuler accordion radioknappene */
@@ -221,20 +264,6 @@ padding: 1em;
 }
 
 
-/*Responsive design for mindere skjermer*/
-
- @media (max-width: 768px){
-    .info-container{
-        grid-template-columns: repeat(2, 1fr);
-    }
- }
-
- @media (max-width: 480px){
-    .info-container{
-        grid-template-columns: 1fr;
-    }
- }
-
 /* Overskrift*/
 .heading {  
     text-align: center;
@@ -280,109 +309,112 @@ padding: 1em;
   }
 
 
-/* Faglig-leder overskrift */
-.faglig-leder {
+/* Faglig leder - overskrift */
+.faglig-leder h2 {
     text-align: center;
-    color: #333;
-    margin-bottom: 1.25rem; 
-    margin-top: 1rem;
-}
+    font-size: 2rem;
+    color: #1f4118;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+} 
 
-/* Innramming på faglig-leder info */
+/* Profilkort */
 .profilkort {
     display: flex;
     align-items: center;
-    justify-content: center; /* Sentrerer innholdet horisontalt */
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-    padding: 1.25rem;
-    margin: 0.5rem auto; /* Gir jevn margin */
-    max-width: 800px; /* Setter en maks bredde for innholdet */
-    box-sizing: border-box; /* Sikrer at padding ikke overskrider bredde */
+    padding: 1.5rem;
+    border: 0.0625rem solid #ddd;
+    border-radius: 0.5rem;
+    margin:  0 auto 2rem;
+    max-width: 65rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+    background-color: #fff;
 }
 
 /* Profilbilde */
 .profilbilde {
-    width: 7rem; /* Endret til konsistent enhet */
+    width: 7rem;
     height: 9rem;
-    margin-right: 1rem; /* Litt mindre avstand for bedre sentrering */
+    object-fit: cover;
+    margin-right: 1.5rem;
 }
 
 /* Profildetaljer */
 .profildetaljer h2 {
-    font-size: 1.2em;
     margin: 0;
+    font-size: 1.6rem;
     color: #333;
+}
+
+.profildetaljer h2 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.profildetaljer h2 a:hover {
+    text-decoration: underline;
 }
 
 .profildetaljer p {
-    margin: 0.5rem 0; /* Jevnere avstand mellom linjer */
+    margin: 0.5rem 0;
     color: #333;
+    font-size: 1.4rem;
 }
 
-.profildetaljer a {
+.profildetaljer p a {
     color: #333;
     text-decoration: none;
 }
 
-.profildetaljer a:hover {
-    text-decoration: underline; /* Gir tydeligere hover-effekt */
-    
+.profildetaljer p a:hover {
+    text-decoration: underline;
 }
 
-
-/* Du er kanskje også interessert i disse -> overskrift */
+/* Interessert-disse seksjonen */
 .interessert-disse {
-    text-align: center; 
-    max-width: 800px; /* Begrens bredde for bedre layout */
-    margin: 0 auto; /* Sentrer containeren */
-    padding: 20px; /* Legg til padding for litt luft rundt innholdet */
+    text-align: center;
+    margin: 0 auto;
+    max-width: 65rem;
 }
 
 .interessert-disse h2 {
-    display: inline-block; 
-    margin-top: 30px;
-    margin-bottom: 15px; 
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #1f4118;
 }
 
 .interessert-disse ul {
-    list-style-type: none; 
-    padding: 0; 
-    margin: 0 auto; /* Sentrer listen */
-    max-width: 600px; /* Begrens bredde på listen */
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .interessert-disse li {
-    display: flex; /* Bruk flexbox for å organisere elementer inni hver liste */
-    flex-direction: column; /* Organiser teksten i en vertikal retning */
-    align-items: center; /* Sentrer innholdet i hver liste */
-    text-align: left; 
-    padding: 15px 20px; 
-    border-bottom: 1px solid #ccc; 
+    text-align: left;
+    padding: 1rem;
+    border-bottom: 0.0625rem solid #ddd;
 }
 
 .interessert-disse li strong {
-    display: block; 
-    margin-bottom: 5px; 
-    text-align: center; /* Sentrer overskriften */
+    display: block;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    color: #000;
 }
 
 .interessert-disse li p {
-    margin: 0; 
-    text-align: center; /* Sentrer beskrivelsen */
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
 }
 
-.interessert-disse li a {
-    text-decoration: none; 
-    color: #333; 
-    font-size: 1em; 
-    text-align: center; /* Sentrer lenken */
+.interessert-disse li p a {
+    text-decoration: none;
+    color: #333;
 }
 
-.interessert-disse li a:hover {
-    color: #333; 
-    text-decoration: underline; 
-    transform: scale(1.05); /* Legg til en lett zoom-effekt */
+.interessert-disse li p a:hover {
+    text-decoration: underline;
 }
 
     
@@ -471,32 +503,56 @@ padding: 1em;
 
 /* Footer indexoppsett*/
 .indexfooter {
-    padding: 10px; 
+    padding: 1rem; 
     background-color: #2F5233;
     color: white;
+    font-size: 1.3rem;
 }
-.column.middle a{ /* Gjør linkene hvit */
+.footer-innhold {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.indexfooterh2 a{ /* gjør abonner linken hvit*/
     color:white;
+    font-weight:bold;
+    padding: 0.2rem;
 }
-.column.side a{
+.indexfooterh2 a:hover{
+    background-color: #a2cca0;
+    color:#000000;
+    border-radius: 3rem; /*gjør at kantene på hover blir avrundet*/
+    text-decoration: none;
+}
+
+/* Venstre siden av footer*/
+.footer-left a{
     color:white;
+    font-weight:bold;
 }
-.footerh2 a{
-    color:white;
+
+.footer-left h3{
+    font-size: 18px;
+    margin:0;
 }
-.footerh2{
-    
-}
-a:hover{
-    text-decoration: underline;  
-}
-li{
-    list-style-type: none;
+.footer-left p{
+    margin: 5px 0;
 }
 
 
-/* Liste midt på footer*/
-.indexfooter li :hover{ /* Endrer fargen til linkene når man drar over*/
+/* Footer midten */
+.footer-middle a{ /* Gjør linkene hvit */
+    color:white;
+    font-weight: bold;
+}
+.footer-middle{
+    margin: 5px 0;
+}
+.indexfooter-list li :hover{ /* Endrer fargen til linkene når man drar over*/
     transition: color 0.1s;
     color: #B1D8B7;
 }
@@ -505,29 +561,31 @@ li{
     transition: color 0.2s; 
 }
 
-/* Sosiale medier*/
-.indexsocial.list{
+
+/* Sosiale medier liste, høyre side av footer */
+.indexsocial-list a{
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+.indexsocial-list a:hover{
+    background-color: #a2cca0;
+    color:#000000;
+    border-radius: 3rem; /*gjør at kantene på hover blir avrundet*/
+    text-decoration: none;
+}
+.footer-right .indexsocial.list{
+    display: inline;
+}
+
+
+a:hover{ /* Understrek under linkene når man holder over (alle på siden)*/
+    text-decoration: underline;  
+}
+li{ /* Alle listene kommer uten punkter*/
     list-style-type: none;
 }
 
-.row {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Column flyter ved siden av hverandre */
-.column {
-    float: left;
-    padding: 20px;
-}
-.column.side{
-    font-weight: bold;
-}
-
- a:hover{
-    text-decoration: underline;  
-}
 
 
 /* ----> AKTIVITETS-SIDEN <---- */
@@ -895,5 +953,57 @@ a.aktivitetslink { /*styler lenkene på aktivitets-siden*/
     width: max-content; 
 }
 
+.github body {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    font-size: 1.5rem;
+}
 
+.github h1 {
+    background-color: #154117;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.25rem;
+    margin: 0;
+    font-size: 2.5em;
+}
 
+.github main {
+    padding: 1.25rem; 
+    margin: 1.25rem auto; 
+    max-width: 62.5rem; 
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.github section {
+    margin-bottom: 1.25rem; 
+}
+
+.github h2 {
+    color: #154117; 
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid #154117;
+    padding-bottom: 0.5rem;
+}
+
+.github p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+}
+
+.github ul {
+    list-style-type: circle;
+    margin-left: 1.25rem; 
+}
+
+.github ul li {
+    font-size: 1rem; 
+    margin-bottom: 0.5rem;
+    padding: 1%;
+    list-style-type: disc;
+}
