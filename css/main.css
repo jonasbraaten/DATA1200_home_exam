@@ -121,6 +121,11 @@
     padding-top: 1.25rem;
 }
 
+.info-container-overskrift {
+    font-size: 1.2rem;
+    padding-left: 2rem;
+}
+
 .info-section {
     list-style: none;
     border-top: 0.0625rem solid #333; 
@@ -219,7 +224,7 @@
 
 /* Container for alle accordion-boksene */
 .accordion-content {
-padding: 1em;
+    padding: 1em;
     display: none; /* Start skjult */
     border-top: 0.1em solid #ccc;
     background-color: #f9f9f9;
@@ -232,8 +237,8 @@ padding: 1em;
 .accordion-overskrift {
     display: block;
     padding: 1em;
-    background-color: #147f12;
-    color: #b7ec9e;
+    background-color: #2F5233;
+    color: white;
     font-weight: bold;
     cursor: pointer;
     border-bottom: 0.1em solid #ccc;
@@ -244,7 +249,7 @@ padding: 1em;
 
 /* Hover-effekt på overskriftene */
 .accordion-overskrift:hover {
-    background-color: #0b5a13;
+    background-color: #131a14;
 }
 
 /* Skjuler radioknappene */
