@@ -149,7 +149,6 @@ padding: 1em;
     font-size: 1em;
     margin: 1rem; /*lage kun for p??*/
     border-radius: 1rem;
-    text-align: center;
 }
 
 /* Styling for .accordion-overskrift*/
@@ -203,10 +202,12 @@ padding: 1em;
     gap: 20px;
     font-size: 1em;
     margin-bottom: 5px;
-    color: #0000FF; /* Hyperlink blåfarge for teksten */
+    color: #06580a; /* Hyperlink blåfarge for teksten */
     column-gap: 40px; /* Mellomrom mellom kolonnene */
     break-inside: avoid; 
-    grid-template-columns: repeat(4, 1fr);
+    /*grid-template-columns: repeat(4, 1fr);*/
+    border-style: solid;
+    border-color: #000;
 }
 
 .emnekode{
