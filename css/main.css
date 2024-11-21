@@ -159,6 +159,9 @@
     margin: 2rem; 
     padding: 1rem; 
   }
+  .info-container-overskrift{
+    text-align: center;
+  }
   
   .info-item {
     text-align: center; 
@@ -181,6 +184,16 @@
 .info-detail {
     font-size: 1.48em;
 }
+/**/
+.få-innsikt{
+    text-align: center;
+    padding: 2rem;
+    font-size: larger;
+    font-weight: bold;  
+}
+
+
+
 
 /* Hover-effekt på accordion overskriftene */
 .accordion-overskrift:hover {
