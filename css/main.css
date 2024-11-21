@@ -271,6 +271,7 @@ padding: 1em;
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
 }
 
+/* Emnegrupper*/
 .emnegruppe h4{
     display: flex;
     padding: 1rem;
