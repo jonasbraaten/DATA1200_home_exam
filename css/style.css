@@ -211,8 +211,8 @@ padding: 1em;
 .accordion-overskrift {
     display: block;
     padding: 1em;
-    background-color: #147f12;
-    color: #b7ec9e;
+    background-color: #2F5233;
+    color: #76B947;
     font-weight: bold;
     cursor: pointer;
     border-bottom: 0.1em solid #ccc;
@@ -223,7 +223,7 @@ padding: 1em;
 
 /* Hover-effekt på overskriftene */
 .accordion-overskrift:hover {
-    background-color: #0b5a13;
+    background-color: #B1D8B7;
 }
 
 /* Skjuler radioknappene */
@@ -281,6 +281,28 @@ padding: 1em;
     color: #333; 
     text-decoration: underline; 
   }
+
+
+/**/
+.indexstudiested{
+    padding: 1rem;
+    text-align: center;
+    font-size:larger;
+}
+.indexstudiested a{
+    color: #2F5233;
+    font-weight: bold;
+}
+
+.indexspm-om{
+    padding: 1rem;
+    text-align: center;
+    font-size:larger; 
+}
+.indexspm-om a{
+    font-weight: bold;
+    color: #2F5233;
+}
 
 
 /* Faglig leder - overskrift */
@@ -477,30 +499,55 @@ padding: 1em;
 
 /* Footer indexoppsett*/
 .indexfooter {
-    padding: 10px; 
+    padding: 1rem; 
     background-color: #2F5233;
     color: white;
+    font-size: 1.3rem;
 }
-.column.middle a{ /* Gjør linkene hvit */
-    color:white;
-}
-.column.side a{
-    color:white;
-}
-.footerh2 a{
-    color:white;
-}
-
-a:hover{
-    text-decoration: underline;  
-}
-li{
-    list-style-type: none;
+.row { /* de ulike delene av footer ligger ved siden av hverandre, ikke under */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+    flex-wrap: wrap;
 }
 
+.indexfooterh2 a{ /* gjør abonner linken hvit*/
+    color:white;
+    font-weight:bold;
+    padding: 0.2rem;
+}
+.indexfooterh2 a:hover{
+    background-color: #a2cca0;
+    color:#000000;
+    border-radius: 3rem; /*gjør at kantene på hover blir avrundet*/
+    text-decoration: none;
+}
 
-/* Liste midt på footer*/
-.indexfooter li :hover{ /* Endrer fargen til linkene når man drar over*/
+/* Venstre siden av footer*/
+.footer-left a{
+    color:white;
+    font-weight:bold;
+}
+
+.footer-left h3{
+    font-size: 0.2rem;
+    margin:0;
+}
+.footer-left p{
+    margin: 0.2rem;
+}
+
+
+/* Footer midten */
+.footer-middle a{ /* Gjør linkene hvit */
+    color:white;
+    font-weight: bold;
+}
+.footer-middle{
+    margin: 0.5rem;
+}
+.indexfooter-list li :hover{ /* Endrer fargen til linkene når man drar over*/
     transition: color 0.1s;
     color: #B1D8B7;
 }
@@ -508,31 +555,34 @@ li{
     transform: scale(1.05); /* https://www.w3schools.com/cssref/sel_hover.php#gsc.tab=0*/
     transition: color 0.2s; 
 }
-
-/* Sosiale medier*/
-.indexsocial.list{
-    list-style-type: none;
+.indexfooter-list li{
+    list-style-type: none
 }
 
-.row {
-    content: "";
-    display: table;
-    clear: both;
-}
 
-/* Column flyter ved siden av hverandre */
-.column {
-    float: left;
-    padding: 20px;
-}
-.column.side{
+/* Sosiale medier liste, høyre side av footer */
+.indexsocial-list a{
+    color: white;
     font-weight: bold;
+    padding: 0.5rem;
+}
+.indexsocial-list a:hover{
+    background-color: #a2cca0;
+    color:#000000;
+    border-radius: 3rem; /*gjør at kantene på hover blir avrundet*/
+    text-decoration: none;
+}
+.indexsocial-list li{
+    list-style-type: none
+}
+.footer-right .indexsocial.list{
+    display: inline;
 }
 
- a:hover{
+
+a:hover{ /* Understrek under linkene når man holder over (alle på siden)*/
     text-decoration: underline;  
 }
-
 
 /* ----> AKTIVITETS-SIDEN <---- */
 
