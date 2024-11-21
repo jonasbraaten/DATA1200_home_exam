@@ -503,35 +503,31 @@
 
 /*Flere studenthistorier*/
 .studenthistorier {
-    background-color: #ffe600; /* Gul bakgrunn */
-    padding: 1.5rem; /* Avstand rundt innholdet */
+    background-color: #154117;
+    padding: 1.5rem; 
     text-align: center;
-    border-radius: 0.5rem; /* Runde hjørner */
-    margin: 1rem 0; /* Avstand over og under */
+    border-radius: 0.5rem; 
+    margin: 5rem auto; 
+    max-width: 30rem ;
+    
 }
 
-.studenthistorierh2 {
-    margin: 0;
-    font-size: 2rem; /* Bruke rem istedenfor px */
+.studenthistorier-tekst h2 {
+    margin: 0.5rem 0;
+    font-size: 2.5rem; 
+    color:#147f12
+
 }
 
-.flex-container {
-    display: flex;
-    justify-content: center; /* Sentrere innhold i Flexbox */
-    margin-top: 1rem; /* Avstand over lenken */
+.studenthistorier-tekst h2 a {
+    text-decoration: none;
+    color:#c1e1c5;
+    font-size: 1.7rem;
 }
 
-.link {
-    background-color: #4CAF50; /* Grønn bakgrunn */
-    color: white;
-    padding: 1rem 2rem; /* Avstand på lenken */
-    border-radius: 0.5rem; /* Runde hjørner */
-    text-decoration: none; /* Fjerne understreking */
-    font-size: 1rem; /* Bruke rem istedenfor px */
-}
 
-.link:hover {
-    background-color: #45a049; /* Mørkere grønn ved hover */
+.studenthistorier:hover {
+    background-color: #2F5233; 
 }
 
 
