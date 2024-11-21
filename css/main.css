@@ -159,34 +159,6 @@
 }/*Hamburgermeny slutter her */
 
 
-
-
-/*Studiinformasjon*/
-.info-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); 
-    gap: 20px; 
-    max-width: 800px;
-    margin: 10;
-    padding-top: 20px;
-}
-
-.info-section {
-    list-style: none;
-    border-top: 1px solid #333; 
-    padding-top: 10px;
-}
-
-.info-title {
-    font-weight: bold;
-    font-size: 1.1em;
-    margin-bottom: 5px;
-}
-
-.info-detail {
-    font-size: 0.95em;
-}
-
 /* index-id siden under her*/
 
 .mainbody{
@@ -202,7 +174,6 @@
     max-width: 100%;
 }
 
-/*Studieinfo*/
 /*Studieinfo*/
 .info-sectio-overskrift h2{
     padding: 1rem;
@@ -226,7 +197,7 @@
   .info-item h3 {
     margin: 0.5rem 0; 
     font-weight: bold;
-    font-size: 1.6em;
+    font-size: 1.2em;
     
 }
 .info-detail {
@@ -659,7 +630,6 @@ padding: 1em;
 .studenthistorier:hover {
     background-color: #2F5233; 
 }
-
 
 /* Footer indexoppsett*/
 .indexfooter {
