@@ -1167,9 +1167,12 @@ a.aktivitetslink { /*styler lenkene på aktivitets-siden*/
 
 /* >==== GITHUB SIDE ====< */
 /* ======================< */
+.github{
+    background-image: linear-gradient(#ffbb00, #ff1b67, #ffbb00, #ff1b67, #ff8800, #ff1b67);
+}
+
 .github body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f4f4;
     color: #333;
     font-size: 1.5rem;
 }
