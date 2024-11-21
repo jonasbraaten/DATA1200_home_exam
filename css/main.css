@@ -228,8 +228,8 @@ padding: 1em;
 .accordion-overskrift {
     display: block;
     padding: 1em;
-    background-color: #147f12;
-    color: #b7ec9e;
+    background-color: #2F5233;
+    color: #B1D8B7;
     font-weight: bold;
     cursor: pointer;
     border-bottom: 0.1em solid #ccc;
@@ -240,7 +240,8 @@ padding: 1em;
 
 /* Hover-effekt på overskriftene */
 .accordion-overskrift:hover {
-    background-color: #0b5a13;
+    color: #2F5233;
+    background-color: #B1D8B7;
 }
 
 /* Skjuler radioknappene */
