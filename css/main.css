@@ -115,21 +115,16 @@
 .info-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
-    gap: 1.25px; 
-    max-width: 50rem;
-    margin: 0.625rem;
-    padding-top: 1.25rem;
-}
-
-.info-container-overskrift {
-    font-size: 1.2rem;
-    padding-left: 2rem;
+    gap: 20px; 
+    max-width: 800px;
+    margin: 10;
+    padding-top: 20px;
 }
 
 .info-section {
     list-style: none;
-    border-top: 0.0625rem solid #333; 
-    padding-top: 0.625rem;
+    border-top: 1px solid #333; 
+    padding-top: 10px;
 }
 
 .info-title {
@@ -157,20 +152,14 @@
 }
 
 /*Studieinfo*/
-.info-sectio-overskrift h2{
-    padding: 1rem;
-    font-weight: bold;
-    font-size: 1.6em;
-}
 .info-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem; 
-    max-width:95rem;
-    margin: 0 auto; 
+    margin: 2rem; 
     padding: 1rem; 
   }
-
+  
   .info-item {
     text-align: center; 
     border-top: 0.0625rem solid #ccc;
@@ -180,12 +169,17 @@
   .info-item h3 {
     margin: 0.5rem 0; 
     font-weight: bold;
-    font-size: 1.6em;
-    
+    font-size: 1.65em;
+    margin-bottom: 0.3125rem;
+    margin: 0.5rem 0; /* Avstand over og under overskriften */
+    font-size: 1.5em;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 5px;
 }
 
 .info-detail {
-    font-size: 1.2em;
+    font-size: 1.48em;
 }
 
 /* Hover-effekt på accordion overskriftene */
@@ -204,10 +198,7 @@
 }
 
 
-/*hjelp*/
-.informasjonsbokser{
-    padding: 2px; 
-}
+
 /*Responsive design for mindere skjermer på studieinfo*/
 
 @media (max-width: 48em){
@@ -237,8 +228,8 @@
 .accordion-overskrift {
     display: block;
     padding: 1em;
-    background-color: #2F5233;
-    color: white;
+    background-color: #147f12;
+    color: #b7ec9e;
     font-weight: bold;
     cursor: pointer;
     border-bottom: 0.1em solid #ccc;
@@ -249,7 +240,7 @@
 
 /* Hover-effekt på overskriftene */
 .accordion-overskrift:hover {
-    background-color: #131a14;
+    background-color: #0b5a13;
 }
 
 /* Skjuler radioknappene */
@@ -270,8 +261,72 @@
     margin-bottom: 20px;
 }
 
-/*Linne sin del*/
-/*Videre studiemuligjheter ved OsloMet (kajsa del) */
+/* Semester boksene */
+.semester {
+    background-color: #ffffff;
+    border: 0.0625rem solid #B1D8B7;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 1.25rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+}
+
+/* Emnegrupper*/
+.emnegruppe h4{
+    display: flex;
+    padding: 1rem;
+}
+
+/* Overskrift for semester */
+.semester h4 {
+    margin: 0 0 0.75rem 0;
+    font-size: 1.125rem;
+    color: #333;
+    border-bottom: 0.125rem solid #76B947;
+    display: inline-block;
+    padding-bottom: 0.25rem;
+}
+
+/* Kurs seksjoner */
+.course {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+    padding: 0.5rem;
+    background-color: #f8f9fa;
+    border-radius: 0.375rem;
+    border: 0.0625rem solid #ddd;
+}
+
+/* Kurs-lenker */
+.course a {
+    font-weight: bold;
+    color: #2F5233;
+    text-decoration: none;
+    flex: 1;
+    font-size: 1rem;
+}
+
+.course a:hover {
+    text-decoration: underline;
+}
+
+/* Emnekoden */
+.course .emnekode {
+    color: #666;
+    font-size: 0.875rem;
+    margin: 0 0.625rem;
+}
+
+/* Studieoeng */
+.course .poeng {
+    font-weight: bold;
+    color: #76B947;
+    font-size: 0.875rem;
+}
+
+/*Videre studiemuligjheter ved OsloMet*/
 .videre-studiemuligheter ul{
     list-style-type: none; 
     padding: 0; 
@@ -309,6 +364,36 @@
   }
 
 
+/*Studiested og Spørsmål om utdanningen?*/
+.studiested{
+    font-weight: bold;
+    text-align: center;
+    font-size: larger;
+    padding: 2rem;
+}
+.studiested a{
+   color: #2F5233; 
+}
+.studiested a:hover{
+    background-color:#2F5233;
+    color:white;
+    border-radius: 3rem; /*gjør at kantene på hover blir avrundet*/
+    text-decoration: none;
+    padding: 0.3rem;
+}
+
+.spørsmålomutdanning{
+    font-weight: bold;
+    text-align: center;
+    font-size: larger;
+    padding: 2rem;
+}
+
+.spørsmålomutdanning a{
+    color: #2F5233; 
+}
+
+
 /* Faglig leder - overskrift */
 .faglig-leder h2 {
     text-align: center;
@@ -318,7 +403,7 @@
     margin-top: 2rem;
 } 
 
-/* Profilkort av Kristoffer Herland Helton*/
+/* Profilkort */
 .profilkort {
     display: flex;
     align-items: center;
@@ -501,63 +586,57 @@
     }
 }
 
-/*Flere studenthistorier*/
-.studenthistorier {
-    background-color: #154117;
-    padding: 1.5rem; 
-    text-align: center;
-    border-radius: 0.5rem; 
-    margin: 5rem auto; 
-    max-width: 30rem ;
-    
-}
-
-.studenthistorier-tekst h2 {
-    margin: 0.5rem 0;
-    font-size: 2.5rem; 
-    color:#147f12
-
-}
-
-.studenthistorier-tekst h2 a {
-    text-decoration: none;
-    color:#c1e1c5;
-    font-size: 1.7rem;
-}
-
-
-.studenthistorier:hover {
-    background-color: #2F5233; 
-}
-
-
-
 /* Footer indexoppsett*/
 .indexfooter {
-    padding: 10px; 
+    padding: 1rem; 
     background-color: #2F5233;
     color: white;
+    font-size: 1.3rem;
 }
-.column.middle a{ /* Gjør linkene hvit */
-    color:white;
-}
-.column.side a{
-    color:white;
-}
-.footerh2 a{
-    color:white;
-}
-
-a:hover{
-    text-decoration: underline;  
-}
-li{
-    list-style-type: none;
+.footer-innhold {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
 }
 
+.indexfooterh2 a{ /* gjør abonner linken hvit*/
+    color:white;
+    font-weight:bold;
+    padding: 0.2rem;
+}
+.indexfooterh2 a:hover{
+    background-color: #a2cca0;
+    color:#000000;
+    border-radius: 3rem; /*gjør at kantene på hover blir avrundet*/
+    text-decoration: none;
+}
 
-/* Liste midt på footer*/
-.indexfooter li :hover{ /* Endrer fargen til linkene når man drar over*/
+/* Venstre siden av footer*/
+.footer-left a{
+    color:white;
+    font-weight:bold;
+}
+
+.footer-left h3{
+    font-size: 18px;
+    margin:0;
+}
+.footer-left p{
+    margin: 5px 0;
+}
+
+/* Footer midten */
+.footer-middle a{ /* Gjør linkene hvit */
+    color:white;
+    font-weight: bold;
+}
+.footer-middle{
+    margin: 5px 0;
+}
+.indexfooter-list li :hover{ /* Endrer fargen til linkene når man drar over*/
     transition: color 0.1s;
     color: #B1D8B7;
 }
@@ -565,28 +644,30 @@ li{
     transform: scale(1.05); /* https://www.w3schools.com/cssref/sel_hover.php#gsc.tab=0*/
     transition: color 0.2s; 
 }
-
-/* Sosiale medier*/
-.indexsocial.list{
-    list-style-type: none;
+.indexfooter-list li{
+    list-style-type: none
 }
 
-.row {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Column flyter ved siden av hverandre */
-.column {
-    float: left;
-    padding: 20px;
-}
-.column.side{
+/* Sosiale medier liste, høyre side av footer */
+.indexsocial-list a{
+    color: white;
     font-weight: bold;
+    padding: 0.2rem;
+}
+.indexsocial-list a:hover{
+    background-color: #a2cca0;
+    color:#000000;
+    border-radius: 3rem; /*gjør at kantene på hover blir avrundet*/
+    text-decoration: none;
+}
+.indexsocial-list li{
+    list-style-type: none
+}
+.footer-right .indexsocial.list{
+    display: inline;
 }
 
- a:hover{
+a:hover{ /* Understrek under linkene når man holder over (alle på siden)*/
     text-decoration: underline;  
 }
 
@@ -1010,4 +1091,35 @@ a.aktivitetslink { /*styler lenkene på aktivitets-siden*/
     margin-bottom: 0.5rem;
     padding: 1%;
     list-style-type: disc;
+}
+
+@media (max-width: 768px) {
+    .github h1 {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+
+    .github main {
+        padding: 1rem;
+        margin: 0.5rem auto;
+        box-shadow: none; /* fjern skygger for et enklere design */
+    }
+
+    .github h2 {
+        font-size: 1.5rem;
+    }
+
+    .github p {
+        font-size: 1rem;
+    }
+
+    .github ul li {
+        font-size: 1rem;
+    }
+
+    .github .bilde-galleri img {
+        max-width: 100%; /* fyller skjermbredden */
+        height: auto; 
+        margin-bottom: 1rem;
+    }
 }
