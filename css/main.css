@@ -190,6 +190,12 @@
     margin: 0 auto; 
     padding: 1rem; 
   }
+
+  .info-container-overskrift{
+    text-align: center;
+  }
+  
+
   .info-item {
     text-align: center; 
     border-top: 0.0625rem solid #ccc;
@@ -205,6 +211,17 @@
 .info-detail {
     font-size: 1.2em;
 }
+
+/**/
+.få-innsikt{
+    text-align: center;
+    padding: 2rem;
+    font-size: larger;
+    font-weight: bold;  
+}
+
+
+
 /*Responsive design for mindere skjermer på studieinfo*/
 
 @media (max-width: 48em){
@@ -218,6 +235,7 @@
         grid-template-columns: 1fr;
     }
  }
+
 
 
 /* Hover-effekt på accordion overskriftene */
@@ -388,11 +406,26 @@ padding: 1em;
 
 
 /*Studiested og Spørsmål om utdanningen?*/
-.studiested{
-    font-weight: bold;
-    text-align: center;
-    font-size: larger;
+
+.indexgenrellinfo{
+    display: flex; /* Bruk Flexbox for å arrangere elementene horisontalt */
+    gap: 1rem; /* Mellomrom mellom seksjonene */
+    justify-content: space-between; /* Sentrer seksjonene horisontalt */
+    align-items: stretch; /* Juster seksjonene til toppen */
+    padding: 1rem; /* Legg til litt padding rundt containeren */
+    
+
+}
+.studiested, 
+.spørsmålomutdanning{
+    background-color: #d9d9d9; /* Grå bakgrunnsfarge */
     padding: 2rem;
+    border-radius: 3rem; /* Runde hjørner */
+    flex: 1; /* Sørg for at seksjonene tar opp lik plass */
+    max-width: 100%; /* Begrens maks bredde for hver seksjon (valgfritt) */
+    text-align: center;
+    font-size: larger;  
+    font-weight: bold;  
 }
 .studiested a{
    color: #2F5233; 
@@ -404,19 +437,16 @@ padding: 1em;
     text-decoration: none;
     padding: 0.3rem;
 }
-
-.spørsmålomutdanning{
-    font-weight: bold;
-    text-align: center;
-    font-size: larger;
-    padding: 2rem;
-}
-
 .spørsmålomutdanning a{
     color: #2F5233; 
 }
-
-
+/* Responsiv tilpasning for mindre skjermer */
+@media (max-width: 768px) {
+    .indexgenrellinfo {
+        flex-direction: column; /* Bytt til vertikal layout */
+        align-items: center; /* Sentrer boksene horisontalt */
+    }
+}
 /* Faglig leder - overskrift */
 .faglig-leder h2 {
     text-align: center;
@@ -659,6 +689,12 @@ padding: 1em;
     color:#000000;
     border-radius: 3rem; /*gjør at kantene på hover blir avrundet*/
     text-decoration: none;
+}
+
+.footer-left, 
+.footer-middle,
+.footer-right{
+    padding-top: 3rem;
 }
 
 /* Venstre siden av footer*/
