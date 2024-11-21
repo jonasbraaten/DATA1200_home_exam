@@ -1,4 +1,3 @@
-
 /* UNITVERSEL FOR ALLE SIDER*/
 * {
     text-decoration: none; 
@@ -7,7 +6,6 @@
     padding: 0;
     box-sizing: border-box; /* fjerner standerden og legger til bredde og høyre*/
 }    
-
 
 /* ==== INDEX-SIDEN ==== */
 
@@ -87,6 +85,7 @@
 .menu-toggle {
     display: none; 
 }
+
 .hamburger {
     display: flex; 
     flex-direction: column; 
@@ -94,20 +93,19 @@
     position: absolute;
     right: 2rem; 
     top: 4rem; 
-    Z-INDEX:1001;
 }
+
 .bar {
     height: 0.2em; 
     width: 1.5em; 
     background-color: black; 
     margin: 0.2em 0; 
 }
+
 .navbar {
     display: none; 
     flex-direction: column; 
     position: fixed; 
-    top:0;
-    left:0;
     right: 0; 
     background-color: #2F5233; 
     width: 100%; 
@@ -121,30 +119,43 @@
     margin: auto; 
     font-size: 3rem;
     line-height: 3.5rem;
-    text-align: center;
 }
+
 .navbar ul li {
     display: block; 
     padding-bottom: 0.5rem; 
 }
+
 .navbar ul li a {
     color: #000000; 
     text-decoration: none; 
-    padding: 1rem; 
+    padding: rem; 
 }
+
 .navbar ul li a:hover {
     text-decoration: underline;
 }
+
 #menu-toggle:checked + .hamburger + .navbar {
     display: flex; 
-    overflow: hidden;
 }
+/*IKKE SLETT DETTE*/ 
+/*#menu-toggle:checked  .hamburger  .close {
+    display: block; 
+}*/
 
 #menu-toggle:checked .hamburger .bar {
     display: none; 
 }
+ 
+/*IKKE SLETT DETTE.close {
+    display: none; 
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    font-size: 2;
+}*/
 /*Hamburgermeny slutter her */
-
 
 /* index-id siden under her*/
 
@@ -194,24 +205,6 @@
     
 }
 .info-detail {
-    font-size: 1.48em;
-}
-
-/*Informasjonsbokser, accordion- checkbox, om studiet*/
-
-/* Hover-effekt på accordion overskriftene */
-.accordion-overskrift:hover {
-    background-color: #B1D8B7;
-}
-
-/* Skjul avkrysningsboksen */
-.accordion-checkbox {
-    display: none;
-}
-
-/* Viser innholdet når accordion radioknappen blir trykt på */
-.accordion-checkbox:checked + .accordion-overskrift + .accordion-content {
-    display: block;
     font-size: 1.2em;
 }
 
@@ -222,7 +215,6 @@
     font-size: larger;
     font-weight: bold;  
 }
-
 
 
 /*Responsive design for mindere skjermer på studieinfo*/
@@ -238,7 +230,6 @@
         grid-template-columns: 1fr;
     }
  }
-
 
 
 /* Hover-effekt på accordion overskriftene */
@@ -259,19 +250,12 @@
 /* Container for alle accordion-boksene */
 .accordion-content {
 padding: 1em;
-    display: none; /* Startknapp skjult */
+    display: none; /* Start skjult */
     border-top: 0.1em solid #ccc;
     background-color: #f9f9f9;
     font-size: 1em;
-    margin: 1rem;
+    margin: 1rem; /*lage kun for p??*/
     border-radius: 1rem;
-    line-height: 2;
-    color: #000;
-}
-
-.accordion-content a {
-    text-decoration: none; /* Fjerner understreking */
-    color: #147f12;
 }
 
 /* Styling for overskriftene */
@@ -288,13 +272,20 @@ padding: 1em;
     box-shadow: 0.5rem 0.5rem 0.8rem rgba(2, 77, 20, 0.25);
 }
 
-
-.accordion-content details {
-    color: #147f12;
 /* Hover-effekt på overskriftene */
 .accordion-overskrift:hover {
     color: #2F5233;
     background-color: #B1D8B7;
+}
+
+/* Skjuler radioknappene */
+.accordion-radio {
+    display: none;
+}
+
+/* Viser innholdet når radioknappen blir trykt på */
+.accordion-radio:checked + .accordion-overskrift + .accordion-content {
+    display: block;
 }
 
 /* Overskrift*/
@@ -406,7 +397,6 @@ padding: 1em;
     text-decoration: underline; 
   }
 
-
 /*Studiested og Spørsmål om utdanningen?*/
 
 .indexgenrellinfo{
@@ -420,7 +410,7 @@ padding: 1em;
 }
 .studiested, 
 .spørsmålomutdanning{
-    background-color: #d9d9d9; /* Grå bakgrunnsfarge */
+    background-color: #B1D8B7; /* Grå bakgrunnsfarge */
     padding: 2rem;
     border-radius: 3rem; /* Runde hjørner */
     flex: 1; /* Sørg for at seksjonene tar opp lik plass */
@@ -756,9 +746,7 @@ a:hover{ /* Understrek under linkene når man holder over (alle på siden)*/
     text-decoration: underline;  
 }
 
-
-/* ====> AKTIVITETS-SIDEN <==== */
-/* ============================ */
+/* ----> AKTIVITETS-SIDEN <---- */
 
 /* Generelle instillinger for siden (aktivitetssiden) */
 /* Kilde: https://www.w3schools.com/css/css3_box-sizing.asp */
@@ -766,26 +754,21 @@ a:hover{ /* Understrek under linkene når man holder over (alle på siden)*/
 body.activity-page { /* holder konsist i hele body (siden) med font, farge og linjehøyde*/ 
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f6efef;
-    font-size: 1.5rem;
+    font-size: 1rem;
     line-height: 1.6;
     overflow-x: hidden;
 }
-
 
 /* ----> Fonter og typografi osv (aktivitetssiden) <---- */
 /* Kilde: https://www.w3schools.com/cssref/pr_font_font-size.asp */
 
 .herotittel { /* Dette er teskten over bilde på toppen av siden (hero bildet)*/
-    font-size: clamp(1.5rem, 5vw + 1rem, 3rem);
-    color: #ffffff;
+    font-size: clamp(1.5rem, 2vw + 1rem, 3rem);
+    color: #faffd0;
     line-height: 2.5rem;
     text-align: center;
-    text-shadow: /*skyggen rundt herotittel*/
-        0.1rem 0.1rem  1rem #000000,
-        -0.1rem -0.1rem 1rem #000000,
-        0.1rem -0.1rem 1rem #000000, 
-        -0.1rem 0.1rem 1rem #000000,  
-        0 0 0.5rem rgb(0, 0, 0);   
+    text-shadow: 2px -1px 1px black, -2px 1px 15px black, 
+
 }
 
 /* ----> Struktur av siden og layout av header, main, footer (aktivitetssiden) <---- */
@@ -955,7 +938,7 @@ body.activity-page { /* holder konsist i hele body (siden) med font, farge og li
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('/bilder/håndballjentene.jpg') no-repeat center center;
+    background: url('https://cloudfront-eu-central-1.images.arcpublishing.com/mentormedier/JQPJY5L2HND6HNKA6W3YIGFDJQ.jpg') no-repeat center center;
     background-size: cover;
     height: 16rem;
     position: relative;
@@ -1055,7 +1038,6 @@ a.aktivitetslink { /*styler lenkene på aktivitets-siden*/
     }
 }
 
-
 /* ====> ACCESSIBILITY SIDEN UNDER <==== */
 /* ===================================== */
 .accessibilitybody {
@@ -1086,7 +1068,7 @@ a.aktivitetslink { /*styler lenkene på aktivitets-siden*/
 .accessibilitynav ul li {
     list-style: none;
     display: inline-block;
-    margin-right: 2rem, url(http://127.0.0.1:3000/github.html);
+    margin-right: 2rem;url(http://127.0.0.1:3000/github.html)
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
@@ -1166,7 +1148,6 @@ a.aktivitetslink { /*styler lenkene på aktivitets-siden*/
     padding-right: 2rem;
 }
 
-
 /* footer-accessibility*/
 .accessibilityfooter {
     background-color: #000;
@@ -1223,7 +1204,6 @@ a.aktivitetslink { /*styler lenkene på aktivitets-siden*/
         padding-bottom: 2rem;
     }
 }
-
 
 
 /* >==== GITHUB SIDE ====< */
@@ -1318,7 +1298,6 @@ a.aktivitetslink { /*styler lenkene på aktivitets-siden*/
     margin-bottom: 1rem;
 }
 
-
 .github img:hover {
     transform: scale(1.01);
     transition: transform 0.3s ease box-shadow 0.3s ease;
@@ -1342,7 +1321,6 @@ a.aktivitetslink { /*styler lenkene på aktivitets-siden*/
     padding: 1%;
     list-style-type: disc;
 }
-
 
 
 @media (max-width: 768px) {
@@ -1388,5 +1366,4 @@ a.aktivitetslink { /*styler lenkene på aktivitets-siden*/
         height: auto; 
         margin-bottom: 1rem;
     }
-}
 }
