@@ -83,61 +83,86 @@
     color: #000;
 }
 
-
-/* Main av index starter her*/
-.indexmain{
-    font-family: Arial, Helvetica, sans-serif;
-    color:#333;
-    background-color:white;
-    padding: 2%;
+/*Hamburgermeny*/
+.menu-toggle {
+    display: none; 
 }
 
-.indexhovedbilde img { /*hovedbilde på toppen av index*/
-    position: relative;
-    width: 100rem;
-    max-width: 100%;
-}
-
-.indexmainbody h1{ /*første overskrift over hovedbildet*/
+.hamburger {
+    display: flex; 
+    flex-direction: column; 
+    cursor: pointer; 
     position: absolute;
-    top: 50%;
-    left: 1%;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: left;
+    right: 2rem; 
+    top: 4rem; 
+}
+
+.bar {
+    height: 0.2em; 
+    width: 1.5em; 
+    background-color: black; 
+    margin: 0.2em 0; 
+}
+
+.navbar {
+    display: none; 
+    flex-direction: column; 
+    position: fixed; 
+    right: 0; 
+    background-color: #2F5233; 
+    width: 100%; 
+    height: 100vh; 
+    z-index: 1000; 
+}
+
+
+.navbar ul {
+    list-style: none; 
+    padding: 0; 
+    margin: auto; 
     font-size: 3rem;
-    color: #ffffff;
-    padding-left: 1rem;
-    margin: 1rem;
-    display: inline;
+    line-height: 3.5rem;
 }
 
-/*Studiinformasjon*/
-.info-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); 
-    gap: 20px; 
-    max-width: 800px;
-    margin: 10;
-    padding-top: 20px;
+.navbar ul li {
+    display: block; 
+    padding-bottom: 0.5rem; 
 }
 
-.info-section {
-    list-style: none;
-    border-top: 1px solid #333; 
-    padding-top: 10px;
+.navbar ul li a {
+    color: #000000; 
+    text-decoration: none; 
+    padding: rem; 
 }
 
-.info-title {
-    font-weight: bold;
-    font-size: 1.1em;
-    margin-bottom: 5px;
+.navbar ul li a:hover {
+    text-decoration: underline;
 }
 
-.info-detail {
-    font-size: 0.95em;
+#menu-toggle:checked + .hamburger + .navbar {
+    display: flex; 
 }
+/*IKKE SLETT DETTE*/ 
+/*#menu-toggle:checked  .hamburger  .close {
+    display: block; 
+}*/
+
+#menu-toggle:checked .hamburger .bar {
+    display: none; 
+}
+ 
+/*IKKE SLETT DETTE.close {
+    display: none; 
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    font-size: 2;
+}*/
+/*Hamburgermeny slutter her */
+
 
 /* index-id siden under her*/
+
 .mainbody{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0%;
@@ -152,17 +177,25 @@
 }
 
 /*Studieinfo*/
+.info-sectio-overskrift h2{
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 1.6em;
+}
 .info-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem; 
-    margin: 2rem; 
+    max-width:95rem;
+    margin: 0 auto; 
     padding: 1rem; 
   }
+
   .info-container-overskrift{
     text-align: center;
   }
   
+
   .info-item {
     text-align: center; 
     border-top: 0.0625rem solid #ccc;
@@ -172,42 +205,19 @@
   .info-item h3 {
     margin: 0.5rem 0; 
     font-weight: bold;
-    font-size: 1.65em;
-    margin-bottom: 0.3125rem;
-    margin: 0.5rem 0; /* Avstand over og under overskriften */
-    font-size: 1.5em;
-    font-weight: bold;
-    font-size: 1.1em;
-    margin-bottom: 5px;
+    font-size: 1.2em;
+    
+}
+.info-detail {
+    font-size: 1.2em;
 }
 
-.info-detail {
-    font-size: 1.48em;
-}
 /**/
 .få-innsikt{
     text-align: center;
     padding: 2rem;
     font-size: larger;
     font-weight: bold;  
-}
-
-
-
-
-/* Hover-effekt på accordion overskriftene */
-.accordion-overskrift:hover {
-    background-color: #B1D8B7;
-}
-
-/* Skjuler accordion radioknappene */
-.accordion-radio {
-    display: none;
-}
-
-/* Viser innholdet når accordion radioknappen blir trykt på */
-.accordion-radio:checked + .accordion-overskrift + .accordion-content {
-    display: block;
 }
 
 
@@ -225,6 +235,23 @@
         grid-template-columns: 1fr;
     }
  }
+
+
+
+/* Hover-effekt på accordion overskriftene */
+.accordion-overskrift:hover {
+    background-color: #B1D8B7;
+}
+
+/* Skjuler accordion radioknappene */
+.accordion-radio {
+    display: none;
+}
+
+/* Viser innholdet når accordion radioknappen blir trykt på */
+.accordion-radio:checked + .accordion-overskrift + .accordion-content {
+    display: block;
+}
 
 /* Container for alle accordion-boksene */
 .accordion-content {
@@ -610,6 +637,30 @@ padding: 1em;
     .story-text p {
         font-size: 0.9rem;
     }
+}
+/*Flere studenthistorier*/
+.studenthistorier {
+    background-color: #154117;
+    padding: 1.5rem; 
+    text-align: center;
+    border-radius: 0.5rem; 
+    margin: 5rem auto; 
+    max-width: 30rem ;
+    
+}
+.studenthistorier-tekst h2 {
+    margin: 0.5rem 0;
+    font-size: 2.5rem; 
+    color:#147f12
+}
+.studenthistorier-tekst h2 a {
+    text-decoration: none;
+    color:#c1e1c5;
+    font-size: 1.7rem;
+}
+
+.studenthistorier:hover {
+    background-color: #2F5233; 
 }
 
 /* Footer indexoppsett*/
@@ -1084,7 +1135,7 @@ a.aktivitetslink { /*styler lenkene på aktivitets-siden*/
     margin: 0;
     padding: 2rem;
     color: black;
-    background-color: #d5d5cb;
+    background-color: #dbeffb;
     border-radius: 1rem;
 }
 
@@ -1123,7 +1174,7 @@ a.aktivitetslink { /*styler lenkene på aktivitets-siden*/
     }  
 
     .accessibilitymain p {
-        font-size: 2rem;
+        font-size: 1.6rem;
         padding-left: 0;
         padding-right: 1rem;
     }
@@ -1141,21 +1192,47 @@ a.aktivitetslink { /*styler lenkene på aktivitets-siden*/
     .accessibilitynav {
         padding-left: 0;
     }    
+
+    .lighthousetest p {
+        padding: 3rem;
+        padding-top: 1rem;
+    }
+
+    .manuelltest p {
+        padding: 3rem;
+        padding-top: 1rem;
+    }
+
+    .yolo p {
+        padding: 3rem;
+        padding-top: 1rem;
+    }
+
+    .lighthousebilde {
+        padding-bottom: 2rem;
+    }
+
+    .manuellbilde {
+        padding-bottom: 2rem;
+    }
 }
 
 
 
 /* >==== GITHUB SIDE ====< */
 /* ======================< */
+.github{
+    background-image: linear-gradient(#ffbb00, #ff1b67, #ffbb00, #ff1b67, #ff8800, #ff1b67);
+}
+
 .github body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f4f4;
     color: #333;
     font-size: 1.5rem;
 }
 
 .github h1 {
-    background-color: #ffffff;
+    background-color: #ffce2f;
     color: #ff466e;
     text-align: center;
     padding: 1.25rem;
@@ -1163,9 +1240,44 @@ a.aktivitetslink { /*styler lenkene på aktivitets-siden*/
     font-size: 2.5em;
 }
 
+.gitnav {
+    background-color: #ff0080;
+    padding: 1rem;
+}
+
+.gitnav ul {
+    list-style-type:none;
+    display:flex;
+    justify-content:center;
+    gap: 2rem;
+    font-weight:bold;
+}
+
+.gitnav ul li {
+    margin: 0;
+}
+
+.gitnav ul li a {
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.gitnav ul li a:hover {
+    background-color: #ff9100;
+    border-radius: 5px;
+}
+
+.gitnav ul li a.active {
+    background-color: #ffffff;
+    border-radius: 8em;
+}
+
 .github main {
-    padding: 1.25rem; 
-    margin: 1.25rem auto; 
+    padding: 1.5rem; 
+    margin: 1.5rem auto; 
     max-width: 70rem; 
     background-color: white;
     border-radius: 0.5rem;
@@ -1182,8 +1294,10 @@ a.aktivitetslink { /*styler lenkene på aktivitets-siden*/
 }
 
 .bilde-galleri img{
-    width: 60%;
+    width: 100%;
     height: auto;
+    max-width: 100%;
+    margin-bottom: 1rem;
 }
 
 .github h2 {
@@ -1209,14 +1323,15 @@ a.aktivitetslink { /*styler lenkene på aktivitets-siden*/
     margin-bottom: 1.25rem;
 }
 
-.github ul {
+.ulemper {
     list-style-type: disc;
-    margin-left: 1.25rem; 
+    margin: 5%; 
 }
 
-.github ul li {
+.ulemper li {
     font-size: 1rem; 
     margin-bottom: 0.5rem;
+    margin: 2%;
     padding: 1%;
     list-style-type: disc;
 }
@@ -1227,6 +1342,20 @@ a.aktivitetslink { /*styler lenkene på aktivitets-siden*/
     .github h1 {
         font-size: 2rem;
         padding: 1rem;
+    }
+
+    .gitnav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gitnav ul li a {
+        font-size: 1rem;
+        padding: 0.75rem 1.5rem;
+    }
+
+    .gitnav ul li {
+        margin-bottom: 1rem;
     }
 
     .github main {
