@@ -20,8 +20,36 @@
             <li><a href="activity.html">AKTIVITET</a></li>
         </ul>
     </nav>
+
+ <!--hamburgermeny -->
+<input type="checkbox" id="menu-toggle" class="menu-toggle"> 
+<label for="menu-toggle" class="hamburger">
+    <span class="bar"></span> 
+    <span class="bar"></span> 
+    <span class="bar"></span> 
+    <span class="close">&#10006;</span> 
+</label>
+
+<nav class="navbar"> <!-- Start av navigasjonsmeny -->
+    <ul>
+        <li><a href="https://www.oslomet.no/studier">Studier</a></li>
+        <li><a href="https://www.oslomet.no/forskning">Forskningen vår</a></li>
+        <li><a href="https://www.oslomet.no/om/samarbeid">Samarbeid</a></li>
+        <li><a href="https://www.oslomet.no/ub">Universitetsbibliotek</a></li>
+        <li><a href="https://www.oslomet.no/om">Om OsloMet</a></li>
+        <li><a href="https://www.oslomet.no/om/kontakt">Kontakt</a></li>
+        <li><a href="https://www.oslomet.no/om/for-studenter">For studenter</a></li>
+    </ul>
+</nav> <!--Slutt på navigasjonsmeny --> 
+
+   
+
+     
 </header>
+
 <body class="indexmainbody">
+   
+
     <section class="indexhovedbilde">
         <img src="https://www.oslomet.no/var/oslomet/storage/images/_aliases/xxxlarge/3/0/8/6/426803-2-nor-NO/8bdad5f74e04-kjeller_oslomet.jpg" alt="Hovedbilde">
         <h1>Matematisk modellering og datavitenskap – Ingeniø</h1>
@@ -224,9 +252,9 @@
                 </section>
 
                 <!--Emnegruppe: Matematikk og fysikk-->
+                <h4 class="emnegruppe">Emnegruppe: Matematikk og fysikk</h4>
                 <!--3. Semester-->
                 <section class="semester">
-                    <h4>Emnegruppe: Matematikk og fysikk</h4>
                     <h4>3. semester</h4>
                     <section class="course">
                         <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2300/2024/H%C3%98ST" target="_blank">Lineær algebra og introduksjon til gruppeteori</a>
@@ -251,9 +279,9 @@
                 </section>
 
                 <!--Emnegruppe: Statistiske og datadrevne metoder-->
+                <h4 class="emnegruppe">Emnegruppe: Statistiske og datadrevne metoder</h4>
                 <!--3. semester-->
                 <section class="semester">
-                    <h4>Emnegruppe: Statistiske og datadrevne metoder</h4>
                     <h4>3. semester</h4>
                     <section class="course">
                         <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATS2300/2024/H%C3%98ST" target="_blank">Algoritmer og datastrukturer</a>
@@ -283,9 +311,9 @@
                 </section>
 
                 <!--Emnegruppe: Vitenskapelige beregninger-->
+                <h4 class="emnegruppe">Emnegruppe: Vitenskapelige beregninger</h4>
                 <!--3. semester-->
                 <section class="semester">
-                    <h4>Emnegruppe: Vitenskapelige beregninger</h4>
                     <h4>3. semester</h4>
                     <section class="course">
                         <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATS2300/2024/H%C3%98ST" target="_blank">Algoritmer og datastrukturer</a>
@@ -335,9 +363,9 @@
                 </section>
 
                 <!--Emnegruppe: Matematikk og fysikk-->
+                <h4 class="emnegruppe">Emnegruppe: Matematikk og fysikk</h4>
                 <!--5. Semester-->
                 <section class="semester">
-                    <h4>Emnegruppe: Matematikk og fysikk</h4>
                     <h4>5. semester</h4>
                     <section class="course">
                         <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO3300/2024/H%C3%98ST" target="_blank">Reell analyse</a>
@@ -392,9 +420,9 @@
                 </section>
 
                 <!--Emnegruppe: Statistiske og datadrevne metoder-->
+                <h4 class="emnegruppe">Emnegruppe: Statiske og datadrevne metoder</h4>
                 <!--5. semester-->
                 <section class="semester">
-                    <h4>Emnegruppe: Statistiske og datadrevne metoder</h4>
                     <h4>5. semester</h4>
                     <section class="course">
                         <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DAVE3625/2024/H%C3%98ST" target="_blank">Introduksjon til Kunstig Intelligens</a>
@@ -443,9 +471,9 @@
                 </section>
 
                 <!--Emnegruppe: Vitenskapelige beregninger-->
+                <h4 class="emnegruppe">Emnegruppe: Vitenskapelige beregninger</h4>
                 <!--5. semester-->
                 <article class="semester">
-                    <h4>Emnegruppe: Vitenskapelige beregninger</h4>
                     <h4>4. semester</h4>
                     <section class="course">
                         <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO3200/2024/H%C3%98ST" target="_blank">Simulering og visualisering</a>
@@ -561,14 +589,15 @@
              
              <!--Her slutter boksefeltet med informasjon om studiet -->
 
-        <section class="studiestedogspørsmål">
+        <section class="studiested">
             <h2>Studiested</h2>
                 <a href="https://www.oslomet.no/om/studiested-pilestredet" target="_blank">Studiested Pilestredet</a>
-            <h2>Spørsmål om utdanningen?</h2>
-                <a href="https://www.oslomet.no/kontaktskjema#Jeg%20vil%20bli%20student">
-                Har du spørsmål om utdanningen, kontakt oss gjennom vårt kontaktskjema.</a>
         </section>
-
+        <section class="spørsmålomutdanning">
+            <h2>Spørsmål om utdanningen?</h2>
+                 <a href="https://www.oslomet.no/kontaktskjema#Jeg%20vil%20bli%20student">
+                Har du spørsmål om utdanningen, kontakt oss gjennom vårt kontaktskjema.</a>
+        </section>  
         <!-- Faglig leder -->
 <section class="faglig-leder">
     <h2>Faglig leder</h2>
@@ -647,12 +676,12 @@
                 </section>
             </a>
         </section>
+
        <!--Flere studenthistorier-->
-       <section class="studenthistorier">
-        <h2>Flere studenthistorier</h2>
-        <section class="flex-container">
-            <a href="#" class="link">Les mer</a>
-        </section>
+    <section class="studenthistorier">
+       <section class="studenthistorier-tekst">
+        <h2><a href="https://www.oslomet.no/studier/studenthistorier">Flere studenthistorier</a></h2>
+    </section> 
     </section>
         
     </main>
@@ -660,19 +689,19 @@
     <!-- Footer -->
     <footer class="indexfooter">
         <h2>Hold deg oppdatert på hva som skjer!</h2>
-        <section class="footerh2">
+        <section class="indexfooterh2 ">
             <a href="https://www.oslomet.no/nyhetsbrev">Abonner på vårt nyhetsbrev!</a> <br><br>
         </section>
     
-        <section class="row">
-            <section class="column side">
+        <section class="footer-innhold">
+            <section class="footer-left ">
                 <strong>OSLO METROPOLITAN UNIVERSITY</strong>  
                 <p>STORBYUNIVERISTET</p>
                 <p>Postboks 4, St. Olavs plass <br> Tlf.: 67 23 50 00</p>
                 <a href="https://www.oslomet.no/om/kontakt">Kontakt oss</a> 
             </section>
     
-            <section class="column middle">
+            <section class="footer-middle">
                 <ul class="indexfooter-list">
                     <li><a href="https://www.oslomet.no/en">English</a></li>
                     <li><a href="https://www.oslomet.no/alumni">Alumni</a></li>
@@ -688,7 +717,7 @@
                 </ul>
             </section>
     
-            <section class="column side">
+            <section class="footer-right">
                 <ul class="indexsocial-list">
                     <li><a href="https://www.facebook.com/oslomet/">Facebook</a></li>
                     <li><a href="https://twitter.com/oslomet">X (Twitter)</a></li>
