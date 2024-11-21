@@ -747,7 +747,8 @@ a:hover{ /* Understrek under linkene når man holder over (alle på siden)*/
 }
 
 
-/* ----> AKTIVITETS-SIDEN <---- */
+/* ====> AKTIVITETS-SIDEN <==== */
+/* ============================ */
 
 /* Generelle instillinger for siden (aktivitetssiden) */
 /* Kilde: https://www.w3schools.com/css/css3_box-sizing.asp */
@@ -755,7 +756,7 @@ a:hover{ /* Understrek under linkene når man holder over (alle på siden)*/
 body.activity-page { /* holder konsist i hele body (siden) med font, farge og linjehøyde*/ 
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f6efef;
-    font-size: 1rem;
+    font-size: 1.5rem;
     line-height: 1.6;
     overflow-x: hidden;
 }
@@ -765,12 +766,16 @@ body.activity-page { /* holder konsist i hele body (siden) med font, farge og li
 /* Kilde: https://www.w3schools.com/cssref/pr_font_font-size.asp */
 
 .herotittel { /* Dette er teskten over bilde på toppen av siden (hero bildet)*/
-    font-size: clamp(1.5rem, 2vw + 1rem, 3rem);
-    color: #faffd0;
+    font-size: clamp(1.5rem, 5vw + 1rem, 3rem);
+    color: #ffffff;
     line-height: 2.5rem;
     text-align: center;
-    text-shadow: 2px -1px 1px black, -2px 1px 15px black, 
-
+    text-shadow: /*skyggen rundt herotittel*/
+        0.1rem 0.1rem  1rem #000000,
+        -0.1rem -0.1rem 1rem #000000,
+        0.1rem -0.1rem 1rem #000000, 
+        -0.1rem 0.1rem 1rem #000000,  
+        0 0 0.5rem rgb(0, 0, 0);   
 }
 
 /* ----> Struktur av siden og layout av header, main, footer (aktivitetssiden) <---- */
@@ -940,7 +945,7 @@ body.activity-page { /* holder konsist i hele body (siden) med font, farge og li
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('https://cloudfront-eu-central-1.images.arcpublishing.com/mentormedier/JQPJY5L2HND6HNKA6W3YIGFDJQ.jpg') no-repeat center center;
+    background: url('/bilder/håndballjentene.jpg') no-repeat center center;
     background-size: cover;
     height: 16rem;
     position: relative;
