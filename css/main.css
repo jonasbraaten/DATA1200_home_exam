@@ -83,61 +83,71 @@
     color: #000;
 }
 
-
-/* Main av index starter her*/
-.indexmain{
-    font-family: Arial, Helvetica, sans-serif;
-    color:#333;
-    background-color:white;
-    padding: 2%;
+/*Hamburgermeny*/
+.menu-toggle {
+    display: none; 
 }
-
-.indexhovedbilde img { /*hovedbilde på toppen av index*/
-    position: relative;
-    width: 100rem;
-    max-width: 100%;
-}
-
-.indexmainbody h1{ /*første overskrift over hovedbildet*/
+.hamburger {
+    display: flex; 
+    flex-direction: column; 
+    cursor: pointer; 
     position: absolute;
-    top: 50%;
-    left: 1%;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: left;
+    right: 2rem; 
+    top: 4rem; 
+    Z-INDEX:1001;
+}
+.bar {
+    height: 0.2em; 
+    width: 1.5em; 
+    background-color: black; 
+    margin: 0.2em 0; 
+}
+.navbar {
+    display: none; 
+    flex-direction: column; 
+    position: fixed; 
+    top:0;
+    left:0;
+    right: 0; 
+    background-color: #2F5233; 
+    width: 100%; 
+    height: 100vh; 
+    z-index: 1000; 
+}
+
+.navbar ul {
+    list-style: none; 
+    padding: 0; 
+    margin: auto; 
     font-size: 3rem;
-    color: #ffffff;
-    padding-left: 1rem;
-    margin: 1rem;
-    display: inline;
+    line-height: 3.5rem;
+    text-align: center;
+}
+.navbar ul li {
+    display: block; 
+    padding-bottom: 0.5rem; 
+}
+.navbar ul li a {
+    color: #000000; 
+    text-decoration: none; 
+    padding: 1rem; 
+}
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+#menu-toggle:checked + .hamburger + .navbar {
+    display: flex; 
+    overflow: hidden;
 }
 
-/*Studiinformasjon*/
-.info-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); 
-    gap: 20px; 
-    max-width: 800px;
-    margin: 10;
-    padding-top: 20px;
+#menu-toggle:checked .hamburger .bar {
+    display: none; 
 }
+/*Hamburgermeny slutter her */
 
-.info-section {
-    list-style: none;
-    border-top: 1px solid #333; 
-    padding-top: 10px;
-}
-
-.info-title {
-    font-weight: bold;
-    font-size: 1.1em;
-    margin-bottom: 5px;
-}
-
-.info-detail {
-    font-size: 0.95em;
-}
 
 /* index-id siden under her*/
+
 .mainbody{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0%;
@@ -152,14 +162,25 @@
 }
 
 /*Studieinfo*/
+.info-sectio-overskrift h2{
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 1.6em;
+}
 .info-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem; 
-    margin: 2rem; 
+    max-width:95rem;
+    margin: 0 auto; 
     padding: 1rem; 
   }
+
+  .info-container-overskrift{
+    text-align: center;
+  }
   
+
   .info-item {
     text-align: center; 
     border-top: 0.0625rem solid #ccc;
@@ -169,15 +190,9 @@
   .info-item h3 {
     margin: 0.5rem 0; 
     font-weight: bold;
-    font-size: 1.65em;
-    margin-bottom: 0.3125rem;
-    margin: 0.5rem 0; /* Avstand over og under overskriften */
-    font-size: 1.5em;
-    font-weight: bold;
-    font-size: 1.1em;
-    margin-bottom: 5px;
+    font-size: 1.2em;
+    
 }
-
 .info-detail {
     font-size: 1.48em;
 }
@@ -197,6 +212,16 @@
 /* Viser innholdet når accordion radioknappen blir trykt på */
 .accordion-checkbox:checked + .accordion-overskrift + .accordion-content {
     display: block;
+=======
+    font-size: 1.2em;
+}
+
+/**/
+.få-innsikt{
+    text-align: center;
+    padding: 2rem;
+    font-size: larger;
+    font-weight: bold;  
 }
 
 
@@ -214,6 +239,23 @@
         grid-template-columns: 1fr;
     }
  }
+
+
+
+/* Hover-effekt på accordion overskriftene */
+.accordion-overskrift:hover {
+    background-color: #B1D8B7;
+}
+
+/* Skjuler accordion radioknappene */
+.accordion-radio {
+    display: none;
+}
+
+/* Viser innholdet når accordion radioknappen blir trykt på */
+.accordion-radio:checked + .accordion-overskrift + .accordion-content {
+    display: block;
+}
 
 /* Container for alle accordion-boksene */
 .accordion-content {
@@ -237,8 +279,8 @@ padding: 1em;
 .accordion-overskrift {
     display: block;
     padding: 1em;
-    background-color: #147f12;
-    color: #b7ec9e;
+    background-color: #2F5233;
+    color: #B1D8B7;
     font-weight: bold;
     cursor: pointer;
     border-bottom: 0.1em solid #ccc;
@@ -247,8 +289,14 @@ padding: 1em;
     box-shadow: 0.5rem 0.5rem 0.8rem rgba(2, 77, 20, 0.25);
 }
 
+
 .accordion-content details {
     color: #147f12;
+=======
+/* Hover-effekt på overskriftene */
+.accordion-overskrift:hover {
+    color: #2F5233;
+    background-color: #B1D8B7;
 }
 
 /* Overskrift*/
@@ -362,11 +410,26 @@ padding: 1em;
 
 
 /*Studiested og Spørsmål om utdanningen?*/
-.studiested{
-    font-weight: bold;
-    text-align: center;
-    font-size: larger;
+
+.indexgenrellinfo{
+    display: flex; /* Bruk Flexbox for å arrangere elementene horisontalt */
+    gap: 1rem; /* Mellomrom mellom seksjonene */
+    justify-content: space-between; /* Sentrer seksjonene horisontalt */
+    align-items: stretch; /* Juster seksjonene til toppen */
+    padding: 1rem; /* Legg til litt padding rundt containeren */
+    
+
+}
+.studiested, 
+.spørsmålomutdanning{
+    background-color: #d9d9d9; /* Grå bakgrunnsfarge */
     padding: 2rem;
+    border-radius: 3rem; /* Runde hjørner */
+    flex: 1; /* Sørg for at seksjonene tar opp lik plass */
+    max-width: 100%; /* Begrens maks bredde for hver seksjon (valgfritt) */
+    text-align: center;
+    font-size: larger;  
+    font-weight: bold;  
 }
 .studiested a{
    color: #2F5233; 
@@ -378,19 +441,16 @@ padding: 1em;
     text-decoration: none;
     padding: 0.3rem;
 }
-
-.spørsmålomutdanning{
-    font-weight: bold;
-    text-align: center;
-    font-size: larger;
-    padding: 2rem;
-}
-
 .spørsmålomutdanning a{
     color: #2F5233; 
 }
-
-
+/* Responsiv tilpasning for mindre skjermer */
+@media (max-width: 768px) {
+    .indexgenrellinfo {
+        flex-direction: column; /* Bytt til vertikal layout */
+        align-items: center; /* Sentrer boksene horisontalt */
+    }
+}
 /* Faglig leder - overskrift */
 .faglig-leder h2 {
     text-align: center;
@@ -582,6 +642,30 @@ padding: 1em;
         font-size: 0.9rem;
     }
 }
+/*Flere studenthistorier*/
+.studenthistorier {
+    background-color: #154117;
+    padding: 1.5rem; 
+    text-align: center;
+    border-radius: 0.5rem; 
+    margin: 5rem auto; 
+    max-width: 30rem ;
+    
+}
+.studenthistorier-tekst h2 {
+    margin: 0.5rem 0;
+    font-size: 2.5rem; 
+    color:#147f12
+}
+.studenthistorier-tekst h2 a {
+    text-decoration: none;
+    color:#c1e1c5;
+    font-size: 1.7rem;
+}
+
+.studenthistorier:hover {
+    background-color: #2F5233; 
+}
 
 /* Footer indexoppsett*/
 .indexfooter {
@@ -609,6 +693,12 @@ padding: 1em;
     color:#000000;
     border-radius: 3rem; /*gjør at kantene på hover blir avrundet*/
     text-decoration: none;
+}
+
+.footer-left, 
+.footer-middle,
+.footer-right{
+    padding-top: 3rem;
 }
 
 /* Venstre siden av footer*/
@@ -964,111 +1054,271 @@ a.aktivitetslink { /*styler lenkene på aktivitets-siden*/
 
 
 /* ====> ACCESSIBILITY SIDEN UNDER <==== */
-
+/* ===================================== */
 .accessibilitybody {
+    height: 100%;
+    background-color: rgb(48, 21, 21); /* hvis browser ikke skulle supporte gradient */
+    background-image: linear-gradient(#717a07 1%,rgb(25, 47, 13) 15%, #1a4557, rgb(89, 55, 30), black 96%);
     margin: 0;
     padding: 0;
     font-family: 'poppins', sans-serif;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .accessibilityheader {
     width: 100%;
-    height: 100vh;
-    background:#b24183;
-    padding-left: 12%;
-    padding-right: 7%;
-    position: relative;
+    margin: 1rem;
+    padding: 1rem;
+    padding-top: 3rem;
 }
 
 .accessibilitynav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 3rem 0 1.5rem;
-    border-bottom: 0.1rem solid #ffffff;
+    padding-left: 3rem;
 }
 
 .accessibilitynav ul li {
     list-style: none;
     display: inline-block;
-    margin-right: 2rem;
+    margin-right: 2rem;url(http://127.0.0.1:3000/github.html)
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
 .accessibilitynav ul li a{
+    display: inline-block;
     text-decoration: none;
     color: white;
     font-size: 2rem;
+    font-style: italic;
+    padding: 1rem;
+    background-color: #1d1f06;
+    border: 1rem;
+    border-radius: 10px; 
 }
 
 .accessibilitynav ul li a:hover {
-    background-color: #000000;
-    padding: 0rem;
-    margin: 0;
+    background-color: #ffffff;
+    color: #1d1f06;
     text-decoration: none;
 }
 
-.accessSideNav { /*linje på siden av skjermen for det visuelle*/
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 5%;
-    height: 100vh;
-    padding: 2rem 0 1rem;
-    background: linear-gradient(#a30000, #ea8d3c, #fff980, #a30000); /* fargene på gradient*/
-    background-size: 100% 500%;
-    background-position: 0 40%;
+/* main-accessibility*/
+.accessibilitymain {
+    color: white;
+    padding-top: 3rem;
 }
 
-.accessSideNav h1 { /*teksten inni sidenav m/tekst rotert*/
-    font-size: 2rem;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.accessibilitymain h2 {
+    font-size: 3rem;
+    margin: 1rem;
+    padding-left: 3rem;
+}
+
+.accessibilitymain p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding-left: 4rem;
+    padding-right: 3rem;
+}
+
+.accessibilityintrotekst {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin: 1rem;
+    padding: 2rem;
+    padding-bottom: 5rem;
+}
+
+.accessibilityintrotekst p {
+    flex: 1;
+    margin: 0;
+    padding: 2rem;
     color: black;
-    transform-origin: left;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: rotate(-90deg) translate(-50%);
-    width: max-content; 
+    background-color: #dbeffb;
+    border-radius: 1rem;
+}
+
+.lighthousebilde img {
+    background-color: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.manuellbilde img {
+    background-color: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+
+/* footer-accessibility*/
+.accessibilityfooter {
+    background-color: #000;
+    color: white;
+    padding: 5rem;
+}
+
+@media screen and (max-width: 768px){
+    .accessibilitymain h2 {
+        font-size: 2rem;
+        padding-left: 2rem;
+    }  
+
+    .accessibilitymain p {
+        font-size: 1.6rem;
+        padding-left: 0;
+        padding-right: 1rem;
+    }
+
+    .accessibilityintrotekst {
+        flex-direction: column; /* Endrer layout til vertikal */
+    }
+
+    .accessibilityintrotekst p {
+        width: auto;
+        max-width: 100%;
+        padding: 2rem;
+    }
+
+    .accessibilitynav {
+        padding-left: 0;
+    }    
+
+    .lighthousetest p {
+        padding: 3rem;
+        padding-top: 1rem;
+    }
+
+    .manuelltest p {
+        padding: 3rem;
+        padding-top: 1rem;
+    }
+
+    .yolo p {
+        padding: 3rem;
+        padding-top: 1rem;
+    }
+
+    .lighthousebilde {
+        padding-bottom: 2rem;
+    }
+
+    .manuellbilde {
+        padding-bottom: 2rem;
+    }
+}
+
+
+
+/* >==== GITHUB SIDE ====< */
+/* ======================< */
+.github{
+    background-image: linear-gradient(#ffbb00, #ff1b67, #ffbb00, #ff1b67, #ff8800, #ff1b67);
 }
 
 .github body {
-    font-family:Arial, Helvetica, sans-serif;
-    background-color: #f4f4f4;
+    font-family: Arial, Helvetica, sans-serif;
     color: #333;
     font-size: 1.5rem;
 }
 
 .github h1 {
-    background-color: #154117;
-    color: #ffffff;
+    background-color: #ffce2f;
+    color: #ff466e;
     text-align: center;
     padding: 1.25rem;
     margin: 0;
     font-size: 2.5em;
 }
 
+.gitnav {
+    background-color: #ff0080;
+    padding: 1rem;
+}
+
+.gitnav ul {
+    list-style-type:none;
+    display:flex;
+    justify-content:center;
+    gap: 2rem;
+    font-weight:bold;
+}
+
+.gitnav ul li {
+    margin: 0;
+}
+
+.gitnav ul li a {
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.gitnav ul li a:hover {
+    background-color: #ff9100;
+    border-radius: 5px;
+}
+
+.gitnav ul li a.active {
+    background-color: #ffffff;
+    border-radius: 8em;
+}
+
 .github main {
-    padding: 1.25rem; 
-    margin: 1.25rem auto; 
-    max-width: 62.5rem; 
+    padding: 1.5rem; 
+    margin: 1.5rem auto; 
+    max-width: 70rem; 
     background-color: white;
     border-radius: 0.5rem;
     box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
 }
 
 .github section {
-    margin-bottom: 1.25rem; 
+    background: #ffffff;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.bilde-galleri img{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    margin-bottom: 1rem;
 }
 
 .github h2 {
-    color: #154117; 
+    color: #ff466e; 
     font-size: 1.75rem;
-    margin-bottom: 0.5rem;
-    border-bottom: 1px solid #154117;
+    border-bottom: 1px;
+    border-color: #ff6895;
+    border-bottom-style: groove;
     padding-bottom: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+.github img:hover {
+    transform: scale(1.01);
+    transition: transform 0.3s ease box-shadow 0.3s ease;
 }
 
 .github p {
@@ -1077,14 +1327,62 @@ a.aktivitetslink { /*styler lenkene på aktivitets-siden*/
     margin-bottom: 1.25rem;
 }
 
-.github ul {
-    list-style-type: circle;
-    margin-left: 1.25rem; 
+.ulemper {
+    list-style-type: disc;
+    margin: 5%; 
 }
 
-.github ul li {
+.ulemper li {
     font-size: 1rem; 
     margin-bottom: 0.5rem;
+    margin: 2%;
     padding: 1%;
     list-style-type: disc;
+}
+
+
+
+@media (max-width: 768px) {
+    .github h1 {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+
+    .gitnav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gitnav ul li a {
+        font-size: 1rem;
+        padding: 0.75rem 1.5rem;
+    }
+
+    .gitnav ul li {
+        margin-bottom: 1rem;
+    }
+
+    .github main {
+        padding: 1rem;
+        margin: 0.5rem auto;
+        box-shadow: none; /* fjern skygger for et enklere design */
+    }
+
+    .github h2 {
+        font-size: 1.5rem;
+    }
+
+    .github p {
+        font-size: 1rem;
+    }
+
+    .github ul li {
+        font-size: 1rem;
+    }
+
+    .github .bilde-galleri img {
+        max-width: 100%; /* fyller skjermbredden */
+        height: auto; 
+        margin-bottom: 1rem;
+    }
 }
