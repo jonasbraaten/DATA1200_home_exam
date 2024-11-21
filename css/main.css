@@ -1093,3 +1093,34 @@ a.aktivitetslink { /*styler lenkene på aktivitets-siden*/
     padding: 1%;
     list-style-type: disc;
 }
+
+@media (max-width: 768px) {
+    .github h1 {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+
+    .github main {
+        padding: 1rem;
+        margin: 0.5rem auto;
+        box-shadow: none; /* fjern skygger for et enklere design */
+    }
+
+    .github h2 {
+        font-size: 1.5rem;
+    }
+
+    .github p {
+        font-size: 1rem;
+    }
+
+    .github ul li {
+        font-size: 1rem;
+    }
+
+    .github .bilde-galleri img {
+        max-width: 100%; /* fyller skjermbredden */
+        height: auto; 
+        margin-bottom: 1rem;
+    }
+}
