@@ -182,18 +182,20 @@
     font-size: 1.48em;
 }
 
+/*Informasjonsbokser, accordion- checkbox, om studiet*/
+
 /* Hover-effekt på accordion overskriftene */
 .accordion-overskrift:hover {
     background-color: #B1D8B7;
 }
 
-/* Skjuler accordion radioknappene */
-.accordion-radio {
+/* Skjul avkrysningsboksen */
+.accordion-checkbox {
     display: none;
 }
 
 /* Viser innholdet når accordion radioknappen blir trykt på */
-.accordion-radio:checked + .accordion-overskrift + .accordion-content {
+.accordion-checkbox:checked + .accordion-overskrift + .accordion-content {
     display: block;
 }
 
@@ -216,12 +218,19 @@
 /* Container for alle accordion-boksene */
 .accordion-content {
 padding: 1em;
-    display: none; /* Start skjult */
+    display: none; /* Startknapp skjult */
     border-top: 0.1em solid #ccc;
     background-color: #f9f9f9;
     font-size: 1em;
-    margin: 1rem; /*lage kun for p??*/
+    margin: 1rem;
     border-radius: 1rem;
+    line-height: 2;
+    color: #000;
+}
+
+.accordion-content a {
+    text-decoration: none; /* Fjerner understreking */
+    color: #147f12;
 }
 
 /* Styling for overskriftene */
@@ -238,21 +247,9 @@ padding: 1em;
     box-shadow: 0.5rem 0.5rem 0.8rem rgba(2, 77, 20, 0.25);
 }
 
-/* Hover-effekt på overskriftene */
-.accordion-overskrift:hover {
-    background-color: #0b5a13;
+.accordion-content details {
+    color: #147f12;
 }
-
-/* Skjuler radioknappene */
-.accordion-radio {
-    display: none;
-}
-
-/* Viser innholdet når radioknappen blir trykt på */
-.accordion-radio:checked + .accordion-overskrift + .accordion-content {
-    display: block;
-}
-
 
 /* Overskrift*/
 .heading {  
