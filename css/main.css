@@ -272,6 +272,7 @@ padding: 1em;
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
 }
 
+/* Emnegrupper*/
 .emnegruppe h4{
     display: flex;
     padding: 1rem;
@@ -1038,7 +1039,7 @@ a.aktivitetslink { /*styler lenkene på aktivitets-siden*/
 }
 
 .github body {
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #f4f4f4;
     color: #333;
     font-size: 1.5rem;
@@ -1069,9 +1070,10 @@ a.aktivitetslink { /*styler lenkene på aktivitets-siden*/
 .github h2 {
     color: #154117; 
     font-size: 1.75rem;
-    margin-bottom: 0.5rem;
     border-bottom: 1px solid #154117;
     padding-bottom: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .github p {
@@ -1081,7 +1083,7 @@ a.aktivitetslink { /*styler lenkene på aktivitets-siden*/
 }
 
 .github ul {
-    list-style-type: circle;
+    list-style-type: disc;
     margin-left: 1.25rem; 
 }
 
