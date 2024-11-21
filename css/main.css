@@ -1,4 +1,3 @@
-
 /* UNITVERSEL FOR ALLE SIDER*/
 * {
     text-decoration: none; 
@@ -7,7 +6,6 @@
     padding: 0;
     box-sizing: border-box; /* fjerner standerden og legger til bredde og høyre*/
 }    
-
 
 /* ==== INDEX-SIDEN ==== */
 
@@ -115,7 +113,6 @@
     z-index: 1000; 
 }
 
-
 .navbar ul {
     list-style: none; 
     padding: 0; 
@@ -159,7 +156,6 @@
     font-size: 2;
 }*/
 /*Hamburgermeny slutter her */
-
 
 /* index-id siden under her*/
 
@@ -221,7 +217,6 @@
 }
 
 
-
 /*Responsive design for mindere skjermer på studieinfo*/
 
 @media (max-width: 48em){
@@ -235,7 +230,6 @@
         grid-template-columns: 1fr;
     }
  }
-
 
 
 /* Hover-effekt på accordion overskriftene */
@@ -293,7 +287,6 @@ padding: 1em;
 .accordion-radio:checked + .accordion-overskrift + .accordion-content {
     display: block;
 }
-
 
 /* Overskrift*/
 .heading {  
@@ -403,7 +396,6 @@ padding: 1em;
     color: #333; 
     text-decoration: underline; 
   }
-
 
 /*Studiested og Spørsmål om utdanningen?*/
 
@@ -754,7 +746,6 @@ a:hover{ /* Understrek under linkene når man holder over (alle på siden)*/
     text-decoration: underline;  
 }
 
-
 /* ----> AKTIVITETS-SIDEN <---- */
 
 /* Generelle instillinger for siden (aktivitetssiden) */
@@ -767,7 +758,6 @@ body.activity-page { /* holder konsist i hele body (siden) med font, farge og li
     line-height: 1.6;
     overflow-x: hidden;
 }
-
 
 /* ----> Fonter og typografi osv (aktivitetssiden) <---- */
 /* Kilde: https://www.w3schools.com/cssref/pr_font_font-size.asp */
@@ -1048,7 +1038,6 @@ a.aktivitetslink { /*styler lenkene på aktivitets-siden*/
     }
 }
 
-
 /* ====> ACCESSIBILITY SIDEN UNDER <==== */
 /* ===================================== */
 .accessibilitybody {
@@ -1159,7 +1148,6 @@ a.aktivitetslink { /*styler lenkene på aktivitets-siden*/
     padding-right: 2rem;
 }
 
-
 /* footer-accessibility*/
 .accessibilityfooter {
     background-color: #000;
@@ -1216,7 +1204,6 @@ a.aktivitetslink { /*styler lenkene på aktivitets-siden*/
         padding-bottom: 2rem;
     }
 }
-
 
 
 /* >==== GITHUB SIDE ====< */
@@ -1311,7 +1298,6 @@ a.aktivitetslink { /*styler lenkene på aktivitets-siden*/
     margin-bottom: 1rem;
 }
 
-
 .github img:hover {
     transform: scale(1.01);
     transition: transform 0.3s ease box-shadow 0.3s ease;
@@ -1335,7 +1321,6 @@ a.aktivitetslink { /*styler lenkene på aktivitets-siden*/
     padding: 1%;
     list-style-type: disc;
 }
-
 
 
 @media (max-width: 768px) {

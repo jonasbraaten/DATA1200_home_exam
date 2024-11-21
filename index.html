@@ -27,9 +27,7 @@
     <span class="bar"></span> 
     <span class="bar"></span> 
     <span class="bar"></span> 
-    <!--<span class="close"></span>--> 
 </label>
-
 <nav class="navbar"> <!-- Start av navigasjonsmeny -->
     <ul>
         <li><a href="https://www.oslomet.no/studier">Studier</a></li>
@@ -41,7 +39,7 @@
         <li><a href="https://www.oslomet.no/om/for-studenter">For studenter</a></li>
     </ul>
 </nav> <!--Slutt på navigasjonsmeny --> 
-    
+
 </header>
 
 <body class="indexmainbody">
@@ -94,12 +92,12 @@
         <!-- Her starter boksene med informasjon om studiet
           Kilde: https://www.w3schools.com/tags/tag_details.asp
           Kilder til alle Accordian bokser:
-          https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio
+          https://www.w3schools.com/tags/att_input_type_checkbox.asp
           https://www.youtube.com/watch?v=fSkhTd4rpDo -->
         <section class="informasjonsbokser">
 
             <!-- Accordion boks 1 -->
-        <input type="radio" name="accordion" id="boks1" class="accordion-radio">
+        <input type="checkbox" name="accordion" id="boks1" class="accordion-checkbox">
         <label for="boks1" class="accordion-overskrift">Opptakskrav og poeng</label>
             <article class="accordion-content">
                 <p>For å søke på dette programmet må du ha:</p>
@@ -117,7 +115,7 @@
             </article>
     
               <!-- Accordion boks 2 -->
-        <input type="radio" name="accordion" id="boks2" class="accordion-radio">
+        <input type="checkbox" name="accordion" id="boks2" class="accordion-checkbox">
         <label for="boks2" class="accordion-overskrift">Slik søker du</label>
             <article class="accordion-content">
                 <p>Du søker på Samordna opptak med studiekode 215 503.</p>
@@ -130,7 +128,7 @@
     
                 <!-- Accordion boks 3 -->
                 <!-- Kilden til details-punktene: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details-->
-        <input type="radio" name="accordion" id="boks3" class="accordion-radio">
+        <input type="checkbox" name="accordion" id="boks3" class="accordion-checkbox">
         <label for="boks3" class="accordion-overskrift">Hva lærer du?</label>
             <article class="accordion-content">
                 <p>Bachelor i matematisk modellering og datavitenskap kobler sammen matematikk, informatikk, fysikk og statistikk.</p>
@@ -169,7 +167,7 @@
               Semester, course, emnekode og studiepoeng i class, så det blir enkelt å style i CSS-->
 
               <!-- Accordion boks 4-->
-        <input type="radio" name="accordion" id="boks4" class="accordion-radio">
+        <input type="checkbox" name="accordion" id="boks4" class="accordion-checkbox">
         <label for="boks4" class="accordion-overskrift">Studiets oppbygging</label>
         <article class="accordion-content">
                 <section class="container">
@@ -529,10 +527,10 @@
             </article>
     
             <!-- Accordion boks 5 -->
-        <input type="radio" name="accordion" id="boks5" class="accordion-radio">
+        <input type="checkbox" name="accordion" id="boks5" class="accordion-checkbox">
         <label for="boks5" class="accordion-overskrift">Hvordan foregår undervisningen?</label>
         <article class="accordion-content">
-                <p>Undervisningen er en kombinasjon av</p>
+                <p>Undervisningen er en kombinasjon av:</p>
                 <ul>
                     <li>prosjektarbeid</li>
                     <li>workshop</li>
@@ -548,7 +546,7 @@
         </article>
     
                  <!-- Accordion boks 6 -->
-        <input type="radio" name="accordion" id="boks6" class="accordion-radio">
+        <input type="checkbox" name="accordion" id="boks6" class="accordion-checkbox">
         <label for="boks6" class="accordion-overskrift">Hva koster det?</label>
         <article class="accordion-content">
                 <a href="https://student.oslomet.no/semesteravgift" target="_blank">Du betaler en semesteravgift hvert semester (student.oslomet.no).</a>
@@ -557,7 +555,7 @@
               </article>
     
               <!-- Accordion boks 7-->
-        <input type="radio" name="accordion" id="boks7" class="accordion-radio">
+        <input type="checkbox" name="accordion" id="boks7" class="accordion-checkbox">
         <label for="boks7" class="accordion-overskrift">Hva kan du jobbe som?</label>
         <article class="accordion-content">
                 <p>Med dette studiet får du IT-kompetanse som er etterspurt i arbeidslivet, særlig om du velger spesialiseringene vitenskapelige beregninger eller statistiske og datadrevne metoder.</p>
@@ -567,24 +565,24 @@
         </article>
 
               <!-- Accordion boks 8-->
-        <input type="radio" name="accordion" id="boks8" class="accordion-radio">
+        <input type="checkbox" name="accordion" id="boks8" class="accordion-checkbox">
         <label for="boks8" class="accordion-overskrift">Utveksling</label>
         <article class="accordion-content">
                 <p>Du kan dra på utveksling i femte semester.</p>
         </article>
     
               <!-- Accordion boks 9-->
-        <input type="radio" name="accordion" id="boks9" class="accordion-radio">
+        <input type="checkbox" name="accordion" id="boks9" class="accordion-checkbox">
         <label for="boks9" class="accordion-overskrift">Videre studiemuligheter ved OsloMet</label>
         <article class="accordion-content">
-              <details class="videre-studiemuligheter" >
+              <section class="videre-studiemuligheter" >
                 <ul>
                     <li>
                       <strong>Anvendt data- og informasjonsteknologi (ACIT)</strong>
                       <p><a href="https://www.oslomet.no/studier/tkd/anvendt-data-informasjonsteknologi">Masterprogram 2 år Pilestredet i Oslo Heltid &#8250</a></p>
                     </li>
                 </ul>
-              </details>
+              </section>
         </article>
              
              <!--Her slutter boksefeltet med informasjon om studiet -->
