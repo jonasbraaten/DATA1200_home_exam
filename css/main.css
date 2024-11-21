@@ -270,14 +270,19 @@
     margin-bottom: 20px;
 }
 
-/* Semester-boks */
+/* Semester boksene */
 .semester {
     background-color: #ffffff;
-    border: 0.0625rem solid #ddd;
+    border: 0.0625rem solid #B1D8B7;
     border-radius: 0.5rem;
     padding: 1rem;
     margin-bottom: 1.25rem;
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+}
+
+.emnegruppe h4{
+    display: flex;
+    padding: 1rem;
 }
 
 /* Overskrift for semester */
@@ -285,12 +290,12 @@
     margin: 0 0 0.75rem 0;
     font-size: 1.125rem;
     color: #333;
-    border-bottom: 0.125rem solid #007BFF;
+    border-bottom: 0.125rem solid #76B947;
     display: inline-block;
     padding-bottom: 0.25rem;
 }
 
-/* Kurs-seksjon */
+/* Kurs seksjoner */
 .course {
     display: flex;
     justify-content: space-between;
@@ -302,10 +307,10 @@
     border: 0.0625rem solid #ddd;
 }
 
-/* Kurs-lenke */
+/* Kurs-lenker */
 .course a {
     font-weight: bold;
-    color: #007BFF;
+    color: #2F5233;
     text-decoration: none;
     flex: 1;
     font-size: 1rem;
@@ -315,22 +320,21 @@
     text-decoration: underline;
 }
 
-/* Emnekode */
+/* Emnekoden */
 .course .emnekode {
     color: #666;
     font-size: 0.875rem;
     margin: 0 0.625rem;
 }
 
-/* Poeng */
+/* Studieoeng */
 .course .poeng {
     font-weight: bold;
-    color: #28a745;
+    color: #76B947;
     font-size: 0.875rem;
 }
 
-/*Linne sin del*/
-/*Videre studiemuligjheter ved OsloMet (kajsa del) */
+/*Videre studiemuligjheter ved OsloMet*/
 .videre-studiemuligheter ul{
     list-style-type: none; 
     padding: 0; 
