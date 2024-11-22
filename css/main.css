@@ -909,7 +909,7 @@ padding: 1em;
 /* Generelle instillinger for siden (aktivitetssiden) */
 /* Kilde: https://www.w3schools.com/css/css3_box-sizing.asp */
 
-body.activity-page { /* holder konsist i hele body (siden) med font, farge og linjehøyde*/ 
+.activity-page { /* holder konsist i hele body (siden) med font, farge og linjehøyde*/ 
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f6efef;
     font-size: 1rem;
@@ -967,7 +967,8 @@ body.activity-page { /* holder konsist i hele body (siden) med font, farge og li
     border-radius: 1rem;
     background-color: #06061f;
     max-width: fit-content;
-    margin: 0;
+    margin-bottom: 2rem;
+
 }
 
 .spillertekst p {
@@ -1004,6 +1005,7 @@ body.activity-page { /* holder konsist i hele body (siden) med font, farge og li
     width: 250px;
     border-radius: 50%;
     object-fit: cover;
+    border: 0.3rem solid #ffe3ae;
     border: 5px solid #92b5d8;
     margin: 2rem;
     margin-bottom: 0;
@@ -1114,6 +1116,22 @@ a.aktivitetslink { /*styler lenkene på aktivitets-siden*/
     margin: 1rem;
     padding: 0.5rem;
     border-radius: 1rem;
+    font-size: clamp(0.77rem, 4vw, 1rem);
+}
+
+/*aktivitets-footer styling*/
+.aktivitetsfooter {
+    background-color: #0e1c37;
+    color: white;
+    padding: 3rem;
+    text-align: center;
+}
+
+.aktivitetsfooter-nav ul {
+    list-style-type: none;
+    padding: 1rem;
+    margin: 0;
+    justify-content: center;
     font-size: clamp(0.77rem, 2vw, 1rem);
 }
 
@@ -1129,12 +1147,20 @@ a.aktivitetslink { /*styler lenkene på aktivitets-siden*/
 /* Kilde: https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries */
 
     /* Responsiv til telefon Aktivitetsiden*/
-
 @media screen and (max-width: 768px){
     .herotittel {
         font-size: 2rem;
+        text-shadow:  0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 1), 
+        -0.3rem -0.3rem 0.5rem rgba(0, 0, 0, 0.9), 
+        0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.7), 
+        0.7rem 0.7rem 1.4rem rgba(0, 0, 0, 0.5);
     }
-    
+
+    .aktivitets-navigasjon {
+        padding-bottom: 1rem;
+        border-bottom: 1rem solid white;
+    }
+
     .aktivitets-navigasjon ul li {
         float: none;
         font-size: 1.5rem;
@@ -1149,7 +1175,17 @@ a.aktivitetslink { /*styler lenkene på aktivitets-siden*/
         align-items: center;
     }
 
+    .activity-page { /* holder konsist i hele body (siden) med font, farge og linjehøyde*/ 
+        background-color: #06061f;
+        font-size: 1rem;
+        line-height: 1.6;
+        color: white;
+    }    
+
     .aktivitetsmain p { /*fonten på alle p i main som en default og padding 0 i main aktivitet*/
+        font-size: 1.3rem;
+        padding-left: 0;
+        color: white;
         font-size: 1.2rem;
         padding-left: 0rem;
     }
@@ -1163,6 +1199,14 @@ a.aktivitetslink { /*styler lenkene på aktivitets-siden*/
         text-align: center;
     }
 
+    .spillerinfo { /* spillerbildene går under teksten under tekst og på midten*/
+        flex-direction: column;
+        align-items: center;
+        border: 4px solid #ffffff;
+        border-radius: 1rem;
+        background-color: #fffef5;
+    }  
+      
     .aktuellespillere h2 {
         font-size: 2rem;
         text-align: center;
@@ -1175,12 +1219,45 @@ a.aktivitetslink { /*styler lenkene på aktivitets-siden*/
 
     .spillertekst h3 {
         font-size: 1.9rem;
+        color: #161657;
     }
 
     .spillertekst h4 {
         font-size: 1.5rem;
+        color: #870404;
     }
 
+    .spillertekst p {
+        color: black;
+    }
+
+    .historieoversikt {
+        flex-direction: column;
+    }
+
+    .historie h2 {
+        color: white;
+    }
+
+    .seiersoversikt {
+        background-color: white;
+        color: black;
+    }
+
+    .seiere li {
+        font-size: 1.5rem;
+        color: black;
+    }
+
+    .spillerbilde img { /* spiller bildet blir mindre i tillegg*/
+        width: 250px;
+        height: 250px;
+        border: 0.3rem solid #413012;
+    }
+
+    .aktivitetslenker {
+        text-align: left;
+        padding-left: 0;
     .seiersoversikt h4 {
         font-size: 1.4rem;
         text-align: center;
@@ -1194,6 +1271,11 @@ a.aktivitetslink { /*styler lenkene på aktivitets-siden*/
         width: 200px;
         height: 200px;
     }
+
+    .instagrambruker {
+    color: #f7f3e0;
+    font-weight: bold;
+    background-color: #5c0707;
 }
 
 /* ====> ACCESSIBILITY SIDEN UNDER <==== */
