@@ -1202,17 +1202,17 @@ a.aktivitetslink { /*styler lenkene på aktivitets-siden*/
 
 /* >==== GITHUB SIDE ====< */
 /* ======================< */
-.github{
+.github{ /*bakgrunn med mange farger*/
     background-image: linear-gradient(#ffbb00, #ff1b67, #ffbb00, #ff1b67, #ff8800, #ff1b67);
 }
 
-.github body {
+.github body { /*Generelt for hele body*/
     font-family: Arial, Helvetica, sans-serif;
     color: #333;
     font-size: 1.5rem;
 }
 
-.github h1 {
+.github h1 { /*Hovedoverskriften*/
     background-color: #ffce2f;
     color: #ff466e;
     text-align: center;
@@ -1227,105 +1227,96 @@ a.aktivitetslink { /*styler lenkene på aktivitets-siden*/
 }
 
 .gitnav ul {
-    list-style-type:none;
-    display:flex;
-    justify-content:center;
-    gap: 2rem;
-    font-weight:bold;
-}
-
-.gitnav ul li {
-    margin: 0;
+    list-style-type: none; /* Fjerner punktmerking */
+    display: flex; /* Viser listen som en rad */
+    justify-content: center; /* Sentraliserer listen horisontalt */
+    gap: 2rem; /* Avstand mellom listeelementene */
+    font-weight: bold;
 }
 
 .gitnav ul li a {
     color: white;
     font-size: 1.2rem;
-    padding: 0.5rem 1rem;
-    transition: background-color 0.3s ease;
+    padding: 0.5rem;
+    transition: background-color 0.3s ease; /* Glatt overgang ved hover */
     text-decoration: none;
 }
 
 .gitnav ul li a:hover {
     background-color: #ff9100;
-    border-radius: 5px;
-}
-
-.gitnav ul li a.active {
-    background-color: #ffffff;
-    border-radius: 8em;
+    border-radius: 5px; /* Avrunde kanter ved hover */
 }
 
 .github main {
-    padding: 1.5rem; 
-    margin: 1.5rem auto; 
-    max-width: 70rem; 
-    background-color: white;
-    border-radius: 0.5rem;
-    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    padding: 1rem; 
+    margin: 1rem auto; 
+    max-width: 70rem;
 }
 
 .github section {
     background: #ffffff;
-    border: 1px solid #ddd;
-    padding: 1rem;
     margin-bottom: 1.5rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 5%;
+    padding: 3rem;
+    border: 1px solid #ddd; /* Lys farge på kantene */
+    border-radius: 0.6rem; /* Avrunde hjørner */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Myk skygge */
 }
 
-.bilde-galleri img{
-    width: 100%;
-    height: auto;
-    max-width: 100%;
+.bilde-galleri img {
+    width: 100%; /* Bildene fyller bredden */
+    height: auto; /*Auto høyde for å beholde formatet til bildene*/
     margin-bottom: 1rem;
 }
 
-.github h2 {
+.github h2 { /*Underoverskrifter*/
     color: #ff466e; 
     font-size: 1.75rem;
-    border-bottom: 1px;
-    border-color: #ff6895;
-    border-bottom-style: groove;
+    border-bottom: 1px solid #ff6895; /* Legger til en enkel rosa linje under overskriften */
     padding-bottom: 0.5rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
 .github img:hover {
-    transform: scale(1.01);
-    transition: transform 0.3s ease box-shadow 0.3s ease;
+    transform: scale(1.01); /* Gjør bildet litt større ved hover */
+    transition: transform 0.3s ease; /* Glatt overgang for skalering */
 }
 
 .github p {
     font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 1.25rem;
+    line-height: 2; /* Øker linjeavstanden for bedre lesbarhet */
+    margin-bottom: 1rem;
 }
 
-.ulemper {
-    list-style-type: disc;
-    margin: 5%; 
+.ulemper { /* Punktliste */
+    list-style-type: disc; 
+    margin: 5%;
 }
 
 .ulemper li {
-    font-size: 1rem; 
+    font-size: 1rem;
     margin-bottom: 0.5rem;
     margin: 2%;
-    padding: 1%;
+    padding: 0.5%;
     list-style-type: disc;
 }
+.github-footer { /*Bunntekst*/
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
 
-
-@media (max-width: 768px) {
+@media (max-width: 768px) { /* Tilpasning for mindre skjermer */
     .github h1 {
         font-size: 2rem;
         padding: 1rem;
     }
 
     .gitnav ul {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; /* Gjør listen vertikal */
+        align-items: center; /* Sentraliserer elementene */
     }
 
     .gitnav ul li a {
@@ -1340,7 +1331,7 @@ a.aktivitetslink { /*styler lenkene på aktivitets-siden*/
     .github main {
         padding: 1rem;
         margin: 0.5rem auto;
-        box-shadow: none; /* fjern skygger for et enklere design */
+        box-shadow: none; /* Fjerner skygger for et enklere design */
     }
 
     .github h2 {
@@ -1356,8 +1347,13 @@ a.aktivitetslink { /*styler lenkene på aktivitets-siden*/
     }
 
     .github .bilde-galleri img {
-        max-width: 100%; /* fyller skjermbredden */
-        height: auto; 
+        max-width: 100%; /* Bildene fyller skjermbredden */
+        height: auto;
         margin-bottom: 1rem;
+    }
+
+    .github-footer ul {
+        flex-direction: column;
+        gap: 1rem;
     }
 }
