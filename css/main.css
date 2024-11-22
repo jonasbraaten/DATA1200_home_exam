@@ -1053,9 +1053,16 @@ padding: 1em;
     font-size: clamp(0.77rem, 2vw, 1rem);
 }
 
+.historieartikkel h3 {
+    font-size: 3rem;
+    padding-left: 2rem;
+}
+
 .historieoversikt {
     display: flex; /*legger aside ved siden av historie-seksjon*/
     gap: 2rem; /*mellomrom mellom dem*/
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .historie {
