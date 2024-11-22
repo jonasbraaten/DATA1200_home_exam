@@ -1276,7 +1276,14 @@ a.aktivitetslink { /*styler lenkene på aktivitets-siden*/
     color: #f7f3e0;
     font-weight: bold;
     background-color: #5c0707;
+    }
+    .instagrambruker {
+    color: #f7f3e0;
+    font-weight: bold;
+    background-color: #5c0707;
+    }
 }
+
 
 /* ====> ACCESSIBILITY SIDEN UNDER <==== */
 /* ===================================== */
