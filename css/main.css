@@ -1093,10 +1093,6 @@ body.activity-page { /* holder konsist i hele body (siden) med font, farge og li
         0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.7), 
         0.7rem 0.7rem 1.4rem rgba(0, 0, 0, 0.5);
     }
-
-    .aktivitets-navigasjon {
-        
-    }
     
     .aktivitets-navigasjon ul li {
         float: none;
@@ -1106,6 +1102,10 @@ body.activity-page { /* holder konsist i hele body (siden) med font, farge og li
     .aktivitets-navigasjon li a {
         text-align: left;
     }    
+
+    .aktivitetsmain {
+        overflow-x: hidden;
+    }
 
     .aktivitetsmain p { /*fonten på alle p i main som en default og padding 0 i main aktivitet*/
         font-size: 1.3rem;
