@@ -1257,24 +1257,23 @@ a.aktivitetslink { /*styler lenkene på aktivitets-siden*/
     background: #ffffff;
     margin-bottom: 1.5rem;
     margin: 5%;
-    padding: 3rem;
+    padding: 5%;
     border: 1px solid #ddd; /* Lys farge på kantene */
     border-radius: 0.6rem; /* Avrunde hjørner */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Myk skygge */
 }
 
+.github h2 { /*Underoverskrifter*/
+    color: #ff466e; 
+    font-size: 1.5rem;
+    border-bottom: 1px solid #ff6895; /* Legger til en enkel linje under overskriften */
+    margin-top: 1%;
+    margin-bottom: 4%;
+}
+
 .bilde-galleri img {
     width: 100%; /* Bildene fyller bredden */
     height: auto; /*Auto høyde for å beholde formatet til bildene*/
-    margin-bottom: 1rem;
-}
-
-.github h2 { /*Underoverskrifter*/
-    color: #ff466e; 
-    font-size: 1.75rem;
-    border-bottom: 1px solid #ff6895; /* Legger til en enkel rosa linje under overskriften */
-    padding-bottom: 0.5rem;
-    margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
