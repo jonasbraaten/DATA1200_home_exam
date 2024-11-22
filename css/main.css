@@ -143,7 +143,6 @@
 /*Hamburgermeny*/
 .menu-toggle {
     display: none;  
-    overflow-x:hidden; 
 }
 /*Hamburgerikon*/
 .hamburger {
@@ -1251,6 +1250,15 @@ padding: 1em;
         color: #f7f3e0;
         font-weight: bold;
         background-color: #5c0707;
+        color: #f7f3e0;
+        font-weight: bold;
+        background-color: #5c0707;
+    }
+  
+    .instagrambruker {
+        color: #f7f3e0;
+        font-weight: bold;
+        background-color: #5c0707;
     }
 }
 
@@ -1285,7 +1293,7 @@ padding: 1em;
 .accessibilitynav ul li {
     list-style: none;
     display: inline-block;
-    margin-right: 2rem;url(http://127.0.0.1:3000/github.html)
+    margin-right: 2rem url(http://127.0.0.1:3000/github.html);
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
@@ -1572,4 +1580,5 @@ padding: 1em;
         margin-bottom: 1rem;
     }
 
+}
 }
