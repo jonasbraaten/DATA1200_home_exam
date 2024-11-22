@@ -36,13 +36,13 @@
 .indexnav a {
     text-decoration: none;
     font-weight: bold;
-    color: #000;
+    color: #ffffff;
     padding: 0.5rem;
 }
   
   /* Endre fargen på lenkene */
 .indexnav li a:hover {
-    background-color: #a2cca0;
+    background-color: #ffffff;
     color:#2F5233;
     border-radius: 1rem; /*gjør at kantene på hover blir avrundet*/
     text-decoration: none;
@@ -50,6 +50,7 @@
 
 .indexnav img {
     height: auto;
+    width: 20rem;
 }
 
 .navigation-search {
@@ -63,14 +64,14 @@
 .navigation-search input {
     width: 10rem;
     padding: 0.2rem;
-    border: 0.2rem solid #000000;
+    border: 0.2rem solid #ffffff;
     font-size: 0.8rem;
     outline: none;
 }
 
 .navigation-search button {
-    background-color: #000;
-    color:white;
+    background-color: #000000;
+    color:rgb(255, 255, 255);
     border: none;
     padding: 0.4rem;
     cursor: pointer;
@@ -124,19 +125,25 @@
         margin: 1rem 0; /
     }
 
+    .indexnav img {
+        height: auto;
+        width: 5rem;
+        display: flex;
+        flex-direction: left;
+    }
+
     .navigation-search {
-        position: static; 
         margin-top: 1rem; 
-        justify-content: center; 
+        justify-content: right; 
     }
 
     .navigation-search input {
-        width: 100%; /* La søkefeltet bruke hele bredden */
+        width: 40%; /* La søkefeltet bruke hele bredden */
         max-width: 20rem; /* Sett en maks bredde for å unngå at den blir for bred */
     }
 
     .navigation-search button {
-        width: 100%; /* Gjør knappen like bred som søkefeltet */
+        width: 20%; /* Gjør knappen like bred som søkefeltet */
         max-width: 10rem; 
     }
 }
@@ -158,7 +165,7 @@
 .bar {
     height: 0.2em; 
     width: 1.5em; 
-    background-color: black; 
+    background-color: rgb(255, 255, 255); 
     margin: 0.2em 0; 
 }
 
@@ -230,14 +237,16 @@
     .hamburger {
         display: flex; 
         flex-direction: column; 
+        justify-content: space-between;
         cursor: pointer; 
         position: absolute;
         right: 4rem; 
         top: 5.5rem; 
         z-index:1001;
+        justify-content: left;
     }
     #menu-toggle:checked + .hamburger + .navbar {
-        display: flex; 
+        display: flex;
     } 
 
     .navbar img {
