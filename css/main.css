@@ -309,6 +309,15 @@
     font-size: 1.2em;   
 }
 
+
+/**/
+.få-innsikt{
+    text-align: center;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;  
+
 .info-item ul{
     list-style: none;
 }
@@ -794,18 +803,18 @@ padding: 1em;
     background-color: #2F5233; 
 }
 
-/* Footer indexoppsett*/
+/* FOOTER indexoppsett*/
 .indexfooter { /* Genrelle styling av footer*/
     padding: 1rem; 
     background-color: #2F5233;
     color: white;
     font-size: 1.3rem;
 }
-.footer-innhold { /*Styler oppsettet til innholdet til footer, hvor de ulike seksjonene legger seg*/
+.indexfooter-innhold { /*Styler oppsettet til innholdet til footer, hvor de ulike seksjonene legger seg*/
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    max-width: 1200px;
+    max-width: 80%;
     flex-wrap: wrap;
 }
 
@@ -821,39 +830,30 @@ padding: 1em;
     text-decoration: none;
 }
 
-.footer-left, 
-.footer-middle,
-.footer-right{ /*Legger padding mellom alle seksjonene i footer, mellomrom*/
+.indexfooter-left, 
+.indexfooter-middle,
+.indexfooter-right{ /*Legger padding mellom alle seksjonene i footer, mellomrom*/
     padding-top: 3rem;
 }
 
 
 
 /* Styling venstre siden av footer*/
-.footer-left a{
+.indexfooter-left a{
     color:white;
     font-weight:bold;
 }
-.footer-left a:hover{
+.indexfooter-left a:hover{
     text-decoration: underline;
 }
-.footer-left h3{
-    font-size: 18px;
-    margin:0;
-}
-.footer-left p{
-    margin: 5px 0;
-}
-
-
 
 /* Styling footer midten */
 
-.footer-middle a{ /* Styler linkene */
+.indexfooter-middle a{ /* Styler linkene */
     color:white;
     font-weight: bold;
 }
-.footer-middle{
+.indexfooter-middle{
     margin: 5px 0;
 }
 .indexfooter-list li :hover{ /* Styler linkene når man drar over*/
@@ -889,7 +889,7 @@ padding: 1em;
 .indexsocial-list i{
     padding: 0.2rem;
 }
-.footer-right .indexsocial.list{ /*Legger padding rundt ikonene til sosiale medier */
+.indexfooter-right .indexsocial.list{ /*Legger padding rundt ikonene til sosiale medier */
     display: inline;
 }
 
