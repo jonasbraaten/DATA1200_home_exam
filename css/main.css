@@ -1314,7 +1314,7 @@ a.aktivitetslink { /*styler lenkene på aktivitets-siden*/
 .accessibilitynav ul li {
     list-style: none;
     display: inline-block;
-    margin-right: 2rem;url(http://127.0.0.1:3000/github.html)
+    margin-right: 2rem url(http://127.0.0.1:3000/github.html);
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
@@ -1601,4 +1601,5 @@ a.aktivitetslink { /*styler lenkene på aktivitets-siden*/
         margin-bottom: 1rem;
     }
 
+}
 }
