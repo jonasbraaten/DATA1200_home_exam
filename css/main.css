@@ -326,7 +326,6 @@
     font-weight: bold;  
 }
 
-}
 
 /*Responsive design for mindere skjermer på studieinfo*/
 @media (max-width: 768px){
@@ -1436,7 +1435,7 @@ padding: 1em;
 /* >==== GITHUB SIDE ====< */
 /* ======================< */
 .github{ /*bakgrunn med mange farger*/
-    background-image: linear-gradient(#ffbb00, #ff1b67, #ffbb00, #ff1b67, #ff8800, #ff1b67);
+    background-image: linear-gradient(#2f5233, #76b947, #2f5233);
 }
 
 .github body { /*Generelt for hele body*/
@@ -1446,16 +1445,16 @@ padding: 1em;
 }
 
 .github h1 { /* Hovedoverskrift */
-    background-color: #ffce2f;
-    color: #ff466e;
+    background-color: #2f5233;
+    color: #94c973;
     text-align: center;
     padding: 1.25rem;
     margin: 0;
-    font-size: 2.5em;
+    font-size: 5em;
 }
 
 .gitnav {
-    background-color: #ff0080;
+    background-color: #b1d8b7;
     padding: 1rem;
 }
 
@@ -1468,13 +1467,14 @@ padding: 1em;
 }
 
 .gitnav ul li a {
-    color: white;
+    color: #2f5233;
     font-size: 1.2rem;
     padding: 0.5rem;
 }
 
 .gitnav ul li a:hover {
-    background-color: #ff9100;
+    color: #b1d8b7;
+    background-color: #2f5233;
     border-radius: 5px; /* Avrunde kanter ved hover */
 }
 
@@ -1495,9 +1495,9 @@ padding: 1em;
 }
 
 .github h2 { /*Underoverskrifter*/
-    color: #ff466e; 
+    color: #2f5233; 
     font-size: 1.5rem;
-    border-bottom: 1px solid #ff6895; /* Legger til en enkel linje under overskriften */
+    border-bottom: 1px solid #2f5233; /* Legger til en enkel linje under overskriften */
     margin-top: 1%;
     margin-bottom: 4%;
 }
@@ -1582,3 +1582,4 @@ padding: 1em;
         margin-bottom: 1rem;
     }
 
+}
