@@ -223,30 +223,11 @@
  }
 
 
+ /*Accordionboksene er er de grønne informasjonsboksene*/
 /* Hover-effekt på accordion overskriftene */
 .accordion-overskrift:hover {
+    color: #2F5233;
     background-color: #B1D8B7;
-}
-
-/* Skjuler accordion radioknappene */
-.accordion-radio {
-    display: none;
-}
-
-/* Viser innholdet når accordion radioknappen blir trykt på */
-.accordion-radio:checked + .accordion-overskrift + .accordion-content {
-    display: block;
-}
-
-/* Container for alle accordion-boksene */
-.accordion-content {
-padding: 1em;
-    display: none; /* Start skjult */
-    border-top: 0.1em solid #ccc;
-    background-color: #f9f9f9;
-    font-size: 1em;
-    margin: 1rem; /*lage kun for p??*/
-    border-radius: 1rem;
 }
 
 /* Styling for overskriftene */
@@ -263,22 +244,50 @@ padding: 1em;
     box-shadow: 0.5rem 0.5rem 0.8rem rgba(2, 77, 20, 0.25);
 }
 
-/* Hover-effekt på overskriftene */
-.accordion-overskrift:hover {
-    color: #2F5233;
-    background-color: #B1D8B7;
+/* Skjuler accordion checkboxknappene */
+.accordion-checkbox {
+    display: none; /* Skjuler selve avkrysningsboksen */
 }
 
-/* Skjuler radioknappene */
-.accordion-radio {
-    display: none;
-}
-
-/* Viser innholdet når radioknappen blir trykt på */
-.accordion-radio:checked + .accordion-overskrift + .accordion-content {
+/* Viser innholdet når accordion checkboxknappen blir trykt på */
+.accordion-checkbox:checked + .accordion-overskrift + .accordion-content {
     display: block;
 }
 
+/* Container for alle accordion-boksene */
+.accordion-content {
+padding: 1em;
+    display: none; /* Start skjult */
+    border-top: 0.1em solid #ccc;
+    background-color: #f9f9f9;
+    font-size: 1em;
+    margin: 1rem;
+    border-radius: 1rem;
+    padding: 1em;
+    line-height: 2.2;
+}
+
+/* Fjerner understreking på linkene i informasjonsboksene */
+.accordion-content a {
+    text-decoration: none;
+    color: #76b947;
+}
+
+.accordion-content details{
+    color: #2f5233;
+    font-size: 1.1em;
+}
+
+/*Skalering for accordion- informasjonsboksene*/
+@media (max-width: 768px) {
+    .accordion {
+        padding: 1rem;
+        margin: 0.5rem auto;
+        box-shadow: none; /* fjern skygger for et enklere design */
+    }
+}
+
+/*Her begynner "studiets oppbygging, informasjonsboksen*/
 /* Overskrift*/
 .heading {  
     text-align: center;
@@ -312,7 +321,7 @@ padding: 1em;
     padding-bottom: 0.25rem;
 }
 
-/* Kurs seksjoner */
+/* Emne seksjoner */
 .course {
     display: flex;
     justify-content: space-between;
@@ -333,6 +342,7 @@ padding: 1em;
     font-size: 1rem;
 }
 
+/*Vekk med linjer under linker*/
 .course a:hover {
     text-decoration: underline;
 }
