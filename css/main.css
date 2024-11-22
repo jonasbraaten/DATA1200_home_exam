@@ -117,7 +117,7 @@
     z-index: 1000; 
 }
 
-/*Bildestyling*/
+/*OsloMet logo i navbar*/
 .navbar img {
     height: 4rem;
     position: absolute;
@@ -125,7 +125,7 @@
     top: 4rem;
 }
 
-/*Liste i navbar styling*/
+/*Styling for ul-listen*/
 .navbar ul {
     list-style: none; 
     padding: 0; 
@@ -148,11 +148,15 @@
 .navbar ul li a:hover {
     text-decoration: underline;
 }
+
+/*Sjekker om avkryssningsboks er valgt*/
 #menu-toggle:checked + .hamburger + .navbar {
     display: flex; 
     overflow: hidden;
+   /*Kilde til CSS selectors: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors*/
 }
 
+/*Skjuler barene i hamburgerikonet*/
 #menu-toggle:checked .hamburger .bar {
     display: none; 
 }
@@ -206,11 +210,14 @@
 }
 
 /*Studieinfo*/
+/*Overskrift*/
 .info-sectio-overskrift h2{
     padding: 1rem;
     font-weight: bold;
     font-size: 1.6em;
 }
+
+/*Grid-layout med fire kolonner*/
 .info-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -224,19 +231,21 @@
     text-align: center;
   }
   
-
-  .info-item {
-    text-align: center; 
-    border-top: 0.0625rem solid #ccc;
-    padding-top: 1rem; 
+/*Stil for info elemen (border)*/
+.info-item {
+   text-align: center; 
+   border-top: 0.0625rem solid #ccc;
+   padding-top: 1rem; 
   }
   
+
   .info-item h3 {
     margin: 0.5rem 0; 
     font-weight: bold;
     font-size: 1.2em;
     
 }
+
 .info-detail {
     font-size: 1.2em;
 }
@@ -250,7 +259,6 @@
 }
 
 /*Responsive design for mindere skjermer på studieinfo*/
-
 @media (max-width: 768px){
     .info-container{
         grid-template-columns: repeat(2, 1fr);
@@ -481,7 +489,8 @@ padding: 1em;
         align-items: center; /* Sentrer boksene horisontalt */
     }
 }
-/* Faglig leder - overskrift */
+
+/* Faglig leder */
 .faglig-leder h2 {
     text-align: center;
     font-size: 2rem;
@@ -542,6 +551,7 @@ padding: 1em;
     text-decoration: underline;
 }
 
+/*Responsiv for mindre skjermer på faglig leder delen*/
 @media(max-widtH: 768px){
     .profilkort {
         flex-direction: column; /* Bytter til kolonnevisning på smale skjermer */
@@ -566,18 +576,20 @@ padding: 1em;
 }
 
 /* Interessert-disse seksjonen */
+/*Container*/
 .interessert-disse {
     text-align: center;
     margin: 0 auto;
     max-width: 65rem;
 }
 
+/*Overskrifter*/
 .interessert-disse h2 {
     font-size: 2rem;
     margin-bottom: 1.5rem;
     color: #1f4118;
 }
-
+/*Listedetaljer*/
 .interessert-disse ul {
     list-style: none;
     margin: 0;
@@ -696,26 +708,29 @@ padding: 1em;
     }
 }
 /*Flere studenthistorier*/
+/*Container for studentyhistorier*/
 .studenthistorier {
     background-color: #154117;
     padding: 1.5rem; 
     text-align: center;
     border-radius: 0.5rem; 
     margin: 5rem auto; 
-    max-width: 30rem ;
-    
+    max-width: 30rem ;  
 }
+
+/*Overskrift*/
 .studenthistorier-tekst h2 {
     margin: 0.5rem 0;
     font-size: 2.5rem; 
     color:#147f12
 }
+
+/*Lenke*/
 .studenthistorier-tekst h2 a {
     text-decoration: none;
     color:#c1e1c5;
     font-size: 1.7rem;
 }
-
 .studenthistorier:hover {
     background-color: #2F5233; 
 }
