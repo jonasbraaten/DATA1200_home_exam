@@ -261,11 +261,13 @@
     background-color: #f4f4f4;
     padding: 0%;
 }
+
 .indexmain{
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 5%;
 }
+
 .indexhovedbilde img { /*hovedbilde på toppen av index*/
     width: 100rem;
     max-width: 100%;
@@ -293,7 +295,6 @@
     text-align: center;
     font-size: x-large;
     text-decoration: underline #94C973;
-    
   }
   
 /*Stil for info elemen (border)*/
@@ -309,23 +310,12 @@
     font-size: 1.2em;   
 }
 
-
 .info-item ul{
     list-style: none;
 }
 .info-detail {
     font-size: 1.2em;
 }
-
-/**/
-.få-innsikt{
-    text-align: center;
-    padding-top: 6rem;
-    padding-bottom: 2rem;
-    font-size: 1.5rem;
-    font-weight: bold;  
-}
-
 
 /*Responsive design for mindere skjermer på studieinfo*/
 @media (max-width: 768px){
@@ -348,6 +338,14 @@
     font-weight: bold;  
 }
 
+ /*Overskrift for Accordingboksene*/
+.få-innsikt{
+    text-align: center;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;  
+}
 
  /*Accordionboksene er er de grønne informasjonsboksene*/
 /* Hover-effekt på accordion overskriftene */
