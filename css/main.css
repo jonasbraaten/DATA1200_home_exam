@@ -755,138 +755,13 @@ body.activity-page { /* holder konsist i hele body (siden) med font, farge og li
 
 .herotittel { /* Dette er teskten over bilde på toppen av siden (hero bildet)*/
     font-size: clamp(1.5rem, 2vw + 1rem, 3rem);
-    color: #faffd0;
+    color: #ffffff;
     line-height: 2.5rem;
     text-align: center;
-    text-shadow: 2px -1px 1px black, -2px 1px 15px black, 
-
-}
-
-/* ----> Struktur av siden og layout av header, main, footer (aktivitetssiden) <---- */
-.aktivitetsmain { /*kanter på main-strukturen*/
-    margin: 1.5rem;
-    padding: 0.2rem;
-}
-
-.aktivitetsmain p { /*påvirker alle p i main som en default i main*/
-    font-size: 1.3rem;
-}
-
-.aktivitetsmain h2 { /* huker alle h2 inn litt fra venstre og størrelse*/
-    font-size: 2rem;
-    padding-left: 2rem;
-}
-
-.altomlaget p {
-    padding-top: 1.2rem;
-    padding-bottom: 1.2rem;
-}
-
-.aktuellespillere {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    max-width: 100%;
-    margin: 1rem auto;
-}
-
-.spillerinfo {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    border: 4px solid #000000;
+    background-color: #1f1f48;
+    border: #f4f4f4 solid;
     border-radius: 1rem;
-    background-color: #06061f;
-    max-width: fit-content;
-    margin: 0;
-}
-
-.spillertekst p {
-    display: block;
-    width: 100%;
-}
-
-.spillerinfo h3 {
-    color:#ffe3ae;
-    margin: 0.5rem 0;
-
-}
-
-.spillerinfo h4 {
-    color:#92b5d8;
-    margin: 0.5rem 0;
-}
-
-.spillerinfo p {
-    color:white;
-    margin: 0.5rem 0;
-}
-
-.spillerbilde picture {
-   display: flex;
-   justify-content: flex-end;
-   align-items: center;
-   max-width: 100%;
-   box-sizing: border-box;
-}
-
-.spillerbilde img {
-    height: 250px;
-    width: 250px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 5px solid #92b5d8;
-    margin: 2rem;
-    margin-bottom: 0;
-}
-
-.historieoversikt {
-    display: flex; /*legger aside ved siden av historie-seksjon*/
-    gap: 2rem; /*mellomrom mellom dem*/
-}
-
-.historie {
-    flex: 50%;
-    padding: 0.1rem;
-}
-
-.seiersoversikt {
-    padding: 0.5rem;
-    background-color: #d8be92;
-    border-radius: 1rem;;
-}
-
-.seiere li {
-    font-style: italic;
-    list-style: inside square;
-    margin: 0.5rem;
-}
-
-/*aktivitets-footer styling*/
-.aktivitetsfooter {
-    background-color: #c79ec7;
-    padding: 3rem;
-    text-align: center;
-}
-
-.aktivitetsfooter-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    justify-content: center;
-}
-
-.aktivitetsfooter-nav a {
-    color: #9d2c39;
-    font-size: 1rem;
-    text-decoration: none;
-}
-
-.aktivitetsfooter-nav a:hover {
-    transition: color 0.2s;
-    color:#105ba6;
+    padding: 1rem;
 }
 
 /* ----> Navigasjonen (aktivitetssiden) <---- */
@@ -923,39 +798,192 @@ body.activity-page { /* holder konsist i hele body (siden) med font, farge og li
     text-decoration: none;
 }    
 
+/* ----> Struktur av siden og layout av header, main, footer (aktivitetssiden) <---- */
+.aktivitetsmain { /*kanter på main-strukturen*/
+    margin: 1.5rem;
+    padding: 0.2rem;
+    overflow-x: hidden;
+}
+
+.aktivitetsmain p { /*påvirker alle p i main som en default i main*/
+    font-size: 1.3rem;
+}
+
+.aktivitetsmain h2 { /* huker alle h2 inn litt fra venstre og størrelse*/
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+
+.altomlaget p {
+    padding-left: 2rem;
+    padding-right: 8rem;
+}
+
+.aktuellespillere {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 100%;
+    margin: 1rem auto;
+}
+
+.spillerinfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 4px solid #000000;
+    border-radius: 1rem;
+    background-color: #06061f;
+    max-width: fit-content;
+    margin: 0;
+}
+
+.spillertekst p {
+    display: block;
+    width: 100%;
+}
+
+.spillerinfo h3 {
+    color:#ffe3ae;
+    margin: 0.5rem 0;
+    font-size: 2rem;
+
+}
+
+.spillerinfo h4 {
+    color:#c4d9ef;
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+}
+
+.spillerinfo p {
+    color:white;
+    margin: 0.5rem 0;
+}
+
+.spillerbilde picture { /* plassering spillerbildene*/
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   max-width: 100%;
+   box-sizing: border-box;
+}
+
+.spillerbilde img { /* justering av spillerbildene*/
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #ffe3ae;
+    margin: 2rem;
+    margin-bottom: 0;
+}
+
+.spillerbildeinstagram {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.instagramlenke {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.instagrambruker {
+    font-size: 1.2rem;
+    color: #0e1115;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #ffe3ae;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+}
+
+.historieoversikt {
+    display: flex; /*legger aside ved siden av historie-seksjon*/
+    gap: 2rem; /*mellomrom mellom dem*/
+}
+
+.historie {
+    flex: 50%;
+    padding-left: 2rem;
+    padding-right: 1rem;
+}
+
+.seiersoversikt {
+    color: white;
+    padding: 1rem;
+    background-color: #06061f;
+    border-radius: 1rem;;
+}
+
+.seiersoversikt h4 {
+    font-size: 2rem;
+    padding-left: 1rem;
+}
+
+.seiere li {
+    font-size: 1.5rem;
+    font-style: italic;
+    list-style: inside square;
+    margin: 0.5rem;
+}
+
 /* ----> Bilder / video / Lenker og annen media styling (aktivitetssiden) <----*/
 
 .handballhero { /* Dette er bilde på toppen av aktivitets-siden (hero bildet)*/
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('https://cloudfront-eu-central-1.images.arcpublishing.com/mentormedier/JQPJY5L2HND6HNKA6W3YIGFDJQ.jpg') no-repeat center center;
+    background: url('/bilder/håndballjentene.jpg') no-repeat center center;
     background-size: cover;
     height: 16rem;
     position: relative;
 }
 
 .aktivitetslenker { /*sentrerer og lager plass mellom aktivitets-lenker og annet*/
-    text-align: center;
-    margin-top: 1rem;
+    text-align: left;
+    margin-top: 2rem;
     margin-bottom: 2rem;
+    padding-left: 1rem;
 }
 
-a.aktivitetslink { /*styler lenkene på aktivitets-siden*/
-    background-color: #7f4e4e;
+.aktivitetslink { /*styler lenkene på aktivitets-siden*/
+    background-color: #2b3068;
     color: white;
     margin: 1rem;
     padding: 0.5rem;
     border-radius: 1rem;
-    font-size: clamp(0.77rem, 2vw, 1rem);
+    font-size: clamp(0.77rem, 4vw, 1rem);
 }
 
-.instagrambruker {
-    background-color: #ffe3ae;
-    margin: 1rem;
-    padding: 0.5rem;
-    border-radius: 1rem;
-    font-size: clamp(0.77rem, 2vw, 1rem);
+/*aktivitets-footer styling*/
+.aktivitetsfooter {
+    background-color: #624362;
+    color: white;
+    padding: 3rem;
+    text-align: center;
+}
+
+.aktivitetsfooter-nav ul {
+    list-style-type: none;
+    padding: 1rem;
+    margin: 0;
+    justify-content: center;
+}
+
+.aktivitetsfooter-nav a {
+    color: #ffffff;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.aktivitetsfooter-nav a:hover {
+    transition: color 0.2s;
+    color:#ffd182;
 }
 
 /* ----> Responsiv skjerm og størrelse (aktivitetssiden) <---- */
@@ -965,7 +993,17 @@ a.aktivitetslink { /*styler lenkene på aktivitets-siden*/
 
 @media screen and (max-width: 768px){
     .herotittel {
+        background: none;
+        border: none;
         font-size: 2rem;
+        text-shadow:  0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 1), 
+        -0.3rem -0.3rem 0.5rem rgba(0, 0, 0, 0.9), 
+        0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.7), 
+        0.7rem 0.7rem 1.4rem rgba(0, 0, 0, 0.5);
+    }
+
+    .aktivitets-navigasjon {
+        
     }
     
     .aktivitets-navigasjon ul li {
@@ -973,37 +1011,28 @@ a.aktivitetslink { /*styler lenkene på aktivitets-siden*/
         font-size: 1.5rem;
     }
 
-    .historieoversikt {
-        flex-direction: column;
+    .aktivitets-navigasjon li a {
+        text-align: left;
+    }    
+
+    .aktivitetsmain p { /*fonten på alle p i main som en default og padding 0 i main aktivitet*/
+        font-size: 1.3rem;
+        padding-left: 0;
+    }
+
+    .aktivitetsmain h2 { /* padding til vestre på alle h2 overskrifter i main aktivitet*/
+        padding-left: 1rem;
+        text-align: left;
+    }
+
+    .altomlaget p {
+        padding: 1rem;
+        padding-bottom: 0;
     }
 
     .spillerinfo { /* spillerbildene går under teksten under tekst og på midten*/
         flex-direction: column;
         align-items: center;
-    }
-
-    .aktivitetsmain p { /*fonten på alle p i main som en default og padding 0 i main aktivitet*/
-        font-size: 1.2rem;
-        padding-left: 0rem;
-    }
-
-    .aktivitetsmain h2 { /* padding til vestre på alle h2 overskrifter i main aktivitet*/
-        padding-left: 1rem;
-    }
-
-    .altomlaget h2 { 
-        font-size: 2rem;
-        text-align: center;
-    }
-
-    .aktuellespillere h2 {
-        font-size: 2rem;
-        text-align: center;
-    }
-
-    .historieseksjon h2 {
-        font-size: 2rem;
-        text-align: center;
     }
 
     .spillertekst h3 {
@@ -1014,18 +1043,27 @@ a.aktivitetslink { /*styler lenkene på aktivitets-siden*/
         font-size: 1.5rem;
     }
 
+    .historieoversikt {
+        flex-direction: column;
+    }
+
     .seiersoversikt h4 {
-        font-size: 1.4rem;
-        text-align: center;
+        font-size: 2rem;
+        text-align: left;
     }
 
     .seiere li {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
     .spillerbilde img { /* spiller bildet blir mindre i tillegg*/
-        width: 200px;
-        height: 200px;
+        width: 250px;
+        height: 250px;
+    }
+
+    .aktivitetslenker {
+        text-align: left;
+        padding-left: 0;
     }
 }
 
