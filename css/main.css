@@ -837,6 +837,7 @@ padding: 1em;
 }
 
 
+
 /* Styling venstre siden av footer*/
 .footer-left a{
     color:white;
@@ -854,7 +855,9 @@ padding: 1em;
 }
 
 
+
 /* Styling footer midten */
+
 .footer-middle a{ /* Styler linkene */
     color:white;
     font-weight: bold;
@@ -874,6 +877,7 @@ padding: 1em;
 .indexfooter-list li{ 
     list-style-type: none
 }
+
 
 
 /* Styling av sosiale medier liste, høyre side av footer */
