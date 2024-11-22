@@ -76,11 +76,70 @@
     cursor: pointer;
 }
 
-.navigation-search button:hover {
+.navigation-search button:hover { /*Styler hover på søk-knapp*/
     background-color: #a2cca0;
     color: #000;
 }
+.indexhovedbilde{
+    position: relative; /* Gjør det mulig å plassere overlay-elementer over bildet */
+    display: inline-block;
+    width: 100%; /* Gjør containeren full bredde */
+    max-width: 100%; /* Forhindre overflyt */
+}
+.indexhovedbilde img{ /*Justerer bildet, gir det full bredde osv.*/
+    display: block; 
+    width: 100%; 
+    height: auto; 
+}
+.overskrift-hovedbilde{ /*Justerer overskriften som ligger over bildet */
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); /* Justert for sentrering */
+    color: white; 
+    font-size: clamp(1.5rem, 5vw, 3rem); /* Gjør fontstørrelsen responsiv */
+    font-weight: bold; 
+    text-align: center; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 1rem; 
+    width: 90%; /* Sørg for at teksten ikke går utenfor containeren */
+    box-sizing: border-box; 
+    border-radius: 0.5rem; 
+    word-wrap: break-word; /* Bryt teksten hvis den er for lang */
+}
 
+/*Responsivitet til header*/
+@media (max-width: 768px) { 
+    .indexheader {
+        padding: 2rem; 
+        text-align: center; 
+    }
+
+    .indexnav ul {
+        display: block; 
+        text-align: center; 
+    }
+
+    .indexnav ul li {
+        margin: 1rem 0; /
+    }
+
+    .navigation-search {
+        position: static; 
+        margin-top: 1rem; 
+        justify-content: center; 
+    }
+
+    .navigation-search input {
+        width: 100%; /* La søkefeltet bruke hele bredden */
+        max-width: 20rem; /* Sett en maks bredde for å unngå at den blir for bred */
+    }
+
+    .navigation-search button {
+        width: 100%; /* Gjør knappen like bred som søkefeltet */
+        max-width: 10rem; 
+    }
+}
 /*Hamburgermeny*/
 .menu-toggle {
     display: none;  
@@ -203,7 +262,11 @@
     background-color: #f4f4f4;
     padding: 0%;
 }
-
+.indexmain{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+}
 .indexhovedbilde img { /*hovedbilde på toppen av index*/
     width: 100rem;
     max-width: 100%;
@@ -224,11 +287,14 @@
     gap: 1rem; 
     max-width:95rem;
     margin: 0 auto; 
-    padding: 1rem; 
+    padding: 2rem; 
   }
 
   .info-container-overskrift{
     text-align: center;
+    font-size: x-large;
+    text-decoration: underline #94C973;
+    
   }
   
 /*Stil for info elemen (border)*/
@@ -449,18 +515,16 @@ padding: 1em;
 
 /*Studiested og Spørsmål om utdanningen?*/
 
-.indexgenrellinfo{
-    display: flex; /* Bruk Flexbox for å arrangere elementene horisontalt */
+.indexgenrellinfo{ /*Legger elementene i to flexboxer*/
+    display: flex; 
     gap: 1rem; /* Mellomrom mellom seksjonene */
     justify-content: space-between; /* Sentrer seksjonene horisontalt */
-    align-items: stretch; /* Juster seksjonene til toppen */
-    padding: 1rem; /* Legg til litt padding rundt containeren */
-    
-
+    align-items: stretch; 
+    padding: 1rem; 
 }
 .studiested, 
-.spørsmålomutdanning{
-    background-color: #B1D8B7; /* Grå bakgrunnsfarge */
+.spørsmålomutdanning{ /*Styler flexboxene*/
+    background-color: #B1D8B7; 
     padding: 2rem;
     border-radius: 3rem; /* Runde hjørner */
     flex: 1; /* Sørg for at seksjonene tar opp lik plass */
@@ -482,6 +546,10 @@ padding: 1em;
 .spørsmålomutdanning a{
     color: #2F5233; 
 }
+.spørsmålomutdanning a:hover{
+    text-decoration: underline;
+}
+
 /* Responsiv tilpasning for mindre skjermer */
 @media (max-width: 768px) {
     .indexgenrellinfo {
@@ -769,12 +837,15 @@ padding: 1em;
 }
 
 
-/* Venstre siden av footer*/
+
+/* Styling venstre siden av footer*/
 .footer-left a{
     color:white;
     font-weight:bold;
 }
-
+.footer-left a:hover{
+    text-decoration: underline;
+}
 .footer-left h3{
     font-size: 18px;
     margin:0;
@@ -784,7 +855,9 @@ padding: 1em;
 }
 
 
-/* Footer midten */
+
+/* Styling footer midten */
+
 .footer-middle a{ /* Styler linkene */
     color:white;
     font-weight: bold;
@@ -806,7 +879,8 @@ padding: 1em;
 }
 
 
-/* Sosiale medier liste, høyre side av footer */
+
+/* Styling av sosiale medier liste, høyre side av footer */
 .indexsocial-list a{
     color: white;
     font-weight: bold;
