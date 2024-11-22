@@ -83,17 +83,18 @@
 
 /*Hamburgermeny*/
 .menu-toggle {
-    display: none; 
-   
+    display: none;  
+    overflow-x:hidden; 
 }
+/*Hamburgerikon*/
 .hamburger {
     display: flex; 
     flex-direction: column; 
     cursor: pointer; 
-    position: fixed;
-    right: 2rem; 
+    position: absolute;
+    right: 5rem; 
     top: 4rem; 
-    Z-INDEX:1001;
+    z-index:1001;
 }
 .bar {
     height: 0.2em; 
@@ -101,6 +102,8 @@
     background-color: black; 
     margin: 0.2em 0; 
 }
+
+/*Styling av navbar*/
 .navbar {
     display: none; 
     flex-direction: column; 
@@ -114,10 +117,15 @@
     z-index: 1000; 
 }
 
+/*Bildestyling*/
 .navbar img {
     height: 4rem;
+    position: absolute;
+    left: 5rem; 
+    top: 4rem;
 }
 
+/*Liste i navbar styling*/
 .navbar ul {
     list-style: none; 
     padding: 0; 
@@ -126,6 +134,8 @@
     line-height: 3.5rem;
     text-align: center;
 }
+
+/*Styling av listeinnholdet*/
 .navbar ul li {
     display: block; 
     padding-bottom: 0.5rem; 
@@ -146,7 +156,39 @@
 #menu-toggle:checked .hamburger .bar {
     display: none; 
 }
-/*Hamburgermeny slutter her */
+
+/*Responsiv for mindre skjermer*/
+@media (max-width: 768px){
+    .navbar{
+        display: none;
+        position: fixed; 
+        z-index: 1000; 
+    }
+    .hamburger {
+        display: flex; 
+        flex-direction: column; 
+        cursor: pointer; 
+        position: absolute;
+        right: 4rem; 
+        top: 5.5rem; 
+        z-index:1001;
+    }
+    #menu-toggle:checked + .hamburger + .navbar {
+        display: flex; 
+    } 
+
+    .navbar img {
+        height: 4rem;
+        position: absolute;
+        left: 2rem; 
+        top: 5rem;
+    }
+
+    .navbar ul {
+       font-size: 2rem; /* Mindre fontstørrelse til mobilvisning */
+       line-height: 3rem; /* Endre linjehøyde for bedre spacing */
+    }
+}
 
 /* index-id siden under her*/
 
@@ -207,16 +249,15 @@
     font-weight: bold;  
 }
 
-
 /*Responsive design for mindere skjermer på studieinfo*/
 
-@media (max-width: 48em){
+@media (max-width: 768px){
     .info-container{
         grid-template-columns: repeat(2, 1fr);
     }
  }
 
- @media (max-width: 30em){
+ @media (max-width: 480px){
     .info-container{
         grid-template-columns: 1fr;
     }
@@ -489,6 +530,29 @@ padding: 1em;
 
 .profildetaljer p a:hover {
     text-decoration: underline;
+}
+
+@media(max-widtH: 768px){
+    .profilkort {
+        flex-direction: column; /* Bytter til kolonnevisning på smale skjermer */
+        align-items: flex-start; /* Justerer innholdet til venstre */
+    }
+
+    .profilbilde {
+        width: 50%; /* Lager bildet responsivt */
+        height: auto; /* Beholder proporsjoner */
+        margin-right: 20rem; /* Fjerner margin */
+        margin-left: 5.59rem;
+        margin-bottom: 1rem; /* Gir litt plass under bildet */
+    }
+
+    .profildetaljer h2 {
+        font-size: 1.4rem; /* Lite fontstørrelse for mobil */
+    }
+
+    .profildetaljer p {
+        font-size: 1.2rem; /* Lite fontstørrelse for mobil */
+    }
 }
 
 /* Interessert-disse seksjonen */
