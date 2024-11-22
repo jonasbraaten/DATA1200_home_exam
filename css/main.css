@@ -1467,6 +1467,7 @@ padding: 1em;
 
 /* >==== GITHUB SIDE ====< */
 /* ======================< */
+
 .github{ /*bakgrunn med mange farger*/
     background-image: linear-gradient(#2f5233, #76b947, #2f5233);
 }
@@ -1486,12 +1487,12 @@ padding: 1em;
     font-size: 5em;
 }
 
-.gitnav {
+.gitnav { /*Meny generell*/
     background-color: #b1d8b7;
     padding: 1rem;
 }
 
-.gitnav ul {
+.gitnav ul { /*Meny*/
     display: flex; /*Flexbox*/
     justify-content: center;
     gap: 2rem;
@@ -1499,25 +1500,25 @@ padding: 1em;
     list-style: none; /*Fjerner punktene*/
 }
 
-.gitnav ul li a {
+.gitnav ul li a { /*Meny skrift*/
     color: #2f5233;
     font-size: 1.2rem;
     padding: 0.5rem;
 }
 
-.gitnav ul li a:hover {
+.gitnav ul li a:hover { /*Paragrafer*/
     color: #b1d8b7;
     background-color: #2f5233;
     border-radius: 5px; /* Avrunde kanter ved hover */
 }
 
-.github main {
+.github main { /*Hoved informasjon*/
     padding: 1rem; 
     margin: 1rem auto; 
     max-width: 70rem; 
 }
 
-.github section {
+.github section { /*Sekjsoner*/
     background: #ffffff;
     margin-bottom: 1.5rem;
     margin: 5%;
@@ -1535,18 +1536,18 @@ padding: 1em;
     margin-bottom: 4%;
 }
 
-.bilde-galleri img, .bilde-galleri2 img {
+.bilde-galleri img, .bilde-galleri2 img { /*Bilder*/
     width: 100%; /* Bildene fyller bredden */
     height: auto; /*Auto høyde for å beholde formatet til bildene*/
     margin-bottom: 1rem;
 }
 
-.github img:hover {
+.github img:hover { /*Hover til bildene*/
     transform: scale(1.01); /* Gjør bildet litt større ved hover */
     transition: transform 0.3s ease; /* Glatt overgang for skalering */
 }
 
-.github p {
+.github p { /*Paragrafer*/
     line-height: 2; /* Fjerner font-size hvis 1rem er standard */
 }
 
