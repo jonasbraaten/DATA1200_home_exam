@@ -994,6 +994,7 @@ padding: 1em;
 .spillertekst p {
     display: block;
     width: 100%;
+    padding-right: 2rem;
 }
 
 .spillerinfo h3 {
@@ -1062,9 +1063,11 @@ padding: 1em;
 }
 
 .seiersoversikt {
-    padding: 0.5rem;
+    padding: 1rem;
     background-color: #d8be92;
-    border-radius: 1rem;;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+
 }
 
 .seiere li {
@@ -1089,6 +1092,7 @@ padding: 1em;
     text-align: left;
     margin-top: 1rem;
     margin-bottom: 2rem;
+    padding-left: 1rem;
 }
 
 .aktivitetslink { /*styler lenkene på aktivitets-siden*/
@@ -1101,7 +1105,7 @@ padding: 1em;
 }
 
 /*aktivitets-footer styling*/
-.aktivitetsfooter {
+.aktivitetsfooter-nav {
     background-color: #1a2e56;
     color: #ffffff;
     padding: 3rem;
@@ -1165,6 +1169,10 @@ padding: 1em;
         text-align: left;
     }
 
+    .altomlaget p {
+        font-size: 1.5rem;
+    }
+
     .spillerinfo { /* spillerbildene går under teksten under tekst og på midten*/
         flex-direction: column;
         align-items: center;
@@ -1200,19 +1208,15 @@ padding: 1em;
     .historieseksjon h2 {
         font-size: 2rem;
         text-align: left;
+        color: white;
     }
 
-    .historie h2 {
-        color: white;
+    .historie p {
+        font-size: 1.5rem;
     }
 
     .seiersoversikt {
         background-color: white;
-        color: black;
-    }
-
-    .seiere li {
-        font-size: 1.5rem;
         color: black;
     }
 
@@ -1228,11 +1232,11 @@ padding: 1em;
     }
 
     .seiere li {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
     .aktivitetslink {
-        background-color: #185f7b;
+        background-color: #235468;
         color: white;
     }
 
@@ -1242,14 +1246,6 @@ padding: 1em;
         font-weight: bold;
         background-color: #5c0707;
         color: #f7f3e0;
-        font-weight: bold;
-        background-color: #5c0707;
-    }
-  
-    .instagrambruker {
-        color: #f7f3e0;
-        font-weight: bold;
-        background-color: #5c0707;
     }
 }
 
@@ -1284,7 +1280,7 @@ padding: 1em;
 .accessibilitynav ul li {
     list-style: none;
     display: inline-block;
-    margin-right: 2rem url(http://127.0.0.1:3000/github.html);
+    margin-right: 2rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
@@ -1571,5 +1567,4 @@ padding: 1em;
         margin-bottom: 1rem;
     }
 
-}
 }
