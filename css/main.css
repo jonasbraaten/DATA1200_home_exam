@@ -254,7 +254,6 @@
 }
 
 /* index-id siden under her*/
-
 .mainbody{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0%;
@@ -304,24 +303,14 @@
    padding-top: 1rem; 
   }
   
-
   .info-item h3 {
     margin: 0.5rem 0; 
     font-weight: bold;
-    font-size: 1.2em;
-    
+    font-size: 1.2em;   
 }
 
-.info-detail {
-    font-size: 1.2em;
-}
-
-/**/
-.få-innsikt{
-    text-align: center;
-    padding: 2rem;
-    font-size: larger;
-    font-weight: bold;  
+.info-item ul{
+    list-style: none;
 }
 
 /*Responsive design for mindere skjermer på studieinfo*/
@@ -336,6 +325,14 @@
         grid-template-columns: 1fr;
     }
  }
+
+ /*Overskrift over accordianboksene*/
+ .få-innsikt{
+    text-align: center;
+    padding: 2rem;
+    font-size: larger;
+    font-weight: bold;  
+}
 
 
  /*Accordionboksene er er de grønne informasjonsboksene*/
@@ -563,8 +560,7 @@ padding: 1em;
     text-align: center;
     font-size: 2rem;
     color: #1f4118;
-    margin-bottom: 1rem;
-    margin-top: 2rem;
+    margin-bottom: 2rem o 1rem;
 } 
 
 /* Profilkort */
@@ -592,15 +588,17 @@ padding: 1em;
 .profildetaljer h2 {
     margin: 0;
     font-size: 1.6rem;
-    color: #333;
+    color: #333;       
 }
 
-.profildetaljer h2 a {
+.profildetaljer h2 a,
+.profildetaljer p a {
     text-decoration: none;
-    color: inherit;
+    color: #333;       
 }
 
-.profildetaljer h2 a:hover {
+.profildetaljer h2 a:hover,
+.profildetaljer p a:hover {
     text-decoration: underline;
 }
 
@@ -610,28 +608,20 @@ padding: 1em;
     font-size: 1.4rem;
 }
 
-.profildetaljer p a {
-    color: #333;
-    text-decoration: none;
-}
-
-.profildetaljer p a:hover {
-    text-decoration: underline;
-}
-
 /*Responsiv for mindre skjermer på faglig leder delen*/
 @media(max-widtH: 768px){
     .profilkort {
-        flex-direction: column; /* Bytter til kolonnevisning på smale skjermer */
-        align-items: flex-start; /* Justerer innholdet til venstre */
+        flex-direction: column; 
+        align-items: flex-start; 
     }
 
     .profilbilde {
-        width: 50%; /* Lager bildet responsivt */
-        height: auto; /* Beholder proporsjoner */
-        margin-right: 20rem; /* Fjerner margin */
+        width: 50%; 
+        height: auto; 
+        margin: 0 0 1rem 0;
+       /* margin-right: 20rem;
         margin-left: 5.59rem;
-        margin-bottom: 1rem; /* Gir litt plass under bildet */
+        margin-bottom: 1rem; */
     }
 
     .profildetaljer h2 {
@@ -644,6 +634,7 @@ padding: 1em;
 }
 
 /* Interessert-disse seksjonen */
+
 /*Container*/
 .interessert-disse {
     text-align: center;
@@ -665,7 +656,7 @@ padding: 1em;
 }
 
 .interessert-disse li {
-    text-align: left;
+    text-align: left;      /*? ta vekk, why?*/
     padding: 1rem;
     border-bottom: 0.0625rem solid #ddd;
 }
@@ -683,12 +674,12 @@ padding: 1em;
     color: #333;
 }
 
-.interessert-disse li p a {
+.interessert-disse a {
     text-decoration: none;
     color: #333;
 }
 
-.interessert-disse li p a:hover {
+.interessert-disse a:hover {
     text-decoration: underline;
 }
 
@@ -787,14 +778,14 @@ padding: 1em;
 }
 
 /*Overskrift*/
-.studenthistorier-tekst h2 {
+.studenthistorier h2 {
     margin: 0.5rem 0;
     font-size: 2.5rem; 
     color:#147f12
 }
 
 /*Lenke*/
-.studenthistorier-tekst h2 a {
+.studenthistorier h2 a {
     text-decoration: none;
     color:#c1e1c5;
     font-size: 1.7rem;
