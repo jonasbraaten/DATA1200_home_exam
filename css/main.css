@@ -1301,7 +1301,7 @@ a.aktivitetslink { /*styler lenkene på aktivitets-siden*/
     font-size: 1.5rem;
 }
 
-.github h1 { /*Hovedoverskriften*/
+.github h1 { /* Hovedoverskrift */
     background-color: #ffce2f;
     color: #ff466e;
     text-align: center;
@@ -1316,19 +1316,17 @@ a.aktivitetslink { /*styler lenkene på aktivitets-siden*/
 }
 
 .gitnav ul {
-    list-style-type: none; /* Fjerner punktmerking */
-    display: flex; /* Viser listen som en rad */
-    justify-content: center; /* Sentraliserer listen horisontalt */
-    gap: 2rem; /* Avstand mellom listeelementene */
+    display: flex; /*Flexbox*/
+    justify-content: center;
+    gap: 2rem;
     font-weight: bold;
+    list-style: none; /*Fjerner punktene*/
 }
 
 .gitnav ul li a {
     color: white;
     font-size: 1.2rem;
     padding: 0.5rem;
-    transition: background-color 0.3s ease; /* Glatt overgang ved hover */
-    text-decoration: none;
 }
 
 .gitnav ul li a:hover {
@@ -1339,7 +1337,7 @@ a.aktivitetslink { /*styler lenkene på aktivitets-siden*/
 .github main {
     padding: 1rem; 
     margin: 1rem auto; 
-    max-width: 70rem;
+    max-width: 70rem; 
 }
 
 .github section {
@@ -1348,7 +1346,7 @@ a.aktivitetslink { /*styler lenkene på aktivitets-siden*/
     margin: 5%;
     padding: 5%;
     border: 1px solid #ddd; /* Lys farge på kantene */
-    border-radius: 0.6rem; /* Avrunde hjørner */
+    border-radius: 0.8rem; /* Avrunde hjørner */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Myk skygge */
 }
 
@@ -1372,9 +1370,7 @@ a.aktivitetslink { /*styler lenkene på aktivitets-siden*/
 }
 
 .github p {
-    font-size: 1rem;
-    line-height: 2; /* Øker linjeavstanden for bedre lesbarhet */
-    margin-bottom: 1rem;
+    line-height: 2; /* Fjerner font-size hvis 1rem er standard */
 }
 
 .ulemper { /* Punktliste */
@@ -1389,11 +1385,12 @@ a.aktivitetslink { /*styler lenkene på aktivitets-siden*/
     padding: 0.5%;
     list-style-type: disc;
 }
-.github-footer { /*Bunntekst*/
+
+.github-footer { /* Footer */
     color: white;
     text-align: center;
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    padding: 1rem 0;
 }
 
 @media (max-width: 768px) { /* Tilpasning for mindre skjermer */
