@@ -1250,6 +1250,8 @@ a.aktivitetslink { /*styler lenkene på aktivitets-siden*/
 
 .github section {
     background: #ffffff;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
     border: 1px solid #ddd;
     padding: 1rem;
     margin-bottom: 1.5rem;
