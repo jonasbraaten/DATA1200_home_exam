@@ -1334,6 +1334,8 @@ padding: 1em;
 
 /* ====> ACCESSIBILITY SIDEN UNDER <==== */
 /* ===================================== */
+
+/* Body */
 .accessibilitybody {
     background-color: #2F5233; /* hvis browser ikke skulle supporte gradient */
     background-image: linear-gradient( #76B947 1%, 15%,#2F5233, black 96%);
@@ -1341,11 +1343,13 @@ padding: 1em;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Header */
 .accessibilityheader {
     padding: 1rem;
     padding-top: 3rem;
 }
 
+/* Meny */
 .accessibilitynav {
     display: flex;
     align-items: center;
@@ -1369,24 +1373,27 @@ padding: 1em;
     border-radius: 10px; 
 }
 
+/* Hover til meny */
 .accessibilitynav ul li a:hover {
     background-color: #ffffff;
     color: #1d1f06;
     text-decoration: none;
 }
 
-/* main-accessibility*/
+/* Main-accessibility*/
 .accessibilitymain {
     color: white;
     padding-top: 3rem;
 }
 
+/* H2 */
 .accessibilitymain h2 {
     font-size: 3rem;
     margin: 1rem;
     padding-left: 3rem;
 }
 
+/* Paragraf */
 .accessibilitymain p {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -1394,6 +1401,7 @@ padding: 1em;
     padding-right: 3rem;
 }
 
+/* Introduksjon layout*/
 .accessibilityintrotekst {
     display: flex;
     justify-content: space-between;
@@ -1403,6 +1411,7 @@ padding: 1em;
     padding-bottom: 2rem;
 }
 
+/* Introduksjons tekst */
 .accessibilityintrotekst p {
     flex: 1;
     padding: 2rem;
@@ -1411,12 +1420,14 @@ padding: 1em;
     border-radius: 1rem;
 }
 
+/* Bilder */
 .lighthousebilder img {
     width: 100%;
     Height: auto;
     padding: 2rem;
 }
 
+/* Tekst under bilde */
 .lighthousetestpar {
     color: #333;
     padding: 1rem;
@@ -1431,6 +1442,7 @@ padding: 1em;
     margin: 2rem;
 }
 
+/* Bilde */
 .manuellbilde img {
     background-color: none;
     width: 100%;
@@ -1441,6 +1453,7 @@ padding: 1em;
     padding-right: 2rem;
 }
 
+/* Tekst under bilde */
 .manuelltest p {
     color: #333;
     padding: 2rem;
@@ -1450,34 +1463,39 @@ padding: 1em;
     border-radius: 1.5rem;
 }
 
+/* Endringer */
 .endringKontrast p {
     padding: 2rem;
     margin: 1rem;
 }
 
+/* Paragraf */
 .kodeaktivitetsside p {
     padding: 2rem;
 }
 
+/* Bilde */
 .kodeaktivitetsside img {
     width: 100%;
     Height: auto;
     padding: 2%;
 }
 
+/* Flexboks */
 .footerflex {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
+/* Bilde av footer endring */
 .footerflex img {
     width: 50%;
     height: auto;
     padding-bottom: 2rem;
 }
 
-/* footer-accessibility*/
+/* Footer*/
 .accessibilityfooter {
     font-size: 0.5rem;
     background-color: #000;
@@ -1485,6 +1503,7 @@ padding: 1em;
     padding: 2rem;
 }
 
+/* Media for accessibility */
 @media screen and (max-width: 768px){
     .accessibilitymain h2 {
         padding-left: 0rem;
