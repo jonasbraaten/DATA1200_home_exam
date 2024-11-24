@@ -987,12 +987,12 @@ padding: 1em;
     padding-left: 2rem;
 }
 
-.altomlaget p {
+.altomlaget p { /*teksten til alt om laget*/
     padding: 2rem;
     padding-top: 1rem;
 }
 
-.aktuellespillere {
+.aktuellespillere { /*artikkelen aktuelle spillere*/
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -1000,7 +1000,7 @@ padding: 1em;
     margin: 1rem auto;
 }
 
-.spillerinfo {
+.spillerinfo { /* seksjonene med spillerinfo / boksene med spillerinfo*/
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -1013,31 +1013,31 @@ padding: 1em;
     margin-bottom: 2rem;
 }
 
-.spillertekst p {
+.spillertekst p { /* teksten i spillerinfo boksene*/
     display: block;
     width: 100%;
     padding-right: 2rem;
 }
 
-.spillerinfo h3 {
+.spillerinfo h3 { /* spillerposisjon i spillerinfo boksene*/
     font-size: 2.5rem;
     color:#ffe3ae;
     margin: 1rem;
 
 }
 
-.spillerinfo h4 {
+.spillerinfo h4 { /* spillernavn i spillerinfo boksene*/
     color:#bfd5eb;
     margin-left: 1rem;
     font-size: 2rem;
 }
 
-.spillerinfo p {
+.spillerinfo p { /* teksten under h3 og h4 i spillerinfo boksene*/
     color:white;
     margin-left: 1rem;
 }
 
-.spillerbilde picture {
+.spillerbilde picture { /* spillerbilde picture seksjon plassering av spillerbilde*/
    display: flex;
    justify-content: flex-end;
    align-items: center;
@@ -1045,7 +1045,7 @@ padding: 1em;
    box-sizing: border-box;
 }
 
-.spillerbilde img {
+.spillerbilde img { /* justering av selve spillerbilde str, ramme osv */
     height: 15.625rem;
     width: 15.625rem;
     border-radius: 50%;
@@ -1055,18 +1055,18 @@ padding: 1em;
     margin-bottom: 0;
 }
 
-.spillerbildeinstagram {
+.spillerbildeinstagram { /* plassering av instagram under bilde seksjonen*/
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 2rem;
 }
 
-.instagramlenke {
+.instagramlenke { 
     margin-top: 2rem;
 }
 
-.instagrambruker {
+.instagrambruker { /* styling av llinken til instagram under bildet*/
     background-color: #ffe3ae;
     margin: 1rem;
     padding: 0.5rem;
@@ -1074,14 +1074,14 @@ padding: 1em;
     font-size: clamp(0.77rem, 2vw, 1rem);
 }
 
-.historieartikkel h3 {
+.historieartikkel h3 { /*artikkel historie overskrift*/
     font-size: 3rem;
     padding-left: 2rem;
     padding-right: 1rem;
     padding-top: 2rem;
 }
 
-.historieoversikt {
+.historieoversikt { /* seksjonen med tekst om histoiren til laget og plasseringen ved siden av aside*/
     display: flex; /*legger aside ved siden av historie-seksjon*/
     gap: 2rem; /*mellomrom mellom dem*/
     padding-left: 2rem;
@@ -1093,7 +1093,7 @@ padding: 1em;
     flex: 50%;
 }
 
-.seiersoversikt {
+.seiersoversikt { /* aside ved siden av historieteksten*/
     padding: 1rem;
     padding-top: 0;
     background-color: #2c2211;
@@ -1102,14 +1102,14 @@ padding: 1em;
     margin-bottom: 2rem;
 }
 
-.seiersoversikt h3 {
+.seiersoversikt h3 { /* oversktiften inni aside*/
     font-size: 2.5rem;
     padding-top: 1rem;
     padding-right: 2rem;
     line-height: 3.5rem;
 }
 
-.seiere li {
+.seiere li { /*teskten inni aside om seiere*/
     font-style: italic;
     list-style: inside square;
     margin: 0.5rem;
@@ -1126,8 +1126,6 @@ padding: 1em;
     height: 16rem;
     position: relative;
 }
-
-
 
 .aktivitetslenker { /*sentrerer og lager plass mellom aktivitets-lenker og annet*/
     text-align: left;
