@@ -1299,6 +1299,11 @@ padding: 1em;
     .aktivitetslink {
         background-color: #235468;
         color: white;
+        font-size: 1.2rem;
+    }
+
+    .aktivitetslenker{
+       padding: 0;
     }
 
     .instagrambruker {
