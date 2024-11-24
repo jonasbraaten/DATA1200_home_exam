@@ -564,7 +564,7 @@ padding: 1em;
 .studiested a{
    color: #2F5233; 
 }
-.studiested a:hover{
+.studiested a:hover{ /*Endrer bakgrunnsfarge og skriftfarge med hover*/
     background-color:#2F5233;
     color:white;
     border-radius: 3rem; /*gjør at kantene på hover blir avrundet*/
@@ -574,7 +574,7 @@ padding: 1em;
 .spørsmålomutdanning a{
     color: #2F5233; 
 }
-.spørsmålomutdanning a:hover{
+.spørsmålomutdanning a:hover{ /*understrek på link med hover*/
     text-decoration: underline;
 }
 
