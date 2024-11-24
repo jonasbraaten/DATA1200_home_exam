@@ -1541,8 +1541,6 @@ padding: 1em;
     color: #2f5233; 
     font-size: 1.5rem;
     border-bottom: 1px solid #2f5233; /* Legger til en enkel linje under overskriften */
-    margin-top: 1%;
-    margin-bottom: 4%;
 }
 
 .bilde-galleri img, .bilde-galleri2 img { /*Bilder*/
@@ -1557,7 +1555,7 @@ padding: 1em;
 }
 
 .github p { /*Paragrafer*/
-    line-height: 2; /* Fjerner font-size hvis 1rem er standard */
+    line-height: 2;
 }
 
 .ulemper { /* Punktliste */
@@ -1570,7 +1568,6 @@ padding: 1em;
     margin-bottom: 0.5rem;
     margin: 2%;
     padding: 0.5%;
-    list-style-type: disc;
 }
 
 .github-footer { /* Footer */
