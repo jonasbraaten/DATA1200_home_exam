@@ -40,7 +40,7 @@
                     Matematisk Modellering- siden sin fargepalett, for å sette vårt eget preg på designet. 
                     Vi ble enig om grunnleggende struktur, og layout som skulle sikre en brukervennlig og 
                     tilgjengelig opplevelse for alle brukere. Utover prosessen har mye endret seg, og vi har 
-                    endret synspunkt på hvordan ting skal utføres, jo mer vi …
+                    endret synspunkt på hvordan ting skal utføres.
                 </p>
             </section>
                 <section class="lighthousebilde">
@@ -50,15 +50,29 @@
             <section class="manuelltest">
                 <h2>MANUELL SKJEKK</h2>
                 <p>
-                    Vi har brukt en enkel struktur, så det skal være lett å lese seg gjennom koden. Vi har et strukturert og korrekt hierarki, hvor vi for eksempel holdt oss til at /article/ er over /structure/.  Vi har ikke brukt /br/ i prosjektet, men heller /p/ eller andre semantiske elementer for linjeskift og bryte informasjon inn i forskjellige paragrafer. Vi har styrt unna /div/…
+                    Vi har brukt en enkel struktur, så det skal være lett å lese seg gjennom koden. Vi har et strukturert og korrekt hierarki, hvor vi for eksempel holdt oss til at /article/ er over /structure/.  Vi har ikke brukt /br/ i prosjektet, men heller /p/ eller andre semantiske elementer for linjeskift og bryte informasjon inn i forskjellige paragrafer. Vi har styrt unna /div/. 
                     Det har vært viktig for oss å bruke utrykk som er universelle. For eksempel med informasjonsboksene om studiet, trykker man på en boks for å åpne den, kan man trykke på boksen igjen så lukker den seg, ved hjelp av "accordion-checkbox". For å forstå at noe er en link, har vi brukt streker under. For å gjøre det enda tydeligere, har vi også valgt å enten fremheve de, få bokser rundt de eller endre farge.
                     På hver side holdt vi oss til en fargepalett, så brukeren skal føle seg kjent, og ikke bli overveldet av mange rare farger. Vi har implementert fargekontraster, noe som er viktig for at det skal være enkelt å lese. Minimert distraksjoner, som unødvendig informasjon eller utforminger og ikoner. Fokuset er kun der det skal være.
                     Vi ønsket å sikre at prosjektet oppfyller kravene til universell utforming og testet det med Chrome Lighthouse, som ga oss en god indikasjon på universelle utformingen og tilgjengeligheten vår.
                     Vi vet at automatiske tester ikke er tilstrekkelige for å avdekke alle problemer, og valgte derfor å brukerteste prosjektet på et ekte menneske. En mann 53 år. Tilbakemeldingene vi fikk fra han var verdifull. Han var svaksynt og slet med å lese enkelte steder. Han påpekte for eksempel at footeren på aktivitetssiden var vanskelig å lese på grunn av fargene og hadde dårlig kontrast. På grunn av dette valgte vi å justere farger og fikse på skriftstørrelser, for å sikre lesbarhet og universell utforming for alle. Denne brukertesten ga oss et objektivt og nytt perspektiv som ikke kunne avdekkes gjennom automatiske tester alene.
                 </p>
             </section>
+            <section class="endringKontrast">
+                <p>Dette er hva vi valgte å endre på i aktivitetssiden, etter brukertesten:</p>
+                <img src="/bilder/konstrast2.png" alt="Utkast2">
+                <img src="/bilder/kontrast1.png" alt="Utkast1">
+            </section>
                 <section class="manuellbilde">
+                    <p>Her er utslaget vi fikk på lighthouse i aktivitetssiden etterpå:</p>
                     <img src="https://developer.chrome.com/static/docs/lighthouse/overview/image/lighthouse-report_1920.png" alt="manuell test resultater">
+                </section>
+                <section class="manuellbilde">
+                    <p>Her er utslaget vi fikk på indexsiden:</p>
+                    <img src="https://developer.chrome.com/static/docs/lighthouse/overview/image/lighthouse-report_1920.png" alt="manuell test resultater">
+                    <p>Her er utslaget vi fikk på GitHub siden:</p>
+                    <img src="/bilder/GitHubLightHouseDesktop.png" alt="manuell test resultater">
+                    <p>Her er utslaget vi fikk på Accessibilitysiden:</p>
+                    <img src="/bilder/AccesssibilityLighthouseDesktop.png" alt="manuell test resultater">
                 </section>
 
             <section class="yolo">
