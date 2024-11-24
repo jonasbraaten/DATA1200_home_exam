@@ -929,13 +929,13 @@ padding: 1em;
 
 .herotittel { /* Dette er teskten over bilde på toppen av siden (hero bildet)*/
     font-size: clamp(1.5rem, 2vw + 1rem, 3rem);
-    color: #faffd0;
+    color: #000000;
     line-height: 2.5rem;
     text-align: center;
-    background-color: #06061f;
+    background-color: #c2d8ee;
     padding: 1rem;
     border-radius: 1rem;
-    border: 0.2rem solid  #faffd0 ;
+    border: 0.2rem solid  #000000 ;
 }
 
 /* ----> Navigasjonen (aktivitetssiden) <---- */
@@ -1181,7 +1181,10 @@ padding: 1em;
     /* Responsiv til telefon Aktivitetsiden*/
 @media screen and (max-width: 768px){
     .herotittel {
-        font-size: 1rem;  
+        font-size: 2rem; /* Gjør fontstørrelsen responsiv */ 
+        text-align: center;  
+        max-width: 90%;
+        word-wrap: break-word;
     }
 
     .aktivitets-navigasjon {
@@ -1222,8 +1225,8 @@ padding: 1em;
     }
 
     .altomlaget h2 { 
-        font-size: 2rem;
         text-align: left;
+        text-align: center;
     }
 
     .altomlaget p {
@@ -1239,8 +1242,9 @@ padding: 1em;
     }  
       
     .aktuellespillere h2 {
-        font-size: 2rem;
         text-align: left;
+        text-align: center;
+        padding-top: 2rem;
     }
 
     .spillertekst h3 {
@@ -1260,12 +1264,12 @@ padding: 1em;
 
     .historieoversikt {
         flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
     }
 
-    .historieseksjon h2 {
-        font-size: 2rem;
-        text-align: left;
-        color: white;
+    .historieartikkel h3 {
+        padding-left: 2rem;
     }
 
     .historie p {
