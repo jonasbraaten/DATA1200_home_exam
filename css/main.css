@@ -1313,10 +1313,7 @@ padding: 1em;
         background-color: #5c0707;
         color: #f7f3e0;
     }
-}
 
-/*Footer responsiv for mindre skjermer*/
-@media (max-width: 768px) {
     .aktivitetsfooter-nav {
         padding: 5rem 1rem; /* redusert padding for mindre skjermer */
     }
@@ -1356,7 +1353,8 @@ padding: 1em;
 .accessibilitynav ul li {
     list-style: none;
     display: inline-block;
-    padding: 1rem;
+    padding: 2rem;
+    padding-left: 1rem;
 }
 
 .accessibilitynav ul li a{
@@ -1633,18 +1631,21 @@ padding: 1em;
 
 .github p { /*Paragrafer*/
     line-height: 2;
+    font-size: 1.3rem;
+    padding-top: 1rem;
 }
 
-.ulemper { /* Punktliste */
+.utfordringer { /* Punktliste */
     list-style-type: disc; 
     margin: 5%;
 }
 
-.ulemper li {
-    font-size: 1rem;
+.utfordringer li {
+    font-size: 1.3rem;
     margin-bottom: 0.5rem;
     margin: 2%;
     padding: 0.5%;
+    list-style-type: none;
 }
 
 .github-footer { /* Footer */
@@ -1656,22 +1657,29 @@ padding: 1em;
 
 @media (max-width: 768px) { /* Tilpasning for mindre skjermer */
     .github h1 {
-        font-size: 2rem;
+        font-size: 3rem;
         padding: 1rem;
+        margin: 2rem;
     }
 
     .gitnav ul {
         flex-direction: column; /* Gjør listen vertikal */
         align-items: center; /* Sentraliserer elementene */
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
 
     .gitnav ul li a {
-        font-size: 1rem;
-        padding: 0.75rem 1.5rem;
+        font-size: 2rem;
+        color: #b1d8b7;
     }
 
     .gitnav ul li {
-        margin-bottom: 1rem;
+        margin-bottom: 0rem;
+        background-color: #2f5233;
+        border: 0.2rem solid #2f5233;
+        border-radius: 1rem;
+        padding: 0.5rem;
     }
 
     .github main {
@@ -1681,16 +1689,24 @@ padding: 1em;
     }
 
     .github h2 {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         padding: 1rem;
+        max-width: 100%;
+        padding-left: 0;
     }
 
     .github p {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     .github ul li {
         font-size: 1rem;
+    }
+
+    .utfordringer ul li {
+        font-size: 1.5rem;
+        padding: 1rem;
+        list-style-type: none;
     }
 
     .github .bilde-galleri img {
