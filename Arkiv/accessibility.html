@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="no">   
+<head>
+    <meta charset="UTF-8">
+    <title>Accessibility</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="accessibilitybody">
+    <header class="accessibilityheader">
+        <nav class="accessibilitynav">
+            <ul class="accessibilitynavliste"> 
+                <li><a href="index.html">HJEM</a></li>
+                <li><a href="accessibility.html">TILGJENGELIGHET</a></li>
+                <li><a href="github.html">GITHUB</a></li>
+                <li><a href="activity.html">AKTIVITET</a></li>
+            </ul>
+        </nav> 
+    </header>
+    <main>
+        <article class=accessibilitymain>
+            <section class="accessibilityintro">
+                <h2>ACCESSIBILITY PÅ NETTSIDEN</h2>
+                <section class="accessibilityintrotekst">
+                    <p>
+                     Når vi har utformet nettsiden vår har universeiell accessibility / tilgjengelighet vært hovedfokus. Alle skal kunne bruke nettsiden
+                     uansett kognitive eller fysiske hindringer. Dette vil for eksempel være nedsatt synsfunksjon eller motoriske vansker. 
+                    </p>
+                    <p>
+                     Vi har derfor brukt riktig sematisk korrekt HTML, tastaturnavigasjon, fargevalg med nok kontraster. 
+                     Videre vil du se vi har utført tester i Lighthouse, sammen med manuell testing som har hjulpet oss med potensielle utfordringer.
+                    </p>
+                </section>
+            </section>
+
+            <!--Intro om startprosessen av prosjektet vårt-->
+            <section class="lighthousetest">
+                <h2>AUTOMATISERTE TESTER</h2>
+                <p class="lighthousetestpar">
+                    Før vi begynte å på selve prosjektet, hadde vi en brainstorming time, hvor vi diskuterte hvordan vi 
+                    skulle sette opp prosjektet vårt. På index.html siden valgte vi å gå bort fra den originale 
+                    Matematisk Modellering- siden sin fargepalett, for å sette vårt eget preg på designet. 
+                    Vi ble enig om grunnleggende struktur, og layout som skulle sikre en brukervennlig og 
+                    tilgjengelig opplevelse for alle brukere. Utover prosessen har mye endret seg, og vi har 
+                    endret synspunkt på hvordan ting skal utføres.
+                </p>
+                <p>Dette er hvordan prosjektet slår ut i Lighthouse:</p>
+
+                <!--Bilder av Lighthouse tester
+                Kilde til lighthouse: https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk-->
+                <section class="lighthousebilder">
+                    <p>Her er utslaget vi fikk på indexsiden:</p>
+                    <img src="bilder/indexLighthouse.png" alt="LighthouseTestIndex">
+                    <p>Her er utslaget vi fikk på aktivitetssiden:</p>
+                    <img src="bilder/activityLightHouse.png" alt="LighthouseTestActivity">
+                    <p>Her er utslaget vi fikk på GitHub siden:</p>
+                    <img src="bilder/gitHubLightHouse.png" alt="LighthouseTestGitHub">
+                    <p>Her er utslaget vi fikk på Accessibilitysiden:</p>
+                    <img src="bilder/accessebilityLighthouse1.png" alt="LighthouseTestAccessibility">
+                </section>
+
+                <!--Informasjon om Strukturen i koden og manuell testing-->
+            <section class="manuelltest">
+                <h2>MANUELL SKJEKK</h2>
+                <p>
+                    Vi har brukt en enkel struktur, så det skal være lett å lese seg gjennom koden. Vi har et strukturert og korrekt hierarki, hvor vi for eksempel holdt oss til at /article/ er over /structure/.  Vi har ikke brukt /br/ i prosjektet, men heller /p/ eller andre semantiske elementer for linjeskift og bryte informasjon inn i forskjellige paragrafer. Vi har styrt unna /div/. 
+                    Det har vært viktig for oss å bruke utrykk som er universelle. For eksempel med informasjonsboksene om studiet, trykker man på en boks for å åpne den, kan man trykke på boksen igjen så lukker den seg, ved hjelp av "accordion-checkbox". For å forstå at noe er en link, har vi brukt streker under. For å gjøre det enda tydeligere, har vi også valgt å enten fremheve de, få bokser rundt de eller endre farge.
+                    På hver side holdt vi oss til en fargepalett, så brukeren skal føle seg kjent, og ikke bli overveldet av mange rare farger. Vi har implementert fargekontraster, noe som er viktig for at det skal være enkelt å lese. Minimert distraksjoner, som unødvendig informasjon eller utforminger og ikoner. Fokuset er kun der det skal være.
+                </p>
+                
+                <p>
+                    Vi ønsket å sikre at prosjektet oppfyller kravene til universell utforming og testet det med Chrome Lighthouse, som ga oss en god indikasjon på universelle utformingen og tilgjengeligheten vår.
+                    Vi vet at automatiske tester ikke er tilstrekkelige for å avdekke alle problemer, og valgte derfor å brukerteste prosjektet på et ekte menneske. En mann 53 år. Tilbakemeldingene vi fikk fra han var verdifull. Han var svaksynt og slet med å lese enkelte steder. Han påpekte for eksempel at footeren på aktivitetssiden var vanskelig å lese på grunn av fargene og hadde dårlig kontrast. På grunn av dette valgte vi å justere farger og fikse på skriftstørrelser, for å sikre lesbarhet og universell utforming for alle. Denne brukertesten ga oss et objektivt og nytt perspektiv som ikke kunne avdekkes gjennom automatiske tester alene.
+                </p>
+            </section>
+            <section class="endringKontrast">
+                <p>Dette er hva vi valgte å endre på i aktivitetssiden, etter brukertesten:</p>
+                <section class="footerflex">
+                <img src="bilder/konstrast2.png" alt="Utkast2">
+                <img src="bilder/kontrast1.png" alt="Utkast1">
+                </section>
+            </section>
+            <section class="kodeaktivitetsside">
+                <p>Her er utklipp fra koden vår i aktivitetssiden. Her kan man se hvordan vi har strukturert koden:</p>
+                    <p>Vi starter med en class. Deretter er /article/ over /section/ i hierkiet. Denne strukturen har vi valgt gjennom hele prosjektet.</p>
+                    <img src="bilder/bevisPåKode.png" alt="bevisPåKode">
+            </section>
+
+
+    <footer class="accessibilityfooter">
+        <section>
+            <p>&copy; 2024 Gruppe 7777</p>
+        </section>
+    </footer>
+</body>   
+</html>     
