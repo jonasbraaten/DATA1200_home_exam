@@ -928,13 +928,13 @@ padding: 1em;
 
 .herotittel { /* Dette er teskten over bilde på toppen av siden (hero bildet)*/
     font-size: clamp(1.5rem, 2vw + 1rem, 3rem);
-    color: #faffd0;
+    color: #000000;
     line-height: 2.5rem;
     text-align: center;
-    background-color: #06061f;
+    background-color: #c2d8ee;
     padding: 1rem;
     border-radius: 1rem;
-    border: 0.2rem solid  #faffd0 ;
+    border: 0.2rem solid  #000000 ;
 }
 
 /* ----> Navigasjonen (aktivitetssiden) <---- */
@@ -1180,7 +1180,10 @@ padding: 1em;
     /* Responsiv til telefon Aktivitetsiden*/
 @media screen and (max-width: 768px){
     .herotittel {
-        font-size: 1rem;  
+        font-size: 2rem; /* Gjør fontstørrelsen responsiv */ 
+        text-align: center;  
+        max-width: 90%;
+        word-wrap: break-word;
     }
 
     .aktivitets-navigasjon {
@@ -1221,8 +1224,8 @@ padding: 1em;
     }
 
     .altomlaget h2 { 
-        font-size: 2rem;
         text-align: left;
+        text-align: center;
     }
 
     .altomlaget p {
@@ -1238,8 +1241,9 @@ padding: 1em;
     }  
       
     .aktuellespillere h2 {
-        font-size: 2rem;
         text-align: left;
+        text-align: center;
+        padding-top: 2rem;
     }
 
     .spillertekst h3 {
@@ -1259,12 +1263,12 @@ padding: 1em;
 
     .historieoversikt {
         flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
     }
 
-    .historieseksjon h2 {
-        font-size: 2rem;
-        text-align: left;
-        color: white;
+    .historieartikkel h3 {
+        padding-left: 2rem;
     }
 
     .historie p {
@@ -1294,6 +1298,12 @@ padding: 1em;
     .aktivitetslink {
         background-color: #235468;
         color: white;
+        font-size: 1.2rem;
+    }
+
+    .aktivitetslenker{
+       text-align: center;
+       padding: 0;
     }
 
     .instagrambruker {
@@ -1328,8 +1338,7 @@ padding: 1em;
     height: 100%;
     background-color: #2F5233; /* hvis browser ikke skulle supporte gradient */
     background-image: linear-gradient( #76B947 1%, 15%,#2F5233, black 96%);
-    margin: 0;
-    padding: 0;
+    margin: 1rem;
     font-family: 'poppins', sans-serif;
     box-sizing: border-box;
     overflow-x: hidden;
@@ -1337,7 +1346,6 @@ padding: 1em;
 
 .accessibilityheader {
     width: 100%;
-    margin: 1rem;
     padding: 1rem;
     padding-top: 3rem;
 }
@@ -1405,7 +1413,6 @@ padding: 1em;
 
 .accessibilityintrotekst p {
     flex: 1;
-    margin: 0;
     padding: 2rem;
     color: black;
     background-color: white;
@@ -1432,6 +1439,22 @@ padding: 1em;
     padding-right: 2rem;
 }
 
+.endringKontrast p {
+    padding: 2rem;
+    margin: 1rem;
+}
+
+.footerflex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footerflex img {
+    width: 50%;
+    height: auto;
+}
+
 /* footer-accessibility*/
 .accessibilityfooter {
     background-color: #000;
@@ -1442,7 +1465,7 @@ padding: 1em;
 @media screen and (max-width: 768px){
     .accessibilitymain h2 {
         font-size: 2rem;
-        padding-left: 2rem;
+        padding-left: 0rem;
     }  
 
     .accessibilitymain p {
@@ -1453,6 +1476,8 @@ padding: 1em;
 
     .accessibilityintrotekst {
         flex-direction: column; /* Endrer layout til vertikal */
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .accessibilityintrotekst p {
@@ -1466,8 +1491,7 @@ padding: 1em;
     }    
 
     .lighthousetest p {
-        padding: 3rem;
-        padding-top: 1rem;
+        padding: 1rem;
     }
 
     .manuelltest p {
@@ -1487,6 +1511,17 @@ padding: 1em;
     .manuellbilde {
         padding-bottom: 2rem;
     }
+
+    .footerflex {
+        flex-direction: column; /* Endre Flexbox-retningen til vertikal */
+        align-items: center; /* Sentrer bildene */
+    }
+
+    .footerflex img {
+        width: 100%; /* Bildene tar full bredde på små skjermer */
+    }
+
+    
 }
 
 
@@ -1557,8 +1592,6 @@ padding: 1em;
     color: #2f5233; 
     font-size: 1.5rem;
     border-bottom: 1px solid #2f5233; /* Legger til en enkel linje under overskriften */
-    margin-top: 1%;
-    margin-bottom: 4%;
 }
 
 .bilde-galleri img, .bilde-galleri2 img { /*Bilder*/
@@ -1573,7 +1606,7 @@ padding: 1em;
 }
 
 .github p { /*Paragrafer*/
-    line-height: 2; /* Fjerner font-size hvis 1rem er standard */
+    line-height: 2;
 }
 
 .ulemper { /* Punktliste */
@@ -1586,7 +1619,6 @@ padding: 1em;
     margin-bottom: 0.5rem;
     margin: 2%;
     padding: 0.5%;
-    list-style-type: disc;
 }
 
 .github-footer { /* Footer */
