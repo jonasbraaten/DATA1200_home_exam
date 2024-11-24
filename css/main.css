@@ -326,6 +326,18 @@
     font-size: 1.2em;
 }
 
+
+/**/
+.få-innsikt{
+    text-align: center;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;  
+}
+
+
+
 /*Responsive design for mindere skjermer på studieinfo*/
 @media (max-width: 768px){
     .info-container{
@@ -1311,7 +1323,7 @@ padding: 1em;
 .accessibilitybody {
     height: 100%;
     background-color: #2F5233; /* hvis browser ikke skulle supporte gradient */
-    background-image: linear-gradient(#B1D8B7 1%, 15%, #76B947,#2F5233, black 96%);
+    background-image: linear-gradient( #76B947 1%, 15%,#2F5233, black 96%);
     margin: 0;
     padding: 0;
     font-family: 'poppins', sans-serif;
@@ -1625,4 +1637,3 @@ padding: 1em;
         margin-bottom: 1rem;
     }
 
-}
