@@ -37,7 +37,7 @@
     text-decoration: none;
     font-weight: bold;
     color: #ffffff;
-    padding: 0.5rem;
+    padding: 0.7rem;
 }
   
   /* Endre fargen på lenkene */
@@ -50,8 +50,8 @@
 
 .indexnav img {
     height: auto;
-    width: 20rem;
-}
+    width: 16rem;
+}    
 
 .navigation-search {
     position:absolute;
@@ -207,7 +207,7 @@
     padding-bottom: 0.5rem; 
 }
 .navbar ul li a {
-    color: #000000; 
+    color: #fff; 
     text-decoration: none; 
     padding: 1rem; 
 }
@@ -240,9 +240,11 @@
         justify-content: space-between;
         cursor: pointer; 
         position: absolute;
+        left: 2rem;
         right: 4rem; 
-        top: 5.5rem; 
+        top: 15rem; 
         z-index:1001;
+        bottom: 1rem;
         justify-content: left;
     }
     #menu-toggle:checked + .hamburger + .navbar {
@@ -325,6 +327,18 @@
 .info-detail {
     font-size: 1.2em;
 }
+
+
+/**/
+.få-innsikt{
+    text-align: center;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;  
+}
+
+
 
 /*Responsive design for mindere skjermer på studieinfo*/
 @media (max-width: 768px){
@@ -1166,11 +1180,7 @@ padding: 1em;
     /* Responsiv til telefon Aktivitetsiden*/
 @media screen and (max-width: 768px){
     .herotittel {
-        font-size: 2rem;
-        text-shadow:  0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 1), 
-        -0.3rem -0.3rem 0.5rem rgba(0, 0, 0, 0.9), 
-        0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.7), 
-        0.7rem 0.7rem 1.4rem rgba(0, 0, 0, 0.5);
+        font-size: 1rem;  
     }
 
     .aktivitets-navigasjon {
@@ -1311,7 +1321,7 @@ padding: 1em;
 .accessibilitybody {
     height: 100%;
     background-color: #2F5233; /* hvis browser ikke skulle supporte gradient */
-    background-image: linear-gradient(#B1D8B7 1%, 15%, #76B947,#2F5233, black 96%);
+    background-image: linear-gradient( #76B947 1%, 15%,#2F5233, black 96%);
     margin: 0;
     padding: 0;
     font-family: 'poppins', sans-serif;
@@ -1621,5 +1631,4 @@ padding: 1em;
         height: auto;
         margin-bottom: 1rem;
     }
-
 }
