@@ -1466,7 +1466,7 @@ padding: 1em;
 @media screen and (max-width: 768px){
     .accessibilitymain h2 {
         font-size: 2rem;
-        padding-left: 2rem;
+        padding-left: 0rem;
     }  
 
     .accessibilitymain p {
@@ -1477,6 +1477,8 @@ padding: 1em;
 
     .accessibilityintrotekst {
         flex-direction: column; /* Endrer layout til vertikal */
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .accessibilityintrotekst p {
@@ -1490,8 +1492,7 @@ padding: 1em;
     }    
 
     .lighthousetest p {
-        padding: 3rem;
-        padding-top: 1rem;
+        padding: 1rem;
     }
 
     .manuelltest p {
@@ -1520,6 +1521,8 @@ padding: 1em;
     .footerflex img {
         width: 100%; /* Bildene tar full bredde på små skjermer */
     }
+
+    
 }
 
 
