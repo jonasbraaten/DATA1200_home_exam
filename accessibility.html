@@ -34,7 +34,7 @@
             </section>
             <section class="lighthousetest">
                 <h2>AUTOMATISERTE TESTER</h2>
-                <p>
+                <p class="lighthousetestpar">
                     Før vi begynte å på selve prosjektet, hadde vi en brainstorming time, hvor vi diskuterte hvordan vi 
                     skulle sette opp prosjektet vårt. På index.html siden valgte vi å gå bort fra den originale 
                     Matematisk Modellering- siden sin fargepalett, for å sette vårt eget preg på designet. 
@@ -45,13 +45,13 @@
                 <p>Dette er hvordan prosjektet slår ut i Lighthouse:</p>
                 <section class="lighthousebilder">
                     <p>Her er utslaget vi fikk på indexsiden:</p>
-                    <img src="" alt="">
+                    <img src="/bilder/IndexLighthouse.png" alt="LighthouseTestIndex">
                     <p>Her er utslaget vi fikk på aktivitetssiden:</p>
-                    <img src="" alt="LighthouseTestResultater">
+                    <img src="/bilder/ActivityLightHouse.png" alt="LighthouseTestActivity">
                     <p>Her er utslaget vi fikk på GitHub siden:</p>
-                    <img src="/bilder/GitHubLightHouseDesktop.png" alt="LighthouseTestResultater">
+                    <img src="/bilder/GitHubLightHouseDesktop.png" alt="LighthouseTestGitHub">
                     <p>Her er utslaget vi fikk på Accessibilitysiden:</p>
-                    <img src="/bilder/AccesssibilityLighthouseDesktop.png" alt="LighthouseTestResultater">
+                    <img src="/bilder/AccesssibilityLighthouseDesktop.png" alt="LighthouseTestAccessibility">
                 </section>
 
             <section class="manuelltest">
@@ -60,6 +60,9 @@
                     Vi har brukt en enkel struktur, så det skal være lett å lese seg gjennom koden. Vi har et strukturert og korrekt hierarki, hvor vi for eksempel holdt oss til at /article/ er over /structure/.  Vi har ikke brukt /br/ i prosjektet, men heller /p/ eller andre semantiske elementer for linjeskift og bryte informasjon inn i forskjellige paragrafer. Vi har styrt unna /div/. 
                     Det har vært viktig for oss å bruke utrykk som er universelle. For eksempel med informasjonsboksene om studiet, trykker man på en boks for å åpne den, kan man trykke på boksen igjen så lukker den seg, ved hjelp av "accordion-checkbox". For å forstå at noe er en link, har vi brukt streker under. For å gjøre det enda tydeligere, har vi også valgt å enten fremheve de, få bokser rundt de eller endre farge.
                     På hver side holdt vi oss til en fargepalett, så brukeren skal føle seg kjent, og ikke bli overveldet av mange rare farger. Vi har implementert fargekontraster, noe som er viktig for at det skal være enkelt å lese. Minimert distraksjoner, som unødvendig informasjon eller utforminger og ikoner. Fokuset er kun der det skal være.
+                </p>
+                
+                <p>
                     Vi ønsket å sikre at prosjektet oppfyller kravene til universell utforming og testet det med Chrome Lighthouse, som ga oss en god indikasjon på universelle utformingen og tilgjengeligheten vår.
                     Vi vet at automatiske tester ikke er tilstrekkelige for å avdekke alle problemer, og valgte derfor å brukerteste prosjektet på et ekte menneske. En mann 53 år. Tilbakemeldingene vi fikk fra han var verdifull. Han var svaksynt og slet med å lese enkelte steder. Han påpekte for eksempel at footeren på aktivitetssiden var vanskelig å lese på grunn av fargene og hadde dårlig kontrast. På grunn av dette valgte vi å justere farger og fikse på skriftstørrelser, for å sikre lesbarhet og universell utforming for alle. Denne brukertesten ga oss et objektivt og nytt perspektiv som ikke kunne avdekkes gjennom automatiske tester alene.
                 </p>
