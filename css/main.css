@@ -1166,11 +1166,7 @@ padding: 1em;
     /* Responsiv til telefon Aktivitetsiden*/
 @media screen and (max-width: 768px){
     .herotittel {
-        font-size: 2rem;
-        text-shadow:  0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 1), 
-        -0.3rem -0.3rem 0.5rem rgba(0, 0, 0, 0.9), 
-        0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.7), 
-        0.7rem 0.7rem 1.4rem rgba(0, 0, 0, 0.5);
+        font-size: 1rem;  
     }
 
     .aktivitets-navigasjon {
