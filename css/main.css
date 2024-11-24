@@ -36,13 +36,13 @@
 .indexnav a {
     text-decoration: none;
     font-weight: bold;
-    color: #000;
+    color: #ffffff;
     padding: 0.5rem;
 }
   
   /* Endre fargen på lenkene */
 .indexnav li a:hover {
-    background-color: #a2cca0;
+    background-color: #ffffff;
     color:#2F5233;
     border-radius: 1rem; /*gjør at kantene på hover blir avrundet*/
     text-decoration: none;
@@ -50,6 +50,7 @@
 
 .indexnav img {
     height: auto;
+    width: 20rem;
 }
 
 .navigation-search {
@@ -63,14 +64,14 @@
 .navigation-search input {
     width: 10rem;
     padding: 0.2rem;
-    border: 0.2rem solid #000000;
+    border: 0.2rem solid #ffffff;
     font-size: 0.8rem;
     outline: none;
 }
 
 .navigation-search button {
-    background-color: #000;
-    color:white;
+    background-color: #000000;
+    color:rgb(255, 255, 255);
     border: none;
     padding: 0.4rem;
     cursor: pointer;
@@ -124,19 +125,25 @@
         margin: 1rem 0; /
     }
 
+    .indexnav img {
+        height: auto;
+        width: 5rem;
+        display: flex;
+        flex-direction: left;
+    }
+
     .navigation-search {
-        position: static; 
         margin-top: 1rem; 
-        justify-content: center; 
+        justify-content: right; 
     }
 
     .navigation-search input {
-        width: 100%; /* La søkefeltet bruke hele bredden */
+        width: 40%; /* La søkefeltet bruke hele bredden */
         max-width: 20rem; /* Sett en maks bredde for å unngå at den blir for bred */
     }
 
     .navigation-search button {
-        width: 100%; /* Gjør knappen like bred som søkefeltet */
+        width: 20%; /* Gjør knappen like bred som søkefeltet */
         max-width: 10rem; 
     }
 }
@@ -158,7 +165,7 @@
 .bar {
     height: 0.2em; 
     width: 1.5em; 
-    background-color: black; 
+    background-color: rgb(255, 255, 255); 
     margin: 0.2em 0; 
 }
 
@@ -200,7 +207,7 @@
     padding-bottom: 0.5rem; 
 }
 .navbar ul li a {
-    color: #000000; 
+    color: #fff; 
     text-decoration: none; 
     padding: 1rem; 
 }
@@ -230,14 +237,16 @@
     .hamburger {
         display: flex; 
         flex-direction: column; 
+        justify-content: space-between;
         cursor: pointer; 
         position: absolute;
         right: 4rem; 
         top: 5.5rem; 
         z-index:1001;
+        justify-content: left;
     }
     #menu-toggle:checked + .hamburger + .navbar {
-        display: flex; 
+        display: flex;
     } 
 
     .navbar img {
@@ -261,11 +270,13 @@
     background-color: #f4f4f4;
     padding: 0%;
 }
+
 .indexmain{
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 5%;
 }
+
 .indexhovedbilde img { /*hovedbilde på toppen av index*/
     width: 100rem;
     max-width: 100%;
@@ -293,7 +304,6 @@
     text-align: center;
     font-size: x-large;
     text-decoration: underline #94C973;
-    
   }
   
 /*Stil for info elemen (border)*/
@@ -309,13 +319,13 @@
     font-size: 1.2em;   
 }
 
-
 .info-item ul{
     list-style: none;
 }
 .info-detail {
     font-size: 1.2em;
 }
+
 
 /**/
 .få-innsikt{
@@ -349,6 +359,14 @@
     font-weight: bold;  
 }
 
+ /*Overskrift for Accordingboksene*/
+.få-innsikt{
+    text-align: center;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;  
+}
 
  /*Accordionboksene er er de grønne informasjonsboksene*/
 /* Hover-effekt på accordion overskriftene */
@@ -922,6 +940,10 @@ padding: 1em;
     color: #faffd0;
     line-height: 2.5rem;
     text-align: center;
+    background-color: #06061f;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 0.2rem solid  #faffd0 ;
 }
 
 /* ----> Navigasjonen (aktivitetssiden) <---- */
@@ -1103,6 +1125,8 @@ padding: 1em;
     position: relative;
 }
 
+
+
 .aktivitetslenker { /*sentrerer og lager plass mellom aktivitets-lenker og annet*/
     text-align: left;
     margin-top: 1rem;
@@ -1129,11 +1153,24 @@ padding: 1em;
 
 .aktivitetsfooter-nav ul {
     list-style-type: none;
-    padding: 1rem;
+    padding: 0;
     margin: 0;
-    justify-content: center;
     font-size: clamp(0.77rem, 2vw, 1rem);
 }
+
+.aktivitetsfooter-nav li{
+    margin: 0.5rem 0;
+}
+
+.aktivitetsfooter-nav a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.aktivitetsfooter-nav a:hover{
+    text-decoration: underline;
+}
+
 
 /* ----> Responsiv skjerm og størrelse (aktivitetssiden) <---- */
 /* Kilde: https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries */
@@ -1261,6 +1298,22 @@ padding: 1em;
         font-weight: bold;
         background-color: #5c0707;
         color: #f7f3e0;
+    }
+}
+
+/*Footer responsiv for mindre skjermer*/
+@media (max-width: 768px) {
+    .aktivitetsfooter-nav {
+        padding: 5rem 1rem; /* redusert padding for mindre skjermer */
+    }
+    
+    .aktivitetsfooter-nav ul {
+        font-size: clamp(1.3rem, 5vw, 1.5rem); /* justerer fontstørrelse for mindre skjermer */
+    }
+
+    .aktivitetsfooter-nav a{
+        color: #fff;
+        text-decoration: underline;
     }
 }
 
@@ -1435,8 +1488,9 @@ padding: 1em;
 
 /* >==== GITHUB SIDE ====< */
 /* ======================< */
+
 .github{ /*bakgrunn med mange farger*/
-    background-image: linear-gradient(#ffbb00, #ff1b67, #ffbb00, #ff1b67, #ff8800, #ff1b67);
+    background-image: linear-gradient(#2f5233, #76b947, #2f5233);
 }
 
 .github body { /*Generelt for hele body*/
@@ -1446,20 +1500,20 @@ padding: 1em;
 }
 
 .github h1 { /* Hovedoverskrift */
-    background-color: #ffce2f;
-    color: #ff466e;
+    background-color: #2f5233;
+    color: #ffffff;
     text-align: center;
     padding: 1.25rem;
     margin: 0;
-    font-size: 2.5em;
+    font-size: 5em;
 }
 
-.gitnav {
-    background-color: #ff0080;
+.gitnav { /*Meny generell*/
+    background-color: #b1d8b7;
     padding: 1rem;
 }
 
-.gitnav ul {
+.gitnav ul { /*Meny*/
     display: flex; /*Flexbox*/
     justify-content: center;
     gap: 2rem;
@@ -1467,24 +1521,25 @@ padding: 1em;
     list-style: none; /*Fjerner punktene*/
 }
 
-.gitnav ul li a {
-    color: white;
+.gitnav ul li a { /*Meny skrift*/
+    color: #2f5233;
     font-size: 1.2rem;
     padding: 0.5rem;
 }
 
-.gitnav ul li a:hover {
-    background-color: #ff9100;
+.gitnav ul li a:hover { /*Paragrafer*/
+    color: #b1d8b7;
+    background-color: #2f5233;
     border-radius: 5px; /* Avrunde kanter ved hover */
 }
 
-.github main {
+.github main { /*Hoved informasjon*/
     padding: 1rem; 
     margin: 1rem auto; 
     max-width: 70rem; 
 }
 
-.github section {
+.github section { /*Sekjsoner*/
     background: #ffffff;
     margin-bottom: 1.5rem;
     margin: 5%;
@@ -1495,25 +1550,25 @@ padding: 1em;
 }
 
 .github h2 { /*Underoverskrifter*/
-    color: #ff466e; 
+    color: #2f5233; 
     font-size: 1.5rem;
-    border-bottom: 1px solid #ff6895; /* Legger til en enkel linje under overskriften */
+    border-bottom: 1px solid #2f5233; /* Legger til en enkel linje under overskriften */
     margin-top: 1%;
     margin-bottom: 4%;
 }
 
-.bilde-galleri img, .bilde-galleri2 img {
+.bilde-galleri img, .bilde-galleri2 img { /*Bilder*/
     width: 100%; /* Bildene fyller bredden */
     height: auto; /*Auto høyde for å beholde formatet til bildene*/
     margin-bottom: 1rem;
 }
 
-.github img:hover {
+.github img:hover { /*Hover til bildene*/
     transform: scale(1.01); /* Gjør bildet litt større ved hover */
     transition: transform 0.3s ease; /* Glatt overgang for skalering */
 }
 
-.github p {
+.github p { /*Paragrafer*/
     line-height: 2; /* Fjerner font-size hvis 1rem er standard */
 }
 
@@ -1582,5 +1637,3 @@ padding: 1em;
         margin-bottom: 1rem;
     }
 
-
-}
