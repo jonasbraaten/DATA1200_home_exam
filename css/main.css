@@ -628,7 +628,6 @@ padding: 1em;
 
 .profildetaljer h2 a,
 .profildetaljer p a {
-    text-decoration: none;
     color: #333;       
 }
 
@@ -654,9 +653,6 @@ padding: 1em;
         width: 50%; 
         height: auto; 
         margin: 0 0 1rem 0;
-       /* margin-right: 20rem;
-        margin-left: 5.59rem;
-        margin-bottom: 1rem; */
     }
 
     .profildetaljer h2 {
