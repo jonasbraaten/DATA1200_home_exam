@@ -37,7 +37,7 @@
     text-decoration: none;
     font-weight: bold;
     color: #ffffff;
-    padding: 0.5rem;
+    padding: 0.7rem;
 }
   
   /* Endre fargen på lenkene */
@@ -50,8 +50,8 @@
 
 .indexnav img {
     height: auto;
-    width: 20rem;
-}
+    width: 16rem;
+}    
 
 .navigation-search {
     position:absolute;
@@ -240,9 +240,11 @@
         justify-content: space-between;
         cursor: pointer; 
         position: absolute;
+        left: 2rem;
         right: 4rem; 
-        top: 5.5rem; 
+        top: 15rem; 
         z-index:1001;
+        bottom: 1rem;
         justify-content: left;
     }
     #menu-toggle:checked + .hamburger + .navbar {
@@ -621,7 +623,6 @@ padding: 1em;
 
 .profildetaljer h2 a,
 .profildetaljer p a {
-    text-decoration: none;
     color: #333;       
 }
 
@@ -647,9 +648,6 @@ padding: 1em;
         width: 50%; 
         height: auto; 
         margin: 0 0 1rem 0;
-       /* margin-right: 20rem;
-        margin-left: 5.59rem;
-        margin-bottom: 1rem; */
     }
 
     .profildetaljer h2 {
@@ -952,13 +950,14 @@ padding: 1em;
     background-color: #06061f;
 }
 
-.aktivitets-navigasjon li {
+.aktivitets-navigasjon ul li {
     float: left;
     margin: 1rem;
 }
 
 /* Kilde: https://developer.mozilla.org/en-US/docs/Web/CSS/clamp() */
 .aktivitets-navigasjon li a {
+    font-size: 1.4rem;
     display: block;
     color: #f4f4f4;
     font-weight: bold;
@@ -1079,6 +1078,8 @@ padding: 1em;
 .historieartikkel h3 {
     font-size: 3rem;
     padding-left: 2rem;
+    padding-right: 1rem;
+    padding-top: 2rem;
 }
 
 .historieoversikt {
@@ -1086,19 +1087,27 @@ padding: 1em;
     gap: 2rem; /*mellomrom mellom dem*/
     padding-left: 2rem;
     padding-right: 2rem;
+    padding-bottom: 2rem;
 }
 
 .historie {
     flex: 50%;
-    padding: 0.1rem;
 }
 
 .seiersoversikt {
     padding: 1rem;
-    background-color: #d8be92;
+    padding-top: 0;
+    background-color: #2c2211;
+    color: white;
     border-radius: 1rem;
     margin-bottom: 2rem;
+}
 
+.seiersoversikt h3 {
+    font-size: 2.5rem;
+    padding-top: 1rem;
+    padding-right: 2rem;
+    line-height: 3.5rem;
 }
 
 .seiere li {
@@ -1172,11 +1181,7 @@ padding: 1em;
     /* Responsiv til telefon Aktivitetsiden*/
 @media screen and (max-width: 768px){
     .herotittel {
-        font-size: 2rem;
-        text-shadow:  0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 1), 
-        -0.3rem -0.3rem 0.5rem rgba(0, 0, 0, 0.9), 
-        0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.7), 
-        0.7rem 0.7rem 1.4rem rgba(0, 0, 0, 0.5);
+        font-size: 1rem;  
     }
 
     .aktivitets-navigasjon {
@@ -1185,10 +1190,16 @@ padding: 1em;
         display: flex;
         flex-direction: column;
         align-items: left;
+        padding-bottom: 4rem;
+        padding-top: 2rem;
     }
 
     .aktivitets-navigasjon ul li {
         text-align: left;
+        font-size: 2rem;
+    }
+
+    .aktivitets-navigasjon ul li a {
         font-size: 2rem;
         border-bottom: 0.2rem solid rgb(196, 235, 245); 
     }
@@ -1630,4 +1641,4 @@ padding: 1em;
         height: auto;
         margin-bottom: 1rem;
     }
-
+}
