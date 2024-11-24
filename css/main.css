@@ -1479,21 +1479,19 @@ padding: 1em;
 
 /* footer-accessibility*/
 .accessibilityfooter {
+    font-size: 0.5rem;
     background-color: #000;
     color: white;
-    padding: 5rem;
+    padding: 2rem;
 }
 
 @media screen and (max-width: 768px){
     .accessibilitymain h2 {
-        font-size: 2rem;
         padding-left: 0rem;
     }  
 
     .accessibilitymain p {
-        font-size: 1.6rem;
-        padding-left: 0;
-        padding-right: 1rem;
+        font-size: 1rem;
     }
 
     .accessibilityintrotekst {
@@ -1505,7 +1503,8 @@ padding: 1em;
     .accessibilityintrotekst p {
         width: auto;
         max-width: 100%;
-        padding: 2rem;
+        padding: 1rem;
+        font-size: 1rem;
     }
 
     .accessibilitynav {
@@ -1513,16 +1512,21 @@ padding: 1em;
     }    
 
     .lighthousetest p {
-        padding: 1rem;
+        padding: 0.75rem;
+    }
+
+    .lighthousetestpar {
+        padding: 0.75rem;
     }
 
     .manuelltest p {
-        padding: 3rem;
+        padding: 0.75rem;
         padding-top: 1rem;
     }
 
-    .yolo p {
-        padding: 3rem;
+    .accessibilityfooter p {
+        font-size: 1rem;
+        padding: 1rem;
         padding-top: 1rem;
     }
 
