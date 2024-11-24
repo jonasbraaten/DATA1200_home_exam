@@ -14,25 +14,25 @@
     padding: 4rem; 
     background-color: #2F5233; /* color palette: https://www.canva.com/colors/color-palettes/green-blaze/*/
 }
-
+/*Styling for listeelementene i header*/ 
 .indexheaderliste li{
     list-style-type: none;
     text-align: right;
 }
 
-/* index nav */
+/* Navigasjonsbar styling */
 .indexnav ul {
     list-style: none;
     display: flex;
     justify-content: right;
 }
-  
+
 .indexnav ul li {
     margin: 0.5rem;
     font-size: clamp(1.5rem, 0.5vw, 0.5rem);
 }
   
-  /* fjernet understreking */
+  /* Link styling */
 .indexnav a {
     text-decoration: none;
     font-weight: bold;
@@ -40,19 +40,20 @@
     padding: 0.7rem;
 }
   
-  /* Endre fargen på lenkene */
+  /* hovereffekt på lenker */
 .indexnav li a:hover {
     background-color: #ffffff;
     color:#2F5233;
-    border-radius: 1rem; /*gjør at kantene på hover blir avrundet*/
+    border-radius: 1rem; 
     text-decoration: none;
 }
-
+/*Bilde*/
 .indexnav img {
     height: auto;
     width: 16rem;
 }    
 
+/*Søkeikon*/
 .navigation-search {
     position:absolute;
     top: 1rem;
@@ -60,6 +61,7 @@
     display: flex;
     align-items: center;
 }
+
 
 .navigation-search input {
     width: 10rem;
@@ -77,36 +79,39 @@
     cursor: pointer;
 }
 
-.navigation-search button:hover { /*Styler hover på søk-knapp*/
+.navigation-search button:hover { 
     background-color: #a2cca0;
     color: #000;
 }
+/*Hovedbilde seksjon*/
 .indexhovedbilde{
-    position: relative; /* Gjør det mulig å plassere overlay-elementer over bildet */
+    position: relative; 
     display: inline-block;
-    width: 100%; /* Gjør containeren full bredde */
-    max-width: 100%; /* Forhindre overflyt */
+    width: 100%; 
+    max-width: 100%; 
 }
-.indexhovedbilde img{ /*Justerer bildet, gir det full bredde osv.*/
+.indexhovedbilde img{ 
     display: block; 
     width: 100%; 
     height: auto; 
 }
-.overskrift-hovedbilde{ /*Justerer overskriften som ligger over bildet */
+
+/*Styling overskrift*/
+.overskrift-hovedbilde{ 
     position: absolute; 
     top: 50%; 
     left: 50%; 
-    transform: translate(-50%, -50%); /* Justert for sentrering */
+    transform: translate(-50%, -50%); 
     color: white; 
-    font-size: clamp(1.5rem, 5vw, 3rem); /* Gjør fontstørrelsen responsiv */
+    font-size: clamp(1.5rem, 5vw, 3rem); 
     font-weight: bold; 
     text-align: center; 
     background-color: rgba(0, 0, 0, 0.5); 
     padding: 1rem; 
-    width: 90%; /* Sørg for at teksten ikke går utenfor containeren */
+    width: 90%; 
     box-sizing: border-box; 
     border-radius: 0.5rem; 
-    word-wrap: break-word; /* Bryt teksten hvis den er for lang */
+    word-wrap: break-word; 
 }
 
 /*Responsivitet til header*/
@@ -138,12 +143,12 @@
     }
 
     .navigation-search input {
-        width: 40%; /* La søkefeltet bruke hele bredden */
-        max-width: 20rem; /* Sett en maks bredde for å unngå at den blir for bred */
+        width: 40%; 
+        max-width: 20rem; 
     }
 
     .navigation-search button {
-        width: 20%; /* Gjør knappen like bred som søkefeltet */
+        width: 20%; 
         max-width: 10rem; 
     }
 }
