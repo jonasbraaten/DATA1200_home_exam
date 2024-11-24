@@ -327,7 +327,7 @@
 }
 
 
-/**/
+/*Tekst over accordion-bokser*/
 .få-innsikt{
     text-align: center;
     padding-top: 6rem;
@@ -339,13 +339,8 @@
 
 
 /*Responsive design for mindere skjermer på studieinfo*/
-@media (max-width: 768px){
-    .info-container{
-        grid-template-columns: repeat(2, 1fr);
-    }
- }
 
- @media (max-width: 480px){
+ @media (max-width: 768px){
     .info-container{
         grid-template-columns: 1fr;
     }
@@ -437,7 +432,7 @@ padding: 1em;
 .heading {  
     text-align: center;
     font-size: 1.5em;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 /* Semester boksene */
@@ -689,7 +684,7 @@ padding: 1em;
 }
 
 .interessert-disse li {
-    text-align: left;      /*? ta vekk, why?*/
+    text-align: left;      
     padding: 1rem;
     border-bottom: 0.0625rem solid #ddd;
 }
@@ -874,7 +869,6 @@ padding: 1em;
 }
 
 /* Styling footer midten */
-
 .indexfooter-middle a{ /* Styler linkene */
     color:white;
     font-weight: bold;
@@ -1054,8 +1048,8 @@ padding: 1em;
 }
 
 .spillerbilde img {
-    height: 250px;
-    width: 250px;
+    height: 15.625rem;
+    width: 15.625rem;
     border-radius: 50%;
     object-fit: cover;
     border: 0.3rem solid #dbac74;
@@ -1546,7 +1540,7 @@ padding: 1em;
     padding: 5%;
     border: 1px solid #ddd; /* Lys farge på kantene */
     border-radius: 0.8rem; /* Avrunde hjørner */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Myk skygge */
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1); /* Myk skygge */
 }
 
 .github h2 { /*Underoverskrifter*/
